@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+* {
+  font-family: "inter";
+}
+.Hero {
+  height: 90vh;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+
+.HeroR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 50px;
+}
+.HeroL {
+  position: relative;
+}
+
+.HeroL span img {
+  height: 40vw;
+  filter: drop-shadow(0px 0px 50px #90d1cd);
+}
+.HeroR > h1 {
+  font-size: 5vw;
+  font-weight: 1000;
+  font-stretch: extra-expanded;
+  font-family: "inter";
+  letter-spacing: -1px;
+}
+.HeroR > p {
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "inter";
+}
+
+.quote {
+  background-color: #7110b2;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0px 0px 10px rgb(178, 175, 175);
+  font-family: 'Salsa', cursive;
+}
