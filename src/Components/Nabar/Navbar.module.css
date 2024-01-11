@@ -1,13 +1,15 @@
 header {
   height: 60px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 1px 5px rgb(157, 156, 156);
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 900;
 }
 .logo {
   height: fit-content;
@@ -43,4 +45,9 @@ header {
   width: 20%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1124px) {
+  .menulist{
+    display: none;
+  }
 }
