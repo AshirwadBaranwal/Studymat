@@ -1,7 +1,7 @@
 import styles from "./Hero2.module.css";
-import Batches from "../../assets/Batches.png";
-import PYQ from "../../assets/PYQ.png";
-import News from "../../assets/News.png";
+import Notes from "../../assets/undraw_notes_re_pxhw.svg";
+import PYQ from "../../assets/undraw_questions_re_1fy7.svg";
+import Books from "../../assets/undraw_book_lover_re_rwjy.svg";
 
 const Hero2 = () => {
   return (
@@ -13,11 +13,11 @@ const Hero2 = () => {
           <div className={styles.media_alignment}>
             <div className={styles.box}>
               <div className={styles.logo}>
-                <img height="60px" src={Batches} alt="box-1" />
+                <img height="60px" src={Notes} alt="box-1" />
               </div>
               <div className={styles.paraedit}>
-                <p className={styles.Para_heading}>Batches</p>
-                <p>View the list of all batches</p>
+                <p className={styles.Para_heading}>Notes</p>
+                <p>Get handwritten notes of all subject.</p>
               </div>
             </div>
             {/* box 2         */}
@@ -34,11 +34,11 @@ const Hero2 = () => {
           {/* box-3 */}
           <div className={`${styles.box} ${styles.box3}`}>
             <div className={styles.logo}>
-              <img height="60px" src={News} alt="box3" />
+              <img height="60px" src={Books} alt="box3" />
             </div>
             <div className={styles.paraedit}>
-              <p className={styles.Para_heading}>Bihar Board News</p>
-              <p>View the latest news of biharboard</p>
+              <p className={styles.Para_heading}>Books</p>
+              <p>All books related to BCA(Patliputra University)</p>
             </div>
           </div>
         </div>
