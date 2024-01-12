@@ -9,6 +9,8 @@
   margin-top: 60px;
   display: flex;
   padding-bottom: 50px;
+  
+
 }
 
 .HeroL {
@@ -69,7 +71,9 @@
   color: white;
   box-shadow: 0px 0px 10px rgb(178, 175, 175);
   font-family: "Salsa", cursive;
+  position: relative;
 }
+
 @media (max-width: 1124px) {
   .Hero {
     flex-direction: column;
@@ -92,9 +96,9 @@
     padding: 0px 45px;
     min-height: 0px;
   }
-.HeroRin{
-  min-height: 0px;
-}
+  .HeroRin {
+    min-height: 0px;
+  }
   .HeroR h1 {
     font-size: 5vw;
   }
@@ -111,7 +115,7 @@
   .HeroR p {
     font-size: 16px;
   }
-  .HeroR{
-    padding:0px 30px;
+  .HeroR {
+    padding: 0px 30px;
   }
 }

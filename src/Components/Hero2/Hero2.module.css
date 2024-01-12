@@ -2,7 +2,8 @@
   height: fit-content;
   width: 95%;
   background-color: white;
-  box-shadow: 2px 5px 8px rgb(201, 199, 199);
+  /* box-shadow: 2px 5px 8px rgb(201, 199, 199); */
+  box-shadow: 0px 1px 5px rgb(157, 156, 156);
   margin: auto;
   border-radius: 20px;
   padding: 20px;
