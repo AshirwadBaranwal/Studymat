@@ -50,14 +50,14 @@ header {
   position: relative;
 }
 
-.semInp {
+/* .semInp {
   width: 160px;
   background-color: white;
   outline: none;
   border-radius: 5px;
   box-shadow: 2px 2px 0px 1px rgb(175, 175, 175);
   cursor: pointer;
-}
+} */
 
 .dropbtn{
 background-color: #7110b2;
@@ -65,7 +65,7 @@ color: white;
 border: 0px;
 border-radius: 5px;
 padding: 5px 18px;
-  
+min-width: 130px;
 }
 
 /* .navRest::before {

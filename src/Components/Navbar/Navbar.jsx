@@ -6,7 +6,7 @@ import { NotesArray } from "../../Context/NotesList-Store";
 
 function Navbar() {
   const [showdropdown, setshowdropdown] = useState(false);
-  const { semester } = useContext(NotesArray);
+  const { setSemester, semester } = useContext(NotesArray);
   console.log(semester);
   return (
     <header>
@@ -28,18 +28,17 @@ function Navbar() {
             setshowdropdown(!showdropdown);
           }}
         >
-          Semester?
+          {semester}
         </button>
         <div
           className={styles.dropdown}
           style={{ display: !showdropdown ? "None" : "flex" }}
-          initial={{ scale: 0.5 }}
-          animate={{ scale: 1 }}
         >
           <div
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-1");
             }}
           >
             Sem-1
@@ -48,6 +47,7 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-2");
             }}
           >
             Sem-2
@@ -56,6 +56,7 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-3");
             }}
           >
             Sem-3
@@ -64,6 +65,7 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-4");
             }}
           >
             Sem-4
@@ -72,6 +74,7 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-5");
             }}
           >
             Sem-5
@@ -80,6 +83,7 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
+              setSemester("Sem-6");
             }}
           >
             Sem-6
