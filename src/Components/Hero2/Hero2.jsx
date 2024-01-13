@@ -21,8 +21,8 @@ const Hero2 = () => {
                 <p>Get handwritten notes of all subject.</p>
               </div>
             </Link>
-            {/* box 2         */}
-            <div className={styles.box}>
+            {/* box 2       */}
+            <Link to="/PYQ" className={styles.box}>
               <div className={styles.logo}>
                 <img height="50px" src={PYQ} alt="box2" />
               </div>
@@ -30,7 +30,7 @@ const Hero2 = () => {
                 <p className={styles.Para_heading}>Previous Year Questions</p>
                 <p>View the list of all PYQs of 2015-2023 </p>
               </div>
-            </div>
+            </Link>
           </div>
           {/* box-3 */}
           <div className={`${styles.box} ${styles.box3}`}>

@@ -11,6 +11,7 @@ flex-direction: row;
 .Backbar span{
     width: fit-content;
     font-size: 21px;
+    font-weight: 600;
     width: fit-content;
     display: flex;
     align-items: center;

@@ -10,7 +10,7 @@ function Hero() {
       </div>
       <div className={styles.HeroR}>
         <div className={styles.HeroRin}>
-          <h1>You will learn great with us.</h1>
+          <h1>Your learning will be great with us.</h1>
           <p>
             We are providing the biggest library for students in BCA. Here you
             will get all the

@@ -5,6 +5,7 @@
 }
 .Hero {
   height: fit-content;
+  min-height: 300px;
   width: 100%;
   margin-top: 60px;
   display: flex;
@@ -105,8 +106,11 @@
 }
 
 @media (max-width: 500px) {
+  .HeroL{
+    margin-top: 20px;
+  }
   .HeroL img {
-    height: 350px;
+    height: 330px;
     width: 380px;
   }
   .HeroR h1 {
