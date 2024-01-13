@@ -9,8 +9,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 900;
-  
-
 }
 .logo {
   height: fit-content;
@@ -42,6 +40,15 @@ header {
   list-style: none;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
+  /* padding: 5px 10px; */
+  
+}
+.NavLink{
+text-decoration: none;
+color: black;
+padding: 5px 10px;
+
 }
 .navRest {
   width: fit-content;
@@ -59,13 +66,13 @@ header {
   cursor: pointer;
 } */
 
-.dropbtn{
-background-color: #7110b2;
-color: white;
-border: 0px;
-border-radius: 5px;
-padding: 5px 18px;
-min-width: 130px;
+.dropbtn {
+  background-color: #7110b2;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px 18px;
+  min-width: 130px;
 }
 
 /* .navRest::before {
@@ -91,8 +98,8 @@ min-width: 130px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   bottom: -240px;
-  right:-15% ;
-  box-shadow: 0px 0px 5px rgb(182, 181, 181) ;
+  right: -15%;
+  box-shadow: 0px 0px 5px rgb(182, 181, 181);
 }
 .options {
   width: 100%;
@@ -102,10 +109,9 @@ min-width: 130px;
   padding: 5px;
   cursor: pointer;
   border-bottom: 2px solid rgb(236, 234, 234);
-  
 }
 
-.options:nth-child(6){
+.options:nth-child(6) {
   border-bottom: 0px solid black;
 }
 
@@ -124,13 +130,13 @@ min-width: 130px;
   }
 }
 @media (max-width: 500px) {
-  .logo{
+  .logo {
     margin-left: -20px;
   }
-.dropdown{
-  right:10% ;
-}
-.dropbtn{
-  margin-left: -150px;
-}
+  .dropdown {
+    right: 10%;
+  }
+  .dropbtn {
+    margin-left: -150px;
+  }
 }

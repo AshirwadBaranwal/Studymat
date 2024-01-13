@@ -3,11 +3,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/Logo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester } = useContext(NotesArray);
-  console.log(semester);
+  const ActiveStyle = ({ isActive }) => {
+    if (isActive) {
+      return {
+        color: "white",
+        backgroundColor: "#6528e0",
+        borderRadius: "30px",
+      };
+    }
+  };
+
   return (
     <header>
       <div className={styles.logo}>
@@ -16,9 +26,25 @@ function Navbar() {
 
       <div className={styles.menu}>
         <ul className={styles.menulist}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
+          <li>
+            <NavLink style={ActiveStyle} className={styles.NavLink} to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink style={ActiveStyle} className={styles.NavLink} to="/About">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={ActiveStyle}
+              className={styles.NavLink}
+              to="/ContactUS"
+            >
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
       </div>
       <div className={styles.navRest}>

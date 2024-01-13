@@ -2,6 +2,7 @@ import styles from "./Hero2.module.css";
 import Notes from "../../assets/undraw_notes_re_pxhw.svg";
 import PYQ from "../../assets/undraw_questions_re_1fy7.svg";
 import Books from "../../assets/undraw_book_lover_re_rwjy.svg";
+import { Link } from "react-router-dom";
 
 const Hero2 = () => {
   return (
@@ -11,7 +12,7 @@ const Hero2 = () => {
         <hr />
         <div className={styles.container_content}>
           <div className={styles.media_alignment}>
-            <div className={styles.box}>
+            <Link to="/Subject" className={styles.box}>
               <div className={styles.logo}>
                 <img height="60px" src={Notes} alt="box-1" />
               </div>
@@ -19,7 +20,7 @@ const Hero2 = () => {
                 <p className={styles.Para_heading}>Notes</p>
                 <p>Get handwritten notes of all subject.</p>
               </div>
-            </div>
+            </Link>
             {/* box 2         */}
             <div className={styles.box}>
               <div className={styles.logo}>

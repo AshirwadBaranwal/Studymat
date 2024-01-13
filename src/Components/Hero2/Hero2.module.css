@@ -10,6 +10,11 @@
   margin-top: 10px;
 }
 
+/* .link{
+  text-decoration: none;
+  color: black;
+} */
+
 .container h2 {
   font-size: 24px;
   font-weight: 900;
@@ -39,7 +44,8 @@
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  
+  text-decoration: none;
+  color: black;
   margin: 20px;
 }
 
