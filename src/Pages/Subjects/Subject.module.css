@@ -75,4 +75,7 @@
     width: 96%;
     margin-top: 15px;
   }
+  .banner > h2 {
+    top: 30%;
+  }
 }
