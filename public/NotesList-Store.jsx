@@ -31,7 +31,7 @@ const Notelist = [
   {
     Sem: 1,
     Subj: "Practical",
-    Logo: "Practical.png",
+    Logo: "" ,
     Chapters: [
       {
         Ch_Name: "UNIX",
@@ -52,7 +52,7 @@ const Notelist = [
   {
     Sem: 1,
     Subj: "Computer Fundamental",
-    Logo: "Funda.png",
+    Logo: "" ,
     Chapters: [
       {
         Ch_Name: "UNIX",
@@ -73,7 +73,7 @@ const Notelist = [
   {
     Sem: 1,
     Subj: "English",
-    Logo: "English.png",
+    Logo: "" ,
     Chapters: [
       {
         Ch_Name: "UNIX",
@@ -84,13 +84,14 @@ const Notelist = [
         Ch_Name: "MS Word",
         URL: "#",
       },
+      
     ],
     URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
   {
     Sem: 1,
     Subj: "Hindi",
-    Logo: "Hindiicon.png",
+    Logo: "" ,
     Chapters: [
       {
         Ch_Name: "UNIX",
@@ -111,7 +112,7 @@ const Notelist = [
   {
     Sem: 1,
     Subj: "Math",
-    Logo: "Math.png",
+    Logo: "" ,
     Chapters: [
       {
         Ch_Name: "UNIX",

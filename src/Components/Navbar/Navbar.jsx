@@ -5,6 +5,9 @@ import Logo from "../../assets/Logo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
 
+
+
+
 function Navbar() {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester } = useContext(NotesArray);

@@ -6,6 +6,8 @@ import Maincomp from "./Components/Maincomp.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import About from "./Pages/About/About.jsx";
 import Subject from "./Pages/Subjects/Subject.jsx";
+import NotesArrayProvider from "./Context/NotesList-Store";
+// import Notes from "./Components/Notes/Notes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,13 +17,16 @@ const router = createBrowserRouter([
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
       { path: "/ContactUS", element: <Contact /> },
-      { path: "/Subject", element: <Subject /> },
     ],
   },
+  { path: "/Subject", element: <Subject /> },
+  // { path: "/Notes", element: <Notes /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <NotesArrayProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </NotesArrayProvider>
   </React.StrictMode>
 );
