@@ -3,7 +3,7 @@ import SubBanner from "../../assets/SubBanner.png";
 import styles from "./Subject.module.css";
 import { NotesArray } from "../../Context/NotesList-Store";
 import Backbar from "../../Components/BackBar/Backbar";
-
+import { Link } from "react-router-dom";
 function Subject() {
   const { notesArray } = useContext(NotesArray);
 
@@ -17,7 +17,11 @@ function Subject() {
       <div className={styles.main}>
         {notesArray.map((items) => {
           return (
-            <div className={styles.subjectBox} key={items.Subj}>
+            <Link
+              to={`/ShowNotes/${items.Subj}`}
+              className={styles.subjectBox}
+              key={items.Subj}
+            >
               <div className={styles.Image}>
                 <img height="40px" src={items.Logo} alt="" />
               </div>
@@ -25,7 +29,7 @@ function Subject() {
                 <div>{items.Subj}</div>
                 <p>Chapters - {items.Chapters.length} </p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

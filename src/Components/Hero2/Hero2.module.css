@@ -5,7 +5,7 @@
   /* box-shadow: 2px 5px 8px rgb(201, 199, 199); */
   box-shadow: 0px 1px 5px rgb(157, 156, 156);
   margin: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
   margin-top: 10px;
 }
@@ -135,7 +135,7 @@
     line-height: 40px;
   }
   .container hr {
-  margin-top: -10px;
-  margin-bottom: -5px;
+    margin-top: -10px;
+    margin-bottom: -5px;
   }
 }

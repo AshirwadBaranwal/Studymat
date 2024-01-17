@@ -35,6 +35,8 @@
   width: 60%;
   height: 60px;
   background-color: white;
+  text-decoration: none;
+  color: black;
   margin: 15px;
   border-radius: 5px;
   display: flex;
@@ -50,15 +52,18 @@
   align-items: center;
   justify-content: center;
   object-fit: cover;
+
 }
 .content {
   margin-top: 15px;
   margin-left: 15px;
   font-family: "Poppins", sans-serif;
+
 }
 .content p {
   font-size: 13px;
   opacity: 0.5;
+
 }
 
 @media (max-width: 800px) {
@@ -70,6 +75,8 @@
     width: 98%;
     margin: auto;
     margin-top: 15px;
+    text-decoration: none;
+    color: black;
   }
   .main {
     width: 96%;

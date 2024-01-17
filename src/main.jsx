@@ -8,6 +8,7 @@ import About from "./Pages/About/About.jsx";
 import Subject from "./Pages/Subjects/Subject.jsx";
 import NotesArrayProvider from "./Context/NotesList-Store";
 import PYQPage from "./Pages/PYQPage/PYQPage.jsx";
+import ShowNotes from "./Pages/ShowNotes/ShowNotes.jsx";
 // import Notes from "./Components/Notes/Notes.jsx";
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
   },
   { path: "/Subject", element: <Subject /> },
   { path: "/PYQ", element: <PYQPage /> },
+  { path: "/ShowNotes/:Subject", element: <ShowNotes /> },
 
   // { path: "/Notes", element: <Notes /> },
 ]);

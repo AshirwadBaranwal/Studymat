@@ -18,11 +18,10 @@ export const Notelist = [
         URL: "#",
       },
     ],
-    URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
   {
     Sem: 1,
-    Subj: "Computer Fundamental",
+    Subj: "Computer-Fundamental",
     Logo: "Funda.png",
     Chapters: [
       {
@@ -39,7 +38,6 @@ export const Notelist = [
         URL: "#",
       },
     ],
-    URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
   {
     Sem: 1,
@@ -47,7 +45,7 @@ export const Notelist = [
     Logo: "English.png",
     Chapters: [
       {
-        Ch_Name: "UNIX",
+        Ch_Name: "ahaiuauh",
         URL: "#",
       },
       { Ch_Name: "Windows operating system", URL: "#" },
@@ -56,7 +54,6 @@ export const Notelist = [
         URL: "#",
       },
     ],
-    URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
   {
     Sem: 1,
@@ -77,7 +74,6 @@ export const Notelist = [
         URL: "#",
       },
     ],
-    URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
   {
     Sem: 1,
@@ -98,6 +94,5 @@ export const Notelist = [
         URL: "#",
       },
     ],
-    URL: "https://drive.google.com/file/d/1hnkv3VktsxjPXCv7mTkx4m8nsnOnGFIq/view?usp=sharing",
   },
 ];
