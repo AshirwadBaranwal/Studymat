@@ -33,7 +33,7 @@ const Hero2 = () => {
             </Link>
           </div>
           {/* box-3 */}
-          <div className={`${styles.box} ${styles.box3}`}>
+          <Link to="/Books" className={`${styles.box} ${styles.box3}`}>
             <div className={styles.logo}>
               <img height="60px" src={Books} alt="box3" />
             </div>
@@ -41,7 +41,7 @@ const Hero2 = () => {
               <p className={styles.Para_heading}>Books</p>
               <p>All books related to BCA(Patliputra University)</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </>
