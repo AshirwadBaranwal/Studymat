@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Maincomp from "./Components/Maincomp.jsx";
+import Maincomp from "./Components/Maincomp/Maincomp.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import About from "./Pages/About/About.jsx";
 import Subject from "./Pages/Subjects/Subject.jsx";
