@@ -75,7 +75,11 @@
     padding: 3px;
   }
 }
-
+@media(min-width:500px){
+  .container{
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .container {
     width: 95%;
