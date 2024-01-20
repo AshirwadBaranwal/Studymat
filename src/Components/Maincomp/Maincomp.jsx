@@ -5,8 +5,9 @@ import styles from "./Maincomp.module.css";
 import weblogo from "../../assets/Weblogo.png";
 import Holiday from "../../assets/Holiday.jpg";
 import Syllabus from "../../assets/Syllabus.jpg";
-import Nimcet from "../../assets/Nimcet.png";
-
+import { Link } from "react-router-dom";
+import LinkImage from "../../assets/Link.png";
+Link;
 function Maincomp() {
   return (
     <>
@@ -30,14 +31,14 @@ function Maincomp() {
       </div>
       {/* part2 */}
       <div className={styles.container}>
-        <div className={styles.box}>
+        <Link to="/Holiday" className={styles.box}>
           <div className={styles.imgpart}>
             <img height="70px" src={Holiday} alt="" />
           </div>
           <div className="contentpart">
             <p>Holiday</p>
           </div>
-        </div>
+        </Link>
         <div className={styles.box}>
           <div className={styles.imgpart}>
             <img height="60px" src={Syllabus} alt="" />
@@ -48,10 +49,10 @@ function Maincomp() {
         </div>
         <div className={styles.box}>
           <div className={styles.imgpart}>
-            <img height="40px" src={Nimcet} alt="" />
+            <img height="40px" src={LinkImage} alt="LinkImage" />
           </div>
           <div className="contentpart">
-            <p>NIMCET</p>
+            <p>IMP Links</p>
           </div>
         </div>
       </div>

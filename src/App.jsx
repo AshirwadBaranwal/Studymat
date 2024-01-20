@@ -7,7 +7,6 @@ function App() {
   return (
     <div
       style={{
-        paddingBottom: "50px",
         backgroundImage: "url(../src/assets/Herobg.jpg)",
         backgroundRepeat: "no-repeat",
       }}

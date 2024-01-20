@@ -10,6 +10,7 @@ import NotesArrayProvider from "./Context/NotesList-Store";
 import PYQPage from "./Pages/PYQPage/PYQPage.jsx";
 import ShowNotes from "./Pages/ShowNotes/ShowNotes.jsx";
 import ShowBooks from "./Pages/Books/ShowBooks.jsx";
+import Holiday from "./Pages/Holiday.jsx";
 ShowBooks;
 // import Notes from "./Components/Notes/Notes.jsx";
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
   { path: "/PYQ", element: <PYQPage /> },
   { path: "/ShowNotes/:Subject", element: <ShowNotes /> },
   { path: "/Books", element: <ShowBooks /> },
+  { path: "/Holiday", element: <Holiday /> },
 
   // { path: "/Notes", element: <Notes /> },
 ]);
