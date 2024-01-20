@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../Hero/Hero";
 import Hero2 from "../Hero2/Hero2";
-import styles from "./maincomp.module.css";
+import styles from "./Maincomp.module.css";
 import weblogo from "../../assets/Weblogo.png";
 import Holiday from "../../assets/Holiday.jpg";
 import Syllabus from "../../assets/Syllabus.jpg";
@@ -48,7 +48,7 @@ function Maincomp() {
         </div>
         <div className={styles.box}>
           <div className={styles.imgpart}>
-            <img height="40px"src={Nimcet} alt="" />
+            <img height="40px" src={Nimcet} alt="" />
           </div>
           <div className="contentpart">
             <p>NIMCET</p>
