@@ -22,7 +22,7 @@ export const Notelist = [
   {
     Sem: 1,
     Subj: "Computer-Fundamental",
-    Logo: "Funda.png",
+    Logo: "Funda.jpg",
     Chapters: [
       {
         Ch_Name: "UNIX",
@@ -78,7 +78,7 @@ export const Notelist = [
   {
     Sem: 1,
     Subj: "Math",
-    Logo: "Math.png",
+    Logo: "Mathpic.jpg",
     Chapters: [
       {
         Ch_Name: "UNIX",
