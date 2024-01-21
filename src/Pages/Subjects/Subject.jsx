@@ -9,7 +9,7 @@ function Subject() {
 
   return (
     <>
-      <Backbar></Backbar>
+      <Backbar previosPage="/"></Backbar>
       <div className={styles.banner}>
         <img width="100%" height="80px" src={SubBanner} alt="Banner" />
         <h2>Subject</h2>

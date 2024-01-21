@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function ShowBooks() {
   return (
     <>
-      <Backbar />
+      <Backbar previosPage="/"></Backbar>
       <div className={styles.main}>
         {BookArray.map((books) => {
           return (

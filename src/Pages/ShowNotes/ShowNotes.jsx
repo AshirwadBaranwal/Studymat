@@ -13,7 +13,7 @@ function ShowNotes() {
   const ttt = noteLinkArray[0].Chapters;
   return (
     <div>
-      <Backbar></Backbar>
+      <Backbar previosPage="/Subject"></Backbar>
       <div></div>
       <div className={style.main}>
         {ttt.map((L) => {
