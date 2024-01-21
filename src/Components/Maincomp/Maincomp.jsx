@@ -6,8 +6,8 @@ import weblogo from "../../assets/Weblogo.png";
 import Holiday from "../../assets/Holiday.jpg";
 import Syllabus from "../../assets/Syllabus.jpg";
 import { Link } from "react-router-dom";
-import LinkImage from "../../assets/Link.png";
-Link;
+import LinkImage from "../../assets/Linkimg.png";
+
 function Maincomp() {
   return (
     <>
