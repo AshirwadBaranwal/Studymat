@@ -11,7 +11,7 @@ import PYQPage from "./Pages/PYQPage/PYQPage.jsx";
 import ShowNotes from "./Pages/ShowNotes/ShowNotes.jsx";
 import ShowBooks from "./Pages/Books/ShowBooks.jsx";
 import Holiday from "./Pages/Holiday.jsx";
-ShowBooks;
+
 // import Notes from "./Components/Notes/Notes.jsx";
 
 const router = createBrowserRouter([

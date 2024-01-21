@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 function Footer() {
   return (
@@ -38,7 +39,7 @@ function Footer() {
             </span>
           </li>
           <li>
-            <FaInstagramSquare size={20} />
+            <MdOutlineMail size={20} />
             <span>
               {" "}
               Email

@@ -70,12 +70,12 @@
     align-items: center;
   }
   .contacts ul li:nth-child(3) {
-    margin-left: 80px;
+    margin-left: 70px;
   }
   .Address ul {
     width: 100%;
     justify-content: center;
     display: flex;
-    padding-left: 70px;
+    padding-left: 50px;
   }
 }

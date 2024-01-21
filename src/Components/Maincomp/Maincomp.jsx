@@ -33,23 +33,27 @@ function Maincomp() {
       <div className={styles.container}>
         <Link to="/Holiday" className={styles.box}>
           <div className={styles.imgpart}>
-            <img height="70px" src={Holiday} alt="" />
+            <img height="50px" src={Holiday} alt="" />
           </div>
           <div className="contentpart">
             <p>Holiday</p>
           </div>
         </Link>
-        <div className={styles.box}>
+        <Link
+          to="https://drive.google.com/file/d/1YCBt9BWLOayWsWLiB6wA-aB9X1uJKtjl/view?usp=sharing"
+          target="blank"
+          className={styles.box}
+        >
           <div className={styles.imgpart}>
-            <img height="60px" src={Syllabus} alt="" />
+            <img height="40px" src={Syllabus} alt="" />
           </div>
           <div className="contentpart">
             <p>Syllabus</p>
           </div>
-        </div>
+        </Link>
         <div className={styles.box}>
           <div className={styles.imgpart}>
-            <img height="40px" src={LinkImage} alt="LinkImage" />
+            <img height="30px" src={LinkImage} alt="LinkImage" />
           </div>
           <div className="contentpart">
             <p>IMP Links</p>
