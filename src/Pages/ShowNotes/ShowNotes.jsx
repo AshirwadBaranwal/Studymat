@@ -18,7 +18,7 @@ function ShowNotes() {
       <div className={style.main}>
         {ttt.map((L) => {
           return (
-            <Link to="/" target="blank" className={style.Bar}>
+            <Link to={L.URL} key={L.id} target="blank" className={style.Bar}>
               <div className={style.heading}>
                 <p>{L.Ch_Name}</p>
                 <p>Notes</p>

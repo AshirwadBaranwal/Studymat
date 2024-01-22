@@ -4,18 +4,14 @@ export const Notelist = [
     Subj: "Practical",
     Logo: "Practical.png",
     Chapters: [
+      // { id: "p1", Ch_Name: "UNIX", URL: "#" },
+      // { id: "p2", Ch_Name: "Windows operating system", URL: "#" },
+      // { id: "p3", Ch_Name: "MS Word", URL: "#" },
+      // { id: "p4", Ch_Name: "MS Excel", URL: "#" },
       {
-        Ch_Name: "UNIX",
-        URL: "#",
-      },
-      { Ch_Name: "Windows operating system", URL: "#" },
-      {
-        Ch_Name: "MS Word",
-        URL: "#",
-      },
-      {
-        Ch_Name: "MS Excel",
-        URL: "#",
+        id: "p5",
+        Ch_Name: "Flow Chart",
+        URL: "https://drive.google.com/file/d/1Qwck_25Oy0yTiZ22AeshA4qVb7i7BSTd/view?usp=sharing",
       },
     ],
   },
@@ -24,19 +20,10 @@ export const Notelist = [
     Subj: "Computer-Fundamental",
     Logo: "Funda.jpg",
     Chapters: [
-      {
-        Ch_Name: "UNIX",
-        URL: "#",
-      },
-      { Ch_Name: "Windows operating system", URL: "#" },
-      {
-        Ch_Name: "MS Word",
-        URL: "#",
-      },
-      {
-        Ch_Name: "MS Excel",
-        URL: "#",
-      },
+      // { id: "c1", Ch_Name: "UNIX", URL: "#" },
+      // { id: "c2", Ch_Name: "Windows operating system", URL: "#" },
+      // { id: "c3", Ch_Name: "MS Word", URL: "#" },
+      // { id: "c4", Ch_Name: "MS Excel", URL: "#" },
     ],
   },
   {
@@ -44,15 +31,9 @@ export const Notelist = [
     Subj: "English",
     Logo: "English.png",
     Chapters: [
-      {
-        Ch_Name: "ahaiuauh",
-        URL: "#",
-      },
-      { Ch_Name: "Windows operating system", URL: "#" },
-      {
-        Ch_Name: "MS Word",
-        URL: "#",
-      },
+      // { id: "e1", Ch_Name: "ahaiuauh", URL: "#" },
+      // { id: "e2", Ch_Name: "Windows operating system", URL: "#" },
+      // { id: "e3", Ch_Name: "MS Word", URL: "#" },
     ],
   },
   {
@@ -60,19 +41,10 @@ export const Notelist = [
     Subj: "Hindi",
     Logo: "Hindiicon.png",
     Chapters: [
-      {
-        Ch_Name: "UNIX",
-        URL: "#",
-      },
-      { Ch_Name: "Windows operating system", URL: "#" },
-      {
-        Ch_Name: "MS Word",
-        URL: "#",
-      },
-      {
-        Ch_Name: "MS Excel",
-        URL: "#",
-      },
+      // { id: "h1", Ch_Name: "UNIX", URL: "#" },
+      // { id: "h2", Ch_Name: "Windows operating system", URL: "#" },
+      // { id: "h3", Ch_Name: "MS Word", URL: "#" },
+      // { id: "h4", Ch_Name: "MS Excel", URL: "#" },
     ],
   },
   {
@@ -80,19 +52,10 @@ export const Notelist = [
     Subj: "Math",
     Logo: "Mathpic.jpg",
     Chapters: [
-      {
-        Ch_Name: "UNIX",
-        URL: "#",
-      },
-      { Ch_Name: "Windows operating system", URL: "#" },
-      {
-        Ch_Name: "MS Word",
-        URL: "#",
-      },
-      {
-        Ch_Name: "MS Excel",
-        URL: "#",
-      },
+      // { id: "m1", Ch_Name: "Matrices", URL: "#" },
+      // { id: "m2", Ch_Name: "Set Theory", URL: "#" },
+      // { id: "m3", Ch_Name: "Co-ordinate Geometry", URL: "#" },
+      // { id: "m4", Ch_Name: "Relation and Functions", URL: "#" },
     ],
   },
 ];
