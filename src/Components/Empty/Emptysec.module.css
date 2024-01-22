@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Poppins:wght@500&display=swap");
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* font-family: 'Grape Nuts', cursive; */
+}
+.container img {
+  height: 250px;
+}
+.container p {
+  font-family: "Poppins", sans-serif;
+}
