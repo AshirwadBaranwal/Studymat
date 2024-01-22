@@ -1,5 +1,5 @@
 import { createContext, useReducer, useState } from "react";
-import {Notelist} from "../Arrays/NotesArray";
+import { Notelist } from "../Arrays/NotesArray";
 
 export const NotesArray = createContext({
   notesArray: [],
@@ -17,7 +17,7 @@ const NotesArrayProvider = ({ children }) => {
   );
   // REducer  End ***********************************
 
-  const [semester, setSemester] = useState("sem-1");
+  const [semester, setSemester] = useState("Year-1");
   return (
     <NotesArray.Provider value={{ notesArray, semester, setSemester }}>
       {children}

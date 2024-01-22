@@ -33,7 +33,7 @@
 }
 .box {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .fright h3 {
   color: #7110b2;
@@ -112,9 +112,10 @@
   }
   .box p {
     line-height: 10px;
-    margin-left: 15px;
+    /* margin-left: 14px; */
     font-family: "Poppins";
     font-size: 13px;
+    padding-left: 0px;
   }
   .box p:nth-child(3) {
     margin-left: 10px;
@@ -128,6 +129,10 @@
     /* border: 2px solid #b777e1; */
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .contentpart {
+    display: flex;
     justify-content: center;
   }
 }
@@ -145,10 +150,9 @@
 }
 @media (max-width: 340px) {
   .fright h3 {
-font-size: 18px;
+    font-size: 18px;
   }
   .fright ol li {
-    
     font-size: 12px;
     padding: 2px;
   }

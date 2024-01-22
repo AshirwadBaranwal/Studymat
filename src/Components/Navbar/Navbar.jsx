@@ -5,9 +5,6 @@ import Logo from "../../assets/Logo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
 
-
-
-
 function Navbar() {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester } = useContext(NotesArray);
@@ -67,55 +64,28 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-1");
+              setSemester("Year-1");
             }}
           >
-            Sem-1
+            Year-1
           </div>
           <div
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-2");
+              setSemester("Year-2");
             }}
           >
-            Sem-2
+            Year-2
           </div>
           <div
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-3");
+              setSemester("Year-3");
             }}
           >
-            Sem-3
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-4");
-            }}
-          >
-            Sem-4
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-5");
-            }}
-          >
-            Sem-5
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-6");
-            }}
-          >
-            Sem-6
+            Year-3
           </div>
         </div>
       </div>

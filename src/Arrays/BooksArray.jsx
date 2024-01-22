@@ -15,6 +15,6 @@ export const BookArray = [
     BImage: "ComputerAwareness(2).png",
     Cost: "Free",
     Subject: "Computer",
-    URL: "https://drive.google.com/file/d/1-i5ek8m8boMdz_UxPuRAr87FJ3VG6CFP/view?usp=sharing",
+    URL: "https://drive.google.com/file/d/19mwg2x5l9ij2JPiWYgZGrnu7P1L1iB49/view?usp=sharing",
   },
 ];

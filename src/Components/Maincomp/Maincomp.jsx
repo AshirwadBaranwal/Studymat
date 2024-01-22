@@ -35,7 +35,7 @@ function Maincomp() {
           <div className={styles.imgpart}>
             <img height="50px" src={Holiday} alt="" />
           </div>
-          <div className="contentpart">
+          <div className={styles.contentpart}>
             <p>Holiday</p>
           </div>
         </Link>
@@ -47,7 +47,7 @@ function Maincomp() {
           <div className={styles.imgpart}>
             <img height="40px" src={Syllabus} alt="" />
           </div>
-          <div className="contentpart">
+          <div className={styles.contentpart}>
             <p>Syllabus</p>
           </div>
         </Link>
@@ -55,7 +55,7 @@ function Maincomp() {
           <div className={styles.imgpart}>
             <img height="30px" src={LinkImage} alt="LinkImage" />
           </div>
-          <div className="contentpart">
+          <div className={styles.contentpart}>
             <p>IMP Links</p>
           </div>
         </div>
