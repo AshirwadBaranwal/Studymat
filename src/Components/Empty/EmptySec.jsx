@@ -1,11 +1,11 @@
 import React from "react";
 import EmptyImage from "../../assets/EmptyImage.png";
-import styles from "./EmptySec.module.css";
+import styles from "./Emptysec.module.css";
 
 function EmptySec() {
   return (
     <div className={styles.container}>
-      <img  src={EmptyImage} alt="EmptyImage" />
+      <img src={EmptyImage} alt="EmptyImage" />
       <p>No items here.</p>
     </div>
   );
