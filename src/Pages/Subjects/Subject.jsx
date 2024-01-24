@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import SubBanner from "../../assets/SubBanner.png";
+import SubBanner from "../../assets/SubBanner.jpg";
 import styles from "./Subject.module.css";
 import { NotesArray } from "../../Context/NotesList-Store";
 import Backbar from "../../Components/BackBar/Backbar";

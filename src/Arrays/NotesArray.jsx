@@ -18,7 +18,7 @@ export const Notelist = [
   {
     Sem: 1,
     Subj: "Computer-Fundamental",
-    Logo: "Funda.jpg",
+    Logo: "Funda.png",
     Chapters: [
       // { id: "c1", Ch_Name: "UNIX", URL: "#" },
       // { id: "c2", Ch_Name: "Windows operating system", URL: "#" },
@@ -50,7 +50,7 @@ export const Notelist = [
   {
     Sem: 1,
     Subj: "Math",
-    Logo: "Mathpic.jpg",
+    Logo: "Mathpic.png",
     Chapters: [
       // { id: "m1", Ch_Name: "Matrices", URL: "#" },
       // { id: "m2", Ch_Name: "Set Theory", URL: "#" },

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./PYQPage.module.css";
 import { PYQArray } from "../../Arrays/PYQArray";
-import SubBanner from "../../assets/SubBanner.png";
+import SubBanner from "../../assets/SubBanner.jpg";
 import { Link } from "react-router-dom";
 import Backbar from "../../Components/BackBar/Backbar";
 
