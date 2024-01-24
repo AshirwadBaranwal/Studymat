@@ -16,6 +16,7 @@
 .Hero h1 {
   font-size: 65px;
   /* font-size: 5vw; */
+  color: var(--para-clr);
   font-weight: 1000;
   font-stretch: extra-expanded;
   font-family: "inter";
@@ -28,6 +29,7 @@
   /* font-size: 1.5vw; */
   font-weight: 500;
   font-family: "inter";
+  color: var(--para-clr);
 }
 
 .HeroL {
@@ -64,14 +66,14 @@
   position: relative;
   width: fit-content;
   height: fit-content;
-  background-color: #7110b2;
-  color: white;
+  background-color: var(--btn-clr);  
+  color: var(--para-clr);
   font-size: 18px;
   font-weight: 600;
   font-family: "Salsa", cursive;
   padding: 8px 15px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgb(178, 175, 175);
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
 }
 
 @media (max-width: 1124px) {

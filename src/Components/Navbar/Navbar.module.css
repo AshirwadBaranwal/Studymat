@@ -1,13 +1,13 @@
 header {
   position: fixed;
   top: 0;
-  height: 60px;
+  height: 65px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bg-clr);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 1px 5px rgb(157, 156, 156);
+  box-shadow: 0px 1px 5px var(--bx-shadow);
   z-index: 900;
 }
 .logo {
@@ -37,7 +37,7 @@ header {
   text-decoration: none;
 }
 .NavLink {
-  color: black;
+  color: var(--para-clr);
   text-decoration: none;
   padding: 5px 10px;
 }
@@ -50,8 +50,8 @@ header {
 
 .dropbtn {
   min-width: 130px;
-  color: white;
-  background-color: #7110b2;
+  color: var(--para-clr);
+  background-color: var(--btn-clr);
   border: 0px;
   border-radius: 5px;
   padding: 5px 18px;
@@ -60,7 +60,7 @@ header {
 /* Dropdown Starts here *****************************************/
 .dropdown {
   position: absolute;
-  right: -15%;
+  right: 40%;
   bottom: -135px;
   width: 160px;
   height: fit-content;
@@ -109,8 +109,10 @@ header {
     display: none;
   }
   .navRest {
+    width: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .dropbtn {
     display: none;
@@ -121,7 +123,7 @@ header {
     position: relative;
   }
   .hamburger {
-    width: 40%;
+    width: 5%;
     display: inline-block;
     margin-right: 50px;
     cursor: pointer;

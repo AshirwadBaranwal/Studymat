@@ -6,6 +6,7 @@ import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
+import DarkToggle from "../DARK/DarkToggle";
 
 function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
@@ -15,7 +16,7 @@ function Navbar({ setClickSidebar, clickSidebar }) {
     if (isActive) {
       return {
         color: "white",
-        backgroundColor: "#6528e0",
+        backgroundColor: "var(--btn-clr)",
         borderRadius: "30px",
       };
     }
@@ -59,6 +60,7 @@ function Navbar({ setClickSidebar, clickSidebar }) {
         >
           {semester}
         </button>
+        <DarkToggle />
 
         {/* hamburger */}
 

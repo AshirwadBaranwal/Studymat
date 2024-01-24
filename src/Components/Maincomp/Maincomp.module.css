@@ -1,7 +1,7 @@
 .features {
   width: 95%;
   height: 320px;
-  background-color: white;
+  background-color: var(--sec-bg-clr);
   margin: auto;
   margin-top: 20px;
   padding: 10px;
@@ -32,18 +32,19 @@
   border-left: 1px solid rgb(162, 160, 160);
 }
 .fright h3 {
-  color: #7110b2;
+  color: var(--btn-clr);
   font-size: 42px;
   margin-left: -130px;
 }
 .fright ol li {
+  color: var(--para-clr);
   list-style: disc;
   font-size: 23px;
   opacity: 0.8;
   padding: 3px;
 }
 .box {
-  color: rgb(0, 0, 0);
+  
   text-decoration: none;
 }
 
@@ -63,6 +64,7 @@
   }
 
   .fright {
+    
     width: 70%;
     height: 100%;
     display: flex;
@@ -74,6 +76,7 @@
     margin-left: -60px;
   }
   .fright ol li {
+   
     list-style: disc;
     font-size: 14px;
     padding: 3px;

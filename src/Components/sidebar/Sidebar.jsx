@@ -4,12 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SetSemester from "../SetSemester/SetSemester";
 
+
 function Sidebar({ setClickSidebar, clickSidebar }) {
   const ActiveStyle = ({ isActive }) => {
-    // {
-    //   color: isActive ? "white" : "#6528e0",
-    //   backgroundColor: isActive ? "#6528e0" : "white",
-    // }
 
     if (isActive) {
       return {
@@ -37,7 +34,7 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
               Home
             </NavLink>
           </li>
-          
+
           <li>
             <NavLink
               style={ActiveStyle}
