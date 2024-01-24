@@ -7,7 +7,6 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: "url(../src/assets/Herobg.jpg)",
         backgroundRepeat: "no-repeat",
       }}
     >
