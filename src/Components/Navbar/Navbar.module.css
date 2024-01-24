@@ -50,7 +50,7 @@ header {
 
 .dropbtn {
   min-width: 130px;
-  color: var(--para-clr);
+  color: white;
   background-color: var(--btn-clr);
   border: 0px;
   border-radius: 5px;
