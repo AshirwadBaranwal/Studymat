@@ -21,7 +21,7 @@ const Hero2 = () => {
                 <p>Get handwritten notes of all subject.</p>
               </div>
             </Link>
-            {/* box 2       */}
+            {/* box 2  */}
             <Link to="/PYQ" className={styles.box}>
               <div className={styles.logo}>
                 <img height="50px" src={PYQ} alt="box2" />

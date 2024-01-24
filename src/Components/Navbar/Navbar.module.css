@@ -64,7 +64,8 @@ header {
   bottom: -135px;
   width: 160px;
   height: fit-content;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--sec-bg-clr);
+  color: var(--para-clr);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -72,7 +73,7 @@ header {
   margin-left: 200px;
   padding: 5px 0px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px rgb(182, 181, 181);
+  box-shadow: 0px 0px 5px  rgb(182, 181, 181);
 }
 .options {
   width: 100%;
@@ -81,7 +82,7 @@ header {
   justify-content: center;
   padding: 5px;
   cursor: pointer;
-  border-bottom: 2px solid rgb(236, 234, 234);
+  border-bottom: 2px solid rgb(168, 165, 165);
 }
 
 .options:nth-child(3) {
@@ -89,7 +90,7 @@ header {
 }
 
 .options:hover {
-  background-color: #aa5bdf;
+  background-color: var(--btn-clr);
   border-radius: 5px;
 }
 
@@ -131,11 +132,11 @@ header {
 
   .navmenu ul li {
     font-size: 14px;
-    color: white;
+    color: var(--para-clr);
   }
 
   .navmenu ul li a {
-    color: white;
+    color: var(--para-clr);
   }
 }
 @media (max-width: 500px) {

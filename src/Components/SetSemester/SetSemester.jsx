@@ -6,7 +6,10 @@ function SetSemester() {
   const { setSemester, semester } = useContext(NotesArray);
   return (
     <div>
-      <div className={styles.dropdown}>
+      <div
+        className={styles.dropdown}
+        // style={{ display: !showdropdown ? "None" : "flex" }}
+      >
         <div
           className={styles.options}
           onClick={() => {

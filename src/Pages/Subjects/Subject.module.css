@@ -22,27 +22,27 @@
 
 .main {
   width: 90%;
-  background-color: white;
+  background-color: var(--sec-bg-clr);
   height: fit-content;
   padding: 20px 10px;
   margin: auto;
   margin-top: 20px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px -3px rgb(198, 196, 196);
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
 }
 
 .subjectBox {
   width: 60%;
   height: 60px;
-  background-color: white;
+  background-color: var(--tert-bg-clr);
   text-decoration: none;
-  color: black;
+  color: var(--para-clr);
   margin: 15px;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 8px -3px rgb(198, 196, 196);
-  border: 1px solid rgb(226, 225, 225);
+  box-shadow: 0px 0px 8px -3px var(--bx-shadow);
+  border: 1px solid var(--bx-shadow);
 }
 
 .Image {
@@ -52,18 +52,15 @@
   align-items: center;
   justify-content: center;
   object-fit: cover;
-
 }
 .content {
   margin-top: 15px;
   margin-left: 15px;
   font-family: "Poppins", sans-serif;
-
 }
 .content p {
   font-size: 13px;
   opacity: 0.5;
-
 }
 
 @media (max-width: 800px) {
@@ -76,7 +73,6 @@
     margin: auto;
     margin-top: 15px;
     text-decoration: none;
-    color: black;
   }
   .main {
     width: 96%;

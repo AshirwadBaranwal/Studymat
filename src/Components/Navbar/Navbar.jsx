@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/Logo.png";
+import weblogo from "../../assets/Weblogo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,7 +11,7 @@ import DarkToggle from "../DARK/DarkToggle";
 
 function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
-  const { setSemester, semester } = useContext(NotesArray);
+  const { setSemester, semester, theme } = useContext(NotesArray);
 
   const ActiveStyle = ({ isActive }) => {
     if (isActive) {
@@ -25,7 +26,7 @@ function Navbar({ setClickSidebar, clickSidebar }) {
   return (
     <header>
       <div className={styles.logo}>
-        <img height="60px" src={Logo} alt="Logo" />
+        <img height="60px" src={theme === "Dark" ? Logo : weblogo} alt="Logo" />
       </div>
 
       <div className={styles.menu}>
@@ -69,9 +70,9 @@ function Navbar({ setClickSidebar, clickSidebar }) {
           onClick={() => setClickSidebar(!clickSidebar)}
         >
           {!clickSidebar ? (
-            <RxHamburgerMenu size={30} color="rgb(101, 40, 224)" />
+            <RxHamburgerMenu size={30} color="var(--btn-clr)" />
           ) : (
-            <RxCross1 size={30} color="rgb(101, 40, 224)" />
+            <RxCross1 size={30} color="var(--btn-clr)" />
           )}
         </span>
 

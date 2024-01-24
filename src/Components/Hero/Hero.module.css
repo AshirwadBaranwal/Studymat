@@ -40,7 +40,7 @@
 }
 .HeroL img {
   width: 50vw;
-  filter: drop-shadow(0px 0px 50px #90d1cd);
+  /* filter: drop-shadow(0px 0px 50px #90d1cd); */
 }
 .HeroR {
   width: 50%;
@@ -67,7 +67,7 @@
   width: fit-content;
   height: fit-content;
   background-color: var(--btn-clr);  
-  color: var(--para-clr);
+  color: white;
   font-size: 18px;
   font-weight: 600;
   font-family: "Salsa", cursive;

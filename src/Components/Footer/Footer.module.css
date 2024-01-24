@@ -1,10 +1,11 @@
 .container {
   width: 100%;
   height: fit-content;
+  color: var(--para-clr);
   padding: 10px 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: white;
+  background-color: var(--bg-clr);
   margin-top: 20px;
 }
 .Links {

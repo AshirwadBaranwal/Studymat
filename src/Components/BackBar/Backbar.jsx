@@ -8,7 +8,7 @@ function Backbar({ previosPage }) {
   return (
     <div className={style.Backbar}>
       <span
-        style={{ color: "#7110b2", marginLeft: "15px" }}
+
         onClick={() => BackButton(previosPage)}
       >
         <IoArrowBackSharp size={32} />

@@ -9,17 +9,25 @@ body {
 .Dark {
   --bg-clr: white;
   --sec-bg-clr: #ffffff;
+  --tert-bg-clr: #ffffff;
   --para-clr: rgb(0, 0, 0);
-  --btn-clr: #6528e0;
+  --btn-clr: #7110b2;
   --bx-shadow: rgb(157, 156, 156);
+  --box1-clr: #f4f4fe;
+  --box2-clr: #f7ecfc;
+  --box3-clr: #fbecf1;
   background-color: white;
 }
 
 .Light {
   --bg-clr: #060b10;
-  --sec-bg-clr: #12181f;
+  --sec-bg-clr: #1e2732;
+  --tert-bg-clr: #1e242c;
   --para-clr: white;
-  --btn-clr: #15c9d2;
-  --bx-shadow: rgb(222, 222, 222);
-  background-color: black;
+  --btn-clr: #04a29f;
+  --bx-shadow: rgb(76, 71, 71);
+  --box1-clr: #222328;
+  --box2-clr: #2c2431;
+  --box3-clr: #2e2327;
+  background-color: #1B2430;
 }

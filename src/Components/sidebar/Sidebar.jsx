@@ -11,7 +11,7 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
     if (isActive) {
       return {
         color: "white",
-        backgroundColor: "#6528e0",
+        backgroundColor: "var(--btn-clr)",
         borderRadius: "30px",
       };
     }

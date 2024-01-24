@@ -6,15 +6,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background-color: var(--tert-bg-clr);
+  color: var(--para-clr);
   /* gap: 10px; */
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 5px rgb(182, 181, 181);
 }
+
 .options {
   width: 100%;
   display: flex;
