@@ -4,8 +4,10 @@ import styles from "./Navbar.module.css";
 import Logo from "../../assets/Logo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
-function Navbar() {
+function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester } = useContext(NotesArray);
   const ActiveStyle = ({ isActive }) => {
@@ -56,6 +58,17 @@ function Navbar() {
         >
           {semester}
         </button>
+        {/* hamburger */}
+        <span
+          className={styles.hamburger}
+          onClick={() => setClickSidebar(!clickSidebar)}
+        >
+          {!clickSidebar ? (
+            <RxHamburgerMenu size={30} color="rgb(101, 40, 224)" />
+          ) : (
+            <RxCross1 size={30} color="rgb(101, 40, 224)" />
+          )}
+        </span>
         <div
           className={styles.dropdown}
           style={{ display: !showdropdown ? "None" : "flex" }}

@@ -118,7 +118,39 @@ header {
   border-radius: 5px;
 }
 
-@media (max-width: 1124px) {
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1115px) {
+  header {
+    justify-content: space-between;
+  }
+  .navmenu {
+    display: none;
+    position: relative;
+  }
+  .hamburger {
+    display: inline-block;
+    width: 40%;
+    display: flex;
+    margin-right: 50px;
+  }
+
+  Header {
+    z-index: 200;
+  }
+  .navmenu ul li {
+    font-size: 14px;
+    color: white;
+  }
+
+  .navmenu ul li a {
+    color: white;
+  }
+}
+
+@media (max-width: 1126px) {
   .menulist {
     display: none;
   }
@@ -126,15 +158,41 @@ header {
     display: flex;
     align-items: center;
   }
+  .dropbtn {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .navmenu {
+    display: none;
+    position: relative;
+  }
+  .hamburger {
+    display: inline-block;
+    width: 40%;
+    display: flex;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  Header {
+    z-index: 200;
+  }
+  .navmenu ul li {
+    font-size: 14px;
+    color: white;
+  }
+
+  .navmenu ul li a {
+    color: white;
+  }
+  .logo {
+    margin-left: 10px;
+  }
 }
 @media (max-width: 500px) {
   .logo {
-    margin-left: -20px;
-  }
-  .dropdown {
-    right: 10%;
-  }
-  .dropbtn {
-    margin-left: -150px;
+    margin-left: 10px;
   }
 }
