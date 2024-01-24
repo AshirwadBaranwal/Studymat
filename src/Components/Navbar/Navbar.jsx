@@ -10,6 +10,7 @@ import { RxCross1 } from "react-icons/rx";
 function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester } = useContext(NotesArray);
+
   const ActiveStyle = ({ isActive }) => {
     if (isActive) {
       return {
@@ -58,7 +59,9 @@ function Navbar({ setClickSidebar, clickSidebar }) {
         >
           {semester}
         </button>
+
         {/* hamburger */}
+
         <span
           className={styles.hamburger}
           onClick={() => setClickSidebar(!clickSidebar)}
@@ -69,6 +72,11 @@ function Navbar({ setClickSidebar, clickSidebar }) {
             <RxCross1 size={30} color="rgb(101, 40, 224)" />
           )}
         </span>
+
+        {/* hamburger */}
+
+        {/* SemesterDropdown */}
+
         <div
           className={styles.dropdown}
           style={{ display: !showdropdown ? "None" : "flex" }}
@@ -101,6 +109,7 @@ function Navbar({ setClickSidebar, clickSidebar }) {
             Year-3
           </div>
         </div>
+        {/* SemesterDropdown */}
       </div>
     </header>
   );

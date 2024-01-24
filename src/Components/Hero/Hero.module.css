@@ -3,47 +3,16 @@
 * {
   font-family: "inter";
 }
+
 .Hero {
+  width: 100%;
   height: fit-content;
   min-height: 300px;
-  width: 100%;
+  display: flex;
   margin-top: 60px;
-  display: flex;
   padding-bottom: 50px;
-  
-
 }
 
-.HeroL {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  align-items: center;
-}
-.HeroR {
-  height: 100%;
-  min-height: 580px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-.HeroRin {
-  height: fit-content;
-  min-height: 483px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.HeroL img {
-  width: 50vw;
-  filter: drop-shadow(0px 0px 50px #90d1cd);
-}
 .Hero h1 {
   font-size: 65px;
   /* font-size: 5vw; */
@@ -61,18 +30,48 @@
   font-family: "inter";
 }
 
-.quote {
-  background-color: #7110b2;
+.HeroL {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.HeroL img {
+  width: 50vw;
+  filter: drop-shadow(0px 0px 50px #90d1cd);
+}
+.HeroR {
+  width: 50%;
+  height: 100%;
+  min-height: 580px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HeroRin {
+  width: 100%;
   height: fit-content;
+  min-height: 483px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quote {
+  position: relative;
   width: fit-content;
-  padding: 8px 15px;
-  border-radius: 8px;
+  height: fit-content;
+  background-color: #7110b2;
+  color: white;
   font-size: 18px;
   font-weight: 600;
-  color: white;
-  box-shadow: 0px 0px 10px rgb(178, 175, 175);
   font-family: "Salsa", cursive;
-  position: relative;
+  padding: 8px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgb(178, 175, 175);
 }
 
 @media (max-width: 1124px) {
@@ -92,10 +91,10 @@
     width: 400px;
   }
   .HeroR {
-    justify-content: center;
     width: 100%;
-    padding: 0px 45px;
     min-height: 0px;
+    justify-content: center;
+    padding: 0px 45px;
   }
   .HeroRin {
     min-height: 0px;
@@ -106,7 +105,7 @@
 }
 
 @media (max-width: 500px) {
-  .HeroL{
+  .HeroL {
     margin-top: 20px;
   }
   .HeroL img {
