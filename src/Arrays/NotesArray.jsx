@@ -15,8 +15,13 @@ export const Notelist = [
       },
       {
         id: "p6",
-        Ch_Name: "QBASIC",
-        URL: "https://drive.google.com/file/d/14rdBjxP_7wx3IGb5sTgt2IxB8iKlIact/view?usp=sharing",
+        Ch_Name: "QBASIC-1",
+        URL: "https://drive.google.com/file/d/15qRnZUOqdARJUR6_dSiMRWAu5wGWHuPu/view?usp=sharing",
+      },
+      {
+        id: "p7",
+        Ch_Name: "QBASIC-2",
+        URL: "https://drive.google.com/file/d/15sgk4qXPuWdNADp8UpYk54I6ayloqIDU/view?usp=sharing",
       },
     ],
   },
