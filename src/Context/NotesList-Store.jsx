@@ -18,7 +18,7 @@ const NotesArrayProvider = ({ children }) => {
   // REducer  End ***********************************
 
   const [semester, setSemester] = useState("Year-1");
-  const [theme, setTheme] = useState("Light");
+  const [theme, setTheme] = useState("Dark");
   return (
     <NotesArray.Provider
       value={{ notesArray, semester, setSemester, theme, setTheme }}
