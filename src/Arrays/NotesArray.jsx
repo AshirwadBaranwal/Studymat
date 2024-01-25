@@ -13,6 +13,11 @@ export const Notelist = [
         Ch_Name: "Flow Chart",
         URL: "https://drive.google.com/file/d/1ns_r9W0YDPVOMv5LL_pQ7D_Fa512786c/view?usp=sharing",
       },
+      {
+        id: "p6",
+        Ch_Name: "QBASIC",
+        URL: "https://drive.google.com/file/d/14rdBjxP_7wx3IGb5sTgt2IxB8iKlIact/view?usp=sharing",
+      },
     ],
   },
   {
@@ -45,6 +50,11 @@ export const Notelist = [
       // { id: "h2", Ch_Name: "Windows operating system", URL: "#" },
       // { id: "h3", Ch_Name: "MS Word", URL: "#" },
       // { id: "h4", Ch_Name: "MS Excel", URL: "#" },
+      {
+        id: "h4",
+        Ch_Name: "पूस की रात",
+        URL: "https://drive.google.com/file/d/13mx17l30sNMPIgTUITftah0gFVTTelqH/view?usp=sharing",
+      },
     ],
   },
   {
