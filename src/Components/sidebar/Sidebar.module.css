@@ -3,13 +3,15 @@
   top: 66px;
   right: 0px;
   width: 60%;
-  background-color: var(--sec-bg-clr);
   height: 85vh;
   z-index: 500;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0px 0px 5px var(--bx-shadow);
   overflow-y: auto;
+  background: val(--side-bg-clr);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navmenu h6 {
@@ -26,6 +28,7 @@
 
 .navmenu ul li {
   list-style: none;
+  font-weight: 800;
 }
 .navmenu ul li a {
   text-decoration: none;

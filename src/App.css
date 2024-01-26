@@ -10,6 +10,7 @@ body {
   --bg-clr: white;
   --sec-bg-clr: #ffffff;
   --tert-bg-clr: #ffffff;
+  --side-bg-clr: rgba(255, 255, 255, 0.4);
   --para-clr: rgb(0, 0, 0);
   --btn-clr: #7110b2;
   --bx-shadow: rgb(157, 156, 156);
@@ -25,6 +26,7 @@ body {
   --bg-clr: #19191c;
   --sec-bg-clr: #19191c;
   --tert-bg-clr: #19191c;
+  --side-bg-clr: rgba(41, 40, 40, 0.4);
   --para-clr: white;
   --btn-clr: #fd356e;
   --bx-shadow: rgb(87, 85, 85);

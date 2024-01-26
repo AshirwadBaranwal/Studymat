@@ -2,12 +2,10 @@ import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import SetSemester from "../SetSemester/SetSemester";
-
+// import SetSemester from "../SetSemester/SetSemester";
 
 function Sidebar({ setClickSidebar, clickSidebar }) {
   const ActiveStyle = ({ isActive }) => {
-
     if (isActive) {
       return {
         color: "white",
@@ -54,10 +52,10 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
             </NavLink>
           </li>
         </ul>
-        <h6 style={{ marginLeft: "45px", marginTop: "25px" }}>
+        {/* <h6 style={{ marginLeft: "45px", marginTop: "25px" }}>
           Choose your year:
-        </h6>
-        <SetSemester />
+        </h6> */}
+        {/* <SetSemester /> */}
       </motion.div>
     </>
   );
