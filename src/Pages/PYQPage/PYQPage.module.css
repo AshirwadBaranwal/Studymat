@@ -25,9 +25,9 @@
   background-color: var(--sec-bg-clr);
   padding: 20px 5px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 8px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+  box-shadow: 0px 0px 10px -5px var(--bx-shadow);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -95,13 +95,18 @@
   margin: auto;
   background-color: white;
   margin-top: 5px;
-  box-shadow: 0px 0px 8px -3px rgb(88, 87, 87);
+  box-shadow: 0px 0px 8px -4px rgb(88, 87, 87);
   border-radius: 5px;
   cursor: pointer;
+  overflow-x: auto;
 }
+.filtercontainer::-webkit-scrollbar {
+  display: none;
+}
+
 .all {
-  height: 30px;
-  width: 60px;
+  min-height: 30px;
+  min-width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,8 +115,8 @@
   font-weight: 600;
 }
 .filterboxes {
-  height: 30px;
-  width: 60px;
+  min-height: 30px;
+  min-width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +127,13 @@
 .filterboxes:hover {
   background-color: rgb(231, 231, 231);
 }
+.filterboxes::selection {
+  visibility: hidden;
+}
+
+.all:hover {
+  background-color: rgb(231, 231, 231);
+}
 @media (max-width: 800px) {
   .banner {
     width: 96%;
@@ -129,10 +141,10 @@
   }
   .main {
     width: 96%;
-    margin-top: 15px;
+    margin-top: 7px;
     height: 70vh;
   }
-  .filter {
+  .filtercontainer {
     width: 96%;
   }
   .banner > h2 {
