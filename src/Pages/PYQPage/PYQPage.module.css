@@ -93,9 +93,10 @@
   padding: 0px 10px;
   align-items: center;
   margin: auto;
-  background-color: white;
+  background-color: var(--sec-bg-clr);
   margin-top: 5px;
   box-shadow: 0px 0px 8px -4px rgb(88, 87, 87);
+
   border-radius: 5px;
   cursor: pointer;
   overflow-x: auto;
@@ -111,8 +112,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  border: 1px solid rgb(188, 185, 185);
+  border: 1px solid var(--btn-clr);
   font-weight: 600;
+  color: var(--para-clr);
 }
 .filterboxes {
   min-height: 30px;
@@ -121,18 +123,21 @@
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  border: 1px solid rgb(188, 185, 185);
+  border: 1px solid var(--btn-clr);
   font-weight: 600;
+  color: var(--para-clr);
 }
 .filterboxes:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: var(--Hover-bg);
+  color: var(--Hover-clr);
 }
 .filterboxes::selection {
   visibility: hidden;
 }
 
 .all:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: var(--Hover-bg);
+  color: var(--Hover-clr);
 }
 @media (max-width: 800px) {
   .banner {

@@ -16,6 +16,8 @@ body {
   --box1-clr: #f4f4fe;
   --box2-clr: #f7ecfc;
   --box3-clr: #fbecf1;
+  --Hover-bg: #786ece;
+  --Hover-clr: rgb(255, 255, 255);
   background-color: white;
 }
 
@@ -29,5 +31,7 @@ body {
   --box1-clr: #222328;
   --box2-clr: #2c2431;
   --box3-clr: #2e2327;
+  --Hover-bg: rgb(255, 255, 255);
+  --Hover-clr: rgb(0, 0, 0);
   background-color: #19191c;
 }
