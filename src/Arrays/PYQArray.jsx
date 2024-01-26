@@ -77,3 +77,6 @@ export const PYQArray = [
     Part: "1",
   },
 ];
+
+const categories = PYQArray.map((P) => P.Year);
+export const simplestCategory = [...new Set(categories)];

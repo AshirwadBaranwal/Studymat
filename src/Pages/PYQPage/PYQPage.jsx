@@ -1,11 +1,21 @@
 import React from "react";
 import style from "./PYQPage.module.css";
-import { PYQArray } from "../../Arrays/PYQArray";
+import { PYQArray, simplestCategory } from "../../Arrays/PYQArray";
 import SubBanner from "../../assets/SubBanner.jpg";
 import { Link } from "react-router-dom";
 import Backbar from "../../Components/BackBar/Backbar";
+import { useState } from "react";
 
 function PYQPage() {
+  const [PYQToPrint, setPYQToPrint] = useState(PYQArray);
+  const filter = (Category) => {
+    let newarray = PYQArray.filter((P) => P.Year === Category);
+    setPYQToPrint(newarray);
+  };
+  const filterall = () => {
+    setPYQToPrint(PYQArray);
+  };
+
   return (
     <>
       <Backbar previosPage="/"></Backbar>
@@ -13,8 +23,24 @@ function PYQPage() {
         <img width="100%" height="80px" src={SubBanner} alt="Banner" />
         <h2>Previous Year Questions</h2>
       </div>
+      <div className={style.filtercontainer}>
+        <div className={style.all} onClick={() => filterall()}>
+          All
+        </div>
+        {simplestCategory.map((category, index) => {
+          return (
+            <div
+              key={index}
+              className={style.filterboxes}
+              onClick={() => filter(category)}
+            >
+              {category}
+            </div>
+          );
+        })}
+      </div>
       <div className={style.main}>
-        {PYQArray.map((items) => {
+        {PYQToPrint.map((items) => {
           return (
             <Link
               to={items.URL}

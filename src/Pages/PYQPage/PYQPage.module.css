@@ -84,6 +84,44 @@
   color: var(--para-clr);
 }
 
+.filtercontainer {
+  height: 40px;
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  margin-top: 5px;
+  box-shadow: 0px 0px 8px -3px rgb(88, 87, 87);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.all {
+  height: 30px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid rgb(188, 185, 185);
+  font-weight: 600;
+}
+.filterboxes {
+  height: 30px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid rgb(188, 185, 185);
+  font-weight: 600;
+}
+.filterboxes:hover {
+  background-color: rgb(231, 231, 231);
+}
 @media (max-width: 800px) {
   .banner {
     width: 96%;
@@ -93,6 +131,9 @@
     width: 96%;
     margin-top: 15px;
     height: 70vh;
+  }
+  .filter {
+    width: 96%;
   }
   .banner > h2 {
     top: 30%;
