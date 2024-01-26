@@ -4,14 +4,15 @@ import HeroImage from "../../assets/Hero2img.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 
 const Hero = () => {
-  const { theme } = useContext(NotesArray);
+  const { theme, darkMode } = useContext(NotesArray);
   return (
     <div className={styles.Hero}>
       <div className={styles.HeroL}>
         <img
           style={{
             filter:
-              theme === "Dark"
+              // theme === "Dark"
+              darkMode
                 ? "drop-shadow(0px 0px 50px #90d1cd)"
                 : "drop-shadow(0px 0px 0px #7110b2)",
           }}

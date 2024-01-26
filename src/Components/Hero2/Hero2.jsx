@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { NotesArray } from "../../Context/NotesList-Store";
 
 const Hero2 = () => {
-  const { theme } = useContext(NotesArray);
+  const { darkMode } = useContext(NotesArray);
 
   return (
     <>
@@ -21,7 +21,7 @@ const Hero2 = () => {
           <div className={styles.media_alignment}>
             <Link to="/Subject" className={styles.box}>
               <div className={styles.logo}>
-                {theme === "Dark" ? (
+                {darkMode === true ? (
                   <img height="60px" src={Notes} alt="box-1" />
                 ) : (
                   <img height="60px" src={NotesDark} alt="box-1" />
@@ -35,7 +35,7 @@ const Hero2 = () => {
             {/* box 2  */}
             <Link to="/PYQ" className={styles.box}>
               <div className={styles.logo}>
-                {theme === "Dark" ? (
+                {darkMode ? (
                   <img height="60px" src={PYQ} alt="box-1" />
                 ) : (
                   <img height="60px" src={PYQDark} alt="box-1" />
@@ -50,7 +50,7 @@ const Hero2 = () => {
           {/* box-3 */}
           <Link to="/Books" className={`${styles.box} ${styles.box3}`}>
             <div className={styles.logo}>
-              {theme === "Dark" ? (
+              {darkMode ? (
                 <img height="60px" src={Books} alt="box-1" />
               ) : (
                 <img height="60px" src={BooksDark} alt="box-1" />
