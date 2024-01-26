@@ -20,14 +20,14 @@ body {
 }
 
 .Light {
-  --bg-clr: #060b10;
-  --sec-bg-clr: #1e2732;
-  --tert-bg-clr: #1e242c;
+  --bg-clr: #19191c;
+  --sec-bg-clr: #19191c;
+  --tert-bg-clr: #19191c;
   --para-clr: white;
-  --btn-clr: #04a29f;
-  --bx-shadow: rgb(76, 71, 71);
+  --btn-clr: #fd356e;
+  --bx-shadow: rgb(87, 85, 85);
   --box1-clr: #222328;
   --box2-clr: #2c2431;
   --box3-clr: #2e2327;
-  background-color: #1B2430;
+  background-color: #19191c;
 }

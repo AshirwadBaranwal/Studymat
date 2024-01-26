@@ -51,15 +51,18 @@
 
 .box:nth-child(1) {
   background-color: var(--box1-clr);
-  box-shadow: 0px 0px 5px #c2c2fb;
+  box-shadow: 0px 0px 5px -2px #c2c2fb;
+  border: 1px solid #c2c2fb ;
 }
 .media_alignment > .box:nth-child(2) {
   background-color: var(--box2-clr);
-  box-shadow: 0px 0px 5px #cfa4e3;
+  box-shadow: 0px 0px 5px -2px #cfa4e3;
+  border: 1px solid #cfa4e3 ;
 }
 .box3 {
   background-color: var(--box3-clr);
-  box-shadow: 0px 0px 5px 0px #dba5b7;
+  box-shadow: 0px 0px 5px -2px  #dba5b7;
+  border: 1px solid #dba5b7 ;
 }
 
 .logo {

@@ -67,7 +67,11 @@ export const Notelist = [
     Subj: "Math",
     Logo: "Mathpic.png",
     Chapters: [
-      // { id: "m1", Ch_Name: "Matrices", URL: "#" },
+      {
+        id: "m1",
+        Ch_Name: "Matrices",
+        URL: "https://drive.google.com/file/d/1689s0dUzki1NAisXNjP5Psi3THO8i0ZX/view?usp=sharing",
+      },
       // { id: "m2", Ch_Name: "Set Theory", URL: "#" },
       // { id: "m3", Ch_Name: "Co-ordinate Geometry", URL: "#" },
       // { id: "m4", Ch_Name: "Relation and Functions", URL: "#" },

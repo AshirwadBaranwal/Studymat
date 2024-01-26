@@ -17,5 +17,13 @@ export const BookArray = [
     Subject: "Computer",
     URL: "https://drive.google.com/file/d/19mwg2x5l9ij2JPiWYgZGrnu7P1L1iB49/view?usp=sharing",
   },
+  {
+    id: 2,
+    BName: "Let US C",
+    BAuth: "Yashvant Kanetkar",
+    BImage: "Let US C(3).jpg",
+    Cost: "Free",
+    Subject: "Computer",
+    URL: "https://drive.google.com/file/d/16938O-g8lApol5l5A8bwptmUVYE8Duzv/view?usp=sharing",
+  },
 ];
-

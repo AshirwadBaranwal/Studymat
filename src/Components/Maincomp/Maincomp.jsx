@@ -3,12 +3,14 @@ import Hero from "../Hero/Hero";
 import Hero2 from "../Hero2/Hero2";
 import styles from "./Maincomp.module.css";
 import weblogo from "../../assets/Weblogo.png";
-import Holiday from "../../assets/Holiday.png";
-import Syllabus from "../../assets/Syllabus.png";
+import Holiday from "../../assets/Holiday.svg";
+import Syllabus from "../../assets/Books.svg";
 import { Link } from "react-router-dom";
-import LinkImage from "../../assets/Linkimg.png";
+import LinkImage from "../../assets/Links.svg";
+
 
 function Maincomp() {
+ 
   return (
     <>
       <Hero></Hero>
