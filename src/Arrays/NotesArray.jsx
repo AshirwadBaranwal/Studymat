@@ -4,7 +4,11 @@ export const Notelist = [
     Subj: "Practical",
     Logo: "Practical.png",
     Chapters: [
-      // { id: "p1", Ch_Name: "UNIX", URL: "#" },
+      {
+        id: "p1",
+        Ch_Name: "Disk Operating System",
+        URL: "https://drive.google.com/file/d/17Hl3AwwJnSAAo0JwLMnTl-3z0nI3B_Wt/view?usp=sharing",
+      },
       // { id: "p2", Ch_Name: "Windows operating system", URL: "#" },
       // { id: "p3", Ch_Name: "MS Word", URL: "#" },
       // { id: "p4", Ch_Name: "MS Excel", URL: "#" },
@@ -64,7 +68,7 @@ export const Notelist = [
   },
   {
     Sem: 1,
-    Subj: "Math",
+    Subj: "Maths",
     Logo: "Mathpic.png",
     Chapters: [
       {
@@ -74,7 +78,11 @@ export const Notelist = [
       },
       // { id: "m2", Ch_Name: "Set Theory", URL: "#" },
       // { id: "m3", Ch_Name: "Co-ordinate Geometry", URL: "#" },
-      // { id: "m4", Ch_Name: "Relation and Functions", URL: "#" },
+      {
+        id: "m4",
+        Ch_Name: "Relation and Functions",
+        URL: "https://drive.google.com/file/d/17TtelFOcDe-vOeB7byReN9OaFvviMuP7/view?usp=sharing",
+      },
     ],
   },
 ];
