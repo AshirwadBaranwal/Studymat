@@ -56,9 +56,12 @@ function Maincomp() {
             <img height="30px" src={LinkImage} alt="LinkImage" />
           </div>
           <div className={styles.contentpart}>
-            <p>QBASIC</p>
+            <p>QBASIC Codes</p>
           </div>
         </Link>
+      </div>
+      <div className={styles.greetings}>
+        <h2>❤️ Love from BCA Guide </h2>
       </div>
     </>
   );

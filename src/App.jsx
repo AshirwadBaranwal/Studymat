@@ -1,20 +1,9 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import Sidebar from "./Components/sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
-
-
-
-
-
-
-
-
-
-
-
 
 function App() {
   const [clickSidebar, setClickSidebar] = useState(false);
@@ -35,7 +24,7 @@ function App() {
         setClickSidebar={setClickSidebar}
       ></Navbar>
       <Outlet />
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
