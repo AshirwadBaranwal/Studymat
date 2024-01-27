@@ -29,7 +29,7 @@ export const PYQArray = [
   },
   {
     id: 5,
-    Subj: "Subsidiary Mathematics 100 Marks",
+    Subj: "Subsidiary Maths 100 Marks",
     Year: 2023,
     URL: "https://drive.google.com/file/d/11TTNCIt3MNmnFwS39q05cv0bRrMhTPrj/view?usp=sharing",
     Part: "1",
