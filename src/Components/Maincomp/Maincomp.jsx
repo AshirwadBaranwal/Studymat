@@ -8,9 +8,7 @@ import Syllabus from "../../assets/Books.svg";
 import { Link } from "react-router-dom";
 import LinkImage from "../../assets/Links.svg";
 
-
 function Maincomp() {
- 
   return (
     <>
       <Hero></Hero>
@@ -53,14 +51,14 @@ function Maincomp() {
             <p>Syllabus</p>
           </div>
         </Link>
-        <div className={styles.box}>
+        <Link to="/Qbasic" className={styles.box}>
           <div className={styles.imgpart}>
             <img height="30px" src={LinkImage} alt="LinkImage" />
           </div>
           <div className={styles.contentpart}>
-            <p>IMP Links</p>
+            <p>QBASIC</p>
           </div>
-        </div>
+        </Link>
       </div>
     </>
   );

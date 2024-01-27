@@ -1,0 +1,47 @@
+.QwhPage {
+  height: 82vh;
+  overflow: auto;
+}
+.container {
+  width: 95%;
+  color: var(--para-clr);
+  border: 2px solid #aea8d6;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.heading {
+  text-align: center;
+  color: #7a68ef;
+  margin: 10px;
+  opacity: 0.8;
+}
+.QuesBox {
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.QuesBox::-webkit-scrollbar {
+  display: none;
+}
+
+.codeBox {
+  width: 99%;
+  max-height: 500px;
+  min-height: fit-content;
+  border-radius: 5px;
+  margin: auto;
+}
+.scrolltop {
+  height: 40px;
+  width: 40px;
+  color: var(--btn-clr);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .QuesBox {
+    font-size: 14px;
+  }
+}
