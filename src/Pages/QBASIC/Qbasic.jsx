@@ -12,7 +12,7 @@ function Qbasic() {
   const { codeLoading, setCodeLoading } = useContext(NotesArray);
   useEffect(() => {
     setCodeLoading("loaded");
-  }, [codeLoading]);
+  }, []);
   return (
     <>
       <Backbar previosPage="/"></Backbar>
