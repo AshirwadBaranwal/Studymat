@@ -19,7 +19,7 @@ const NotesArrayProvider = ({ children }) => {
 
   const [semester, setSemester] = useState("Year-1");
   const [darkMode, setDarkMode] = useState(false);
-
+  const [codeLoading, setCodeLoading] = useState("");
   const darkagain = useEffect(() => {
     if (localStorage.getItem("Theme") === "Light") {
       document.body.classList.add("Light");
@@ -33,7 +33,15 @@ const NotesArrayProvider = ({ children }) => {
 
   return (
     <NotesArray.Provider
-      value={{ notesArray, semester, setSemester, darkMode, setDarkMode }}
+      value={{
+        notesArray,
+        semester,
+        setSemester,
+        darkMode,
+        setDarkMode,
+        codeLoading,
+        setCodeLoading,
+      }}
     >
       {children}
     </NotesArray.Provider>

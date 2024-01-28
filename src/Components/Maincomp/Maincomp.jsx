@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Hero from "../Hero/Hero";
 import Hero2 from "../Hero2/Hero2";
 import styles from "./Maincomp.module.css";
@@ -7,8 +7,10 @@ import Holiday from "../../assets/Holiday.svg";
 import Syllabus from "../../assets/Books.svg";
 import { Link } from "react-router-dom";
 import LinkImage from "../../assets/Links.svg";
+import { NotesArray } from "../../Context/NotesList-Store";
 
 function Maincomp() {
+  const { codeLoading, setCodeLoading } = useContext(NotesArray);
   return (
     <>
       <Hero></Hero>
@@ -51,7 +53,11 @@ function Maincomp() {
             <p>Syllabus</p>
           </div>
         </Link>
-        <Link to="/Qbasic" className={styles.box}>
+        <Link
+          to="/Qbasic"
+          className={styles.box}
+          onClick={() => setCodeLoading("Loading")}
+        >
           <div className={styles.imgpart}>
             <img height="30px" src={LinkImage} alt="LinkImage" />
           </div>
