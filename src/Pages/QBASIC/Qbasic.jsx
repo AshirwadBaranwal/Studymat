@@ -14,7 +14,7 @@ function Qbasic() {
     () => () => {
       setCodeLoading("loaded");
     },
-    []
+    [codeLoading]
   );
   return (
     <>
