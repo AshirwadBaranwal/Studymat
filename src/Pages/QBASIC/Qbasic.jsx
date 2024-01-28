@@ -10,12 +10,9 @@ import { NotesArray } from "../../Context/NotesList-Store";
 
 function Qbasic() {
   const { codeLoading, setCodeLoading } = useContext(NotesArray);
-  useEffect(
-    () => () => {
-      setCodeLoading("loaded");
-    },
-    [codeLoading]
-  );
+  useEffect(() => {
+    setCodeLoading("loaded");
+  }, [codeLoading]);
   return (
     <>
       <Backbar previosPage="/"></Backbar>
