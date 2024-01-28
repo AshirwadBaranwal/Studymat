@@ -109,4 +109,34 @@ export const QbasicprintArray = [
       END IF
     END`,
   },
+{
+    id: 9,
+    ques: "Write a programme in Q Basic to give marks of three subject then print Total Marks, Percentage and Remarks",
+    Code: `CLS
+    INPUT "Marks in 1st subject";A
+    INPUT "Marks in 2nd subject";B
+    INPUT "Marks in 3rd subject";C
+    TM=(A+B+C)
+    P=(TM/300)*100
+    PRINT "Total Marks=";TM
+    PRINT "Percentage=";P
+    IF P>0 AND P<30 THEN
+      PRINT "You are Fail"
+      ELSE
+      IF P>29 AND P<51 THEN
+         PRINT "Your grade is C"
+      ELSE
+        IF P>50 AND P<76 THEN
+         PRINT "Your grade is B"
+      ELSE
+        IF P>75 AND P<86 THEN
+         PRINT "Your grade is A"
+            ELSE 
+            PRINT "Your grade is A+"
+        END IF
+      END IF
+      END IF
+      END IF
+    END`,
+  },
 ];
