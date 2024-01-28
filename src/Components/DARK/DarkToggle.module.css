@@ -1,0 +1,20 @@
+.Togglebtn {
+  width: 90px;
+  color: white;
+  background-color: var( --btn-clr);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  margin: auto;
+  margin-left: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .Togglebtn {
+    margin-left: 40px;
+  }
+}

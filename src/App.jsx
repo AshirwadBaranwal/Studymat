@@ -1,24 +1,30 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-// import Hero from "./Components/Hero/Hero";
-// import Hero2 from "./Components/Hero2/Hero2";
-import Footer from "./Components/Footer/Footer";
-// import { useState } from "react";
-// import NotesArrayProvider from "./Context/NotesList-Store";
+// import Footer from "./Components/Footer/Footer";
+import Sidebar from "./Components/sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [clickSidebar, setClickSidebar] = useState(false);
   return (
     <div
       style={{
-        paddingBottom: "50px",
-        backgroundImage: "url(../src/assets/Herobg.jpg)",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Navbar></Navbar>
+      {clickSidebar && (
+        <Sidebar
+          clickSidebar={clickSidebar}
+          setClickSidebar={setClickSidebar}
+        ></Sidebar>
+      )}
+      <Navbar
+        clickSidebar={clickSidebar}
+        setClickSidebar={setClickSidebar}
+      ></Navbar>
       <Outlet />
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

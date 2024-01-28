@@ -2,20 +2,22 @@ import React, { useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/Logo.png";
+import weblogo from "../../assets/Weblogo.png";
 import { NotesArray } from "../../Context/NotesList-Store";
 import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
+import DarkToggle from "../DARK/DarkToggle";
 
-
-
-
-function Navbar() {
+function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
-  const { setSemester, semester } = useContext(NotesArray);
+  const { setSemester, semester, theme } = useContext(NotesArray);
+
   const ActiveStyle = ({ isActive }) => {
     if (isActive) {
       return {
         color: "white",
-        backgroundColor: "#6528e0",
+        backgroundColor: "var(--btn-clr)",
         borderRadius: "30px",
       };
     }
@@ -24,7 +26,7 @@ function Navbar() {
   return (
     <header>
       <div className={styles.logo}>
-        <img height="60px" src={Logo} alt="Logo" />
+        <img height="60px" src={theme === "Dark" ? Logo : weblogo} alt="Logo" />
       </div>
 
       <div className={styles.menu}>
@@ -59,6 +61,25 @@ function Navbar() {
         >
           {semester}
         </button>
+        <DarkToggle />
+
+        {/* hamburger */}
+
+        <span
+          className={styles.hamburger}
+          onClick={() => setClickSidebar(!clickSidebar)}
+        >
+          {!clickSidebar ? (
+            <RxHamburgerMenu size={30} color="var(--btn-clr)" />
+          ) : (
+            <RxCross1 size={30} color="var(--btn-clr)" />
+          )}
+        </span>
+
+        {/* hamburger */}
+
+        {/* SemesterDropdown */}
+
         <div
           className={styles.dropdown}
           style={{ display: !showdropdown ? "None" : "flex" }}
@@ -67,57 +88,31 @@ function Navbar() {
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-1");
+              setSemester("Year-1");
             }}
           >
-            Sem-1
+            Year-1
           </div>
           <div
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-2");
+              setSemester("Year-2");
             }}
           >
-            Sem-2
+            Year-2
           </div>
           <div
             className={styles.options}
             onClick={() => {
               setshowdropdown(!showdropdown);
-              setSemester("Sem-3");
+              setSemester("Year-3");
             }}
           >
-            Sem-3
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-4");
-            }}
-          >
-            Sem-4
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-5");
-            }}
-          >
-            Sem-5
-          </div>
-          <div
-            className={styles.options}
-            onClick={() => {
-              setshowdropdown(!showdropdown);
-              setSemester("Sem-6");
-            }}
-          >
-            Sem-6
+            Year-3
           </div>
         </div>
+        {/* SemesterDropdown */}
       </div>
     </header>
   );
