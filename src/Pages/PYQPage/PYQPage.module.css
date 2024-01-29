@@ -133,7 +133,7 @@
   color: var(--Hover-clr);
 }
 .filterboxes::selection {
-  visibility: hidden;
+  display: none;
 }
 
 .all:hover {

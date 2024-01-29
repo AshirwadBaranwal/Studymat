@@ -37,3 +37,11 @@ body {
   --Hover-clr: rgb(0, 0, 0);
   background-color: #19191c;
 }
+.active {
+  background-color: var(--btn-clr);
+  color: var(--para-clr);
+}
+.active span {
+  /* color: var(--para-clr); */
+  color: white;
+}

@@ -1,9 +1,10 @@
 .QwhPage {
-  height: 82vh;
+  height: 63vh;
   overflow: auto;
 }
 .container {
   width: 95%;
+  max-height: 500px;
   color: var(--para-clr);
   border: 2px solid #aea8d6;
   border-radius: 5px;
@@ -11,15 +12,16 @@
   margin: auto;
   margin-bottom: 30px;
 }
-.heading {
+/* .heading {
   text-align: center;
   color: #7a68ef;
   margin: 10px;
   opacity: 0.8;
-}
+} */
 .QuesBox {
   margin-bottom: 10px;
   overflow: auto;
+  font-size: 25px;
 }
 .QuesBox::-webkit-scrollbar {
   display: none;
@@ -27,8 +29,8 @@
 
 .codeBox {
   width: 99%;
-  max-height: 500px;
-  min-height: fit-content;
+  max-height: 280px;
+  /* min-height: fit-content; */
   border-radius: 5px;
   margin: auto;
 }
@@ -47,11 +49,80 @@
   font-size: 25px;
 }
 
+.pagination {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+  margin: auto;
+  background-color: var(--sec-bg-clr);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* box-shadow: 0px 0px 8px -4px rgb(88, 87, 87); */
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow-x: auto;
+}
+.pagination::-webkit-scrollbar {
+  display: none;
+}
+
+/* .Page_item {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid green;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+} */
+
+.arrowKey {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  cursor: pointer;
+  padding: 0px;
+}
+.arrowKey li{
+  background-color: var(--btn-clr);
+  color: white;
+}
+
+.Page_item {
+  min-height: 30px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid var(--btn-clr);
+  font-weight: 600;
+  color: var(--para-clr);
+}
+/* .Page_item:hover {
+  background-color: var(--Hover-bg);
+  color: var(--Hover-clr);
+} */
+
+.Page_item::selection {
+  display: none;
+}
 @media (max-width: 500px) {
   .container {
     width: 90%;
   }
   .QuesBox {
     font-size: 14px;
+  }
+  .pagination {
   }
 }
