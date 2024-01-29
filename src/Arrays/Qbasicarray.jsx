@@ -81,7 +81,7 @@ export const QbasicprintArray = [
   },
   {
     id: 8,
-    ques: "Write a programme in Q Basic to give marks of three subject then print Total Marks, Percentage and Remarks",
+    ques: "Write a programme in QBASIC to give marks of three subject then print Total Marks, Percentage and Remarks",
     Code: `CLS
     INPUT "Marks in 1st subject";A
     INPUT "Marks in 2nd subject";B
