@@ -90,13 +90,13 @@ export const QbasicprintArray = [
     P=(TM/300)*100
     PRINT "Total Marks=";TM
     PRINT "Percentage=";P
-    IF P>0 AND P<30 THEN
+    IF P>0 AND P<=30 THEN
       PRINT "You are Fail"
       ELSE
-      IF P>29 AND P<51 THEN
+      IF P>30 AND P<=50 THEN
          PRINT "Your grade is C"
       ELSE
-        IF P>50 AND P<76 THEN
+        IF P>50 AND P<=75 THEN
          PRINT "Your grade is B"
       ELSE
         IF P>75 AND P<86 THEN
@@ -109,5 +109,4 @@ export const QbasicprintArray = [
       END IF
     END`,
   },
-
 ];
