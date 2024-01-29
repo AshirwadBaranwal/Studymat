@@ -11,7 +11,7 @@ import DarkToggle from "../DARK/DarkToggle";
 
 function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
-  const { setSemester, semester, theme } = useContext(NotesArray);
+  const { setSemester, semester, darkMode } = useContext(NotesArray);
 
   const ActiveStyle = ({ isActive }) => {
     if (isActive) {
@@ -26,7 +26,7 @@ function Navbar({ setClickSidebar, clickSidebar }) {
   return (
     <header>
       <div className={styles.logo}>
-        <img height="60px" src={theme === "Dark" ? Logo : weblogo} alt="Logo" />
+        <img height="60px" src={darkMode ? Logo : weblogo} alt="Logo" />
       </div>
 
       <div className={styles.menu}>
