@@ -59,7 +59,7 @@ function Maincomp() {
           onClick={() => setCodeLoading("Loading")}
         >
           <div className={styles.imgpart}>
-            <img height="30px" src={LinkImage} alt="LinkImage" />
+            <img height="40px" src={LinkImage} alt="LinkImage" />
           </div>
           <div className={styles.contentpart}>
             <p>QBASIC Codes</p>
@@ -67,7 +67,7 @@ function Maincomp() {
         </Link>
       </div>
       <div className={styles.greetings}>
-        <h2>❤️ Love from BCA Guide </h2>
+        <h2>❤️ From BCA Guide </h2>
       </div>
     </>
   );

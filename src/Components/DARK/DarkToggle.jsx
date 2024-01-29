@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "./DarkToggle.module.css";
 import { NotesArray } from "../../Context/NotesList-Store";
+import { WiDaySunny } from "react-icons/wi";
+import { IoIosMoon } from "react-icons/io";
 
 function DarkToggle() {
   const { setDarkMode, darkMode } = useContext(NotesArray);
@@ -31,7 +33,7 @@ function DarkToggle() {
 
   return (
     <div className={styles.Togglebtn} onClick={() => ActiveMode()}>
-      {darkMode ? "Dark" : "Light"}
+      {darkMode ? <IoIosMoon size={25} /> : <WiDaySunny size={25} />}
     </div>
   );
 }

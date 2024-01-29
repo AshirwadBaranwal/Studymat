@@ -10,8 +10,10 @@
   /* font-family: 'Grape Nuts', cursive; */
 }
 .container img {
-  height: 250px;
+  height: 150px;
 }
 .container p {
   font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  color: var(--para-clr);
 }
