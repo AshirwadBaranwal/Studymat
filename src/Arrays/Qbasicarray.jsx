@@ -99,7 +99,7 @@ export const QbasicprintArray = [
         IF P>50 AND P<=75 THEN
          PRINT "Your grade is B"
       ELSE
-        IF P>75 AND P<86 THEN
+        IF P>75 AND P<=85 THEN
          PRINT "Your grade is A"
             ELSE 
             PRINT "Your grade is A+"
