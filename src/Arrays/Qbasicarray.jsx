@@ -109,4 +109,22 @@ export const QbasicprintArray = [
       END IF
     END`,
   },
+  {
+    id: 9,
+    ques: "Write a programme in QBASIC to generate natural numbers series up to 100.",
+    Code: `CLS 
+    FOR I= 1 TO 100
+      PRINT I
+      NEXT I
+    END`,
+  },
+  {
+    id: 10,
+    ques: "Write a programme in QBASIC to generate even numbers series from 2 to 100.",
+    Code: `CLS 
+    FOR I= 2 TO 100 STEP 2
+      PRINT I
+      NEXT I
+    END`,
+  },
 ];
