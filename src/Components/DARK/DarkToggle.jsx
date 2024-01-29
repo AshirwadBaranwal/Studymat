@@ -33,7 +33,7 @@ function DarkToggle() {
 
   return (
     <div className={styles.Togglebtn} onClick={() => ActiveMode()}>
-      {darkMode ? <IoIosMoon size={25} /> : <WiDaySunny size={25} />}
+      {!darkMode ? <IoIosMoon size={25} /> : <WiDaySunny size={25} />}
     </div>
   );
 }
