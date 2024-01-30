@@ -90,12 +90,23 @@
   justify-content: space-between;
   align-items: center;
   margin: 0px 20px;
-  cursor: pointer;
   padding: 0px;
 }
 .arrowKey li {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--btn-clr);
   color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.arrowKey li span {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
 }
 
 .Page_item {
@@ -123,5 +134,8 @@
   }
   .QuesBox {
     font-size: 14px;
+  }
+  .arrowKey li{
+    padding-left: 8px;
   }
 }

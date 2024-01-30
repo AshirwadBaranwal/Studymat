@@ -85,11 +85,11 @@ function Qbasic() {
         )}
       </div>
       <div className={styles.arrowKey}>
-        <li className={styles.Page_item} onClick={prePage}>
-          <span className={styles.pagelink}>Prev</span>
+        <li onClick={prePage}>
+          <span>Prev</span>
         </li>
-        <li className={styles.Page_item} onClick={nextPage}>
-          <span className={styles.pagelink}>Next</span>
+        <li onClick={nextPage}>
+          <span>Next</span>
         </li>
       </div>
     </>
