@@ -226,6 +226,7 @@ END`,
         FACT = FACT*I
       NEXT I
       PRINT "Factorial of ";N;" is ";FACT
-    NEXT N`,
+    NEXT N
+    END`,
   },
 ];
