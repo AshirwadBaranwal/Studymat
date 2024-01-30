@@ -208,12 +208,24 @@ export const QbasicprintArray = [
     id: 19,
     ques: " Write a program in QBASIC to give any number and then find its factorial.",
     Code: `CLS
-    INPUT "Enter a Number: ", n
-    fact = 1
-    FOR i = 1 TO n
-        fact = fact * i
-    NEXT i
-    PRINT "Factorial of ";n;" is ";fact
-    END`,
+INPUT "Enter a Number: ", n
+fact = 1
+FOR i = 1 TO n
+    fact = fact * i
+NEXT i
+PRINT "Factorial of ";n;" is ";fact
+END`,
+  },
+  {
+    id: 19,
+    ques: " Write a program in QBASIC to give factorial value of 1 to 10 numbers.",
+    Code: `CLS
+    FOR N = 1 TO 10
+      FACT=1
+      FOR I=1 TO N
+        FACT = FACT*I
+      NEXT I
+      PRINT "Factorial of ";N;" is ";FACT
+    NEXT N`,
   },
 ];
