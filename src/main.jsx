@@ -22,9 +22,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
-      { path: "/ContactUS", element: <Contact /> },
     ],
   },
+  { path: "/ContactUS", element: <Contact /> },
   { path: "/Subject", element: <Subject /> },
   { path: "/PYQ", element: <PYQPage /> },
   { path: "/ShowNotes/:Subject", element: <ShowNotes /> },

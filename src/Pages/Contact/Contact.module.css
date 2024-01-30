@@ -1,0 +1,72 @@
+.right {
+  margin: auto;
+  margin-top: 20px;
+  width: 40%;
+  height: 100%;
+  padding: 0px;
+  /* position: absolute;
+    top: 15%;
+    left: 35%; */
+  background-color: var(--tert-bg-clr);
+  border: 1px solid var(--btn-clr);
+  box-shadow: 0px 0px 4px #98abff;
+  border-radius: 10px;
+  color: var(--para-clr);
+}
+
+.right input {
+  width: 100%;
+  padding: 2px 5px;
+  outline-color: var(--btn-clr);
+  border: 1.5px solid var(--bx-shadow);
+  border-radius: 5px;
+  font-weight: 00;
+  /* color: rgb(128, 125, 125); */
+  background-color: rgb(226, 224, 224);
+}
+
+.inputCon {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.inputCon label {
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+}
+.inputCon div {
+  padding: 5px;
+  margin: 0px 20px;
+}
+
+.btn {
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--btn-clr);
+  color: white;
+  padding: 5px;
+}
+.textarea {
+  min-height: 150px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgb(226, 224, 224);
+}
+@media (max-width: 500px) {
+  .right {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .textarea {
+    width: 86%;
+  }
+}
