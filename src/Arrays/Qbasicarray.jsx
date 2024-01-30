@@ -127,4 +127,81 @@ export const QbasicprintArray = [
       NEXT I
     END`,
   },
+  {
+    id: 11,
+    ques: "Write a programme in QBASIC to generate odd numbers series from 2 to 100.",
+    Code: `CLS  
+    FOR I = 1 TO 99 STEP 2
+     PRINT I
+     NEXT I
+   END`,
+  },
+  {
+    id: 12,
+    ques: "Write a programme in QBASIC to generate table of 5.",
+    Code: `CLS  
+    FOR I = 5 TO 50 STEP 5
+     PRINT I
+     NEXT I
+   END`,
+  },
+  {
+    id: 13,
+    ques: "Write a programme in QBASIC to ask a number from user and then generate table of that number .",
+    Code: `CLS  
+    INPUT "Give a number";N
+    FOR I = N TO N*10 STEP N
+     PRINT I
+     NEXT I
+   END`,
+  },
+  {
+    id: 14,
+    ques: " Write a program in QBASIC to generate the following series-  1, 4, 9, 16, ........., 100.",
+    Code: `CLS  
+    FOR I = 1 TO 10
+    PRINT I*I
+    NEXT I
+   END`,
+  },
+  {
+    id: 15,
+    ques: " Write a program in QBASIC to generate the following series-  1, 8, 27, 64, ........., 1000.",
+    Code: `CLS  
+    FOR I = 1 TO 10
+    K = I*I*I
+    PRINT K
+    NEXT I
+   END`,
+  },
+  {
+    id: 16,
+    ques: " Write a program in QBASIC to generate the following series-  1, 8, 27, 64, ........., 1000.",
+    Code: `CLS  
+    FOR I = 1 TO 10
+    K = I*I*I
+    PRINT K
+    NEXT I
+    END`,
+  },
+  {
+    id: 17,
+    ques: " Write a program in QBASIC to generate the following series-  2, 9, 28, 65, ........., upto 10 terms.",
+    Code: `CLS  
+    FOR I = 1 TO 10  
+    K = (I*I*I)+1
+    PRINT K
+    NEXT I
+    END`,
+  },
+  {
+    id: 18,
+    ques: " Write a program in QBASIC to give any name and then print that name 10 times.",
+    Code: `CLS
+    INPUT "give me a name";K
+    FOR I=1 TO 10
+      PRINT K
+      NEXT I
+    END`,
+  },
 ];

@@ -25,6 +25,7 @@
 }
 .QuesBox::-webkit-scrollbar {
   display: none;
+  visibility: hidden;
 }
 
 .codeBox {
@@ -92,7 +93,7 @@
   cursor: pointer;
   padding: 0px;
 }
-.arrowKey li{
+.arrowKey li {
   background-color: var(--btn-clr);
   color: white;
 }
@@ -122,7 +123,5 @@
   }
   .QuesBox {
     font-size: 14px;
-  }
-  .pagination {
   }
 }
