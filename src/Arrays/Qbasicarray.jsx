@@ -217,7 +217,7 @@ PRINT "Factorial of ";n;" is ";fact
 END`,
   },
   {
-    id: 19,
+    id: 20,
     ques: " Write a program in QBASIC to give factorial value of 1 to 10 numbers.",
     Code: `CLS
     FOR N = 1 TO 10
