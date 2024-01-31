@@ -48,6 +48,11 @@ export const Notelist = [
       // { id: "e1", Ch_Name: "ahaiuauh", URL: "#" },
       // { id: "e2", Ch_Name: "Windows operating system", URL: "#" },
       // { id: "e3", Ch_Name: "MS Word", URL: "#" },
+      {
+        id: "e4",
+        Ch_Name: "Love(George Herbert)",
+        URL: "https://drive.google.com/file/d/1OutxbgKtaVGP0Srx7mFA3u4peUz8sx7T/view?usp=sharing",
+      },
     ],
   },
   {
