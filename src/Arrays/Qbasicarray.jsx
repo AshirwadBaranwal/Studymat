@@ -229,4 +229,46 @@ END`,
     NEXT N
     END`,
   },
+  {
+    id: 21,
+    ques: " Write a program in QBASIC to give any base and power then  display their calculative value.",
+    Code: `CLS
+    INPUT "Give value of base";B
+    INPUT "Give value of power";P
+    K=1
+    FOR i = 1 TO P
+      K=K*B
+      NEXT i
+      PRINT "Calculative value = "; K
+    END`,
+  },
+  {
+    id: 22,
+    ques: " Write a program in QBASIC to generate fibonacci number series upto 100.(Fibonacci series upto 10 terms is: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,....)",
+    Code: `CLS
+    a=0
+    b=1
+    PRINT 0
+    PRINT 1
+    FOR I= 1 TO 10
+      c = a+b
+    PRINT c
+      a=b
+      b=c
+      NEXT I
+    END`,
+  },
+  {
+    id: 23,
+    ques: " Write a program in QBASIC to generate Natural number series upto n terms and lastly print their Sum.",
+    Code: `CLS
+    INPUT "Give any natural no.";N
+    K=0
+    FOR i = 1 TO N
+     PRINT i
+      K=K+i
+      NEXT i
+    PRINT "Sum of ";40;"Consecutive natural no. is "; K
+    END`,
+  },
 ];
