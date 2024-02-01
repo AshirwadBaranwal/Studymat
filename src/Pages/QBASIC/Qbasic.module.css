@@ -95,11 +95,12 @@
   padding: 0px;
 }
 .arrowKey li {
+  position: relative;
   height: 50px;
   width: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: var(--btn-clr);
   color: white;
   cursor: pointer;
@@ -109,6 +110,9 @@
   margin: 0;
   padding: 0;
   width: fit-content;
+  position: absolute;
+  top: 28%;
+  left: 18%;
 }
 
 .Page_item {
