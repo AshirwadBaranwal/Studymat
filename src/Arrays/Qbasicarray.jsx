@@ -276,6 +276,20 @@ END`,
   },
   {
     id: 24,
+    ques: "Write a program in QBASIC to generate table of 1 to 10.",
+    Code: `CLS 
+    FOR I=1 TO 10
+      FOR J= 1 TO 10
+        K=I*J
+        PRINT K;
+        PRINT
+        NEXT J
+      PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 25,
     ques: " Write a program in QBASIC to give any no. then check that is odd or even.",
     Code: `CLS
     INPUT "Give a number";C
@@ -289,7 +303,7 @@ END`,
     `,
   },
   {
-    id: 25,
+    id: 26,
     ques: " Write a program in QBASIC to generate prime number series upto 100.",
     Code: `CLS
     FOR I = 2 TO 100
@@ -306,7 +320,7 @@ END`,
     END`,
   },
   {
-    id: 26,
+    id: 27,
     ques: "Write a program in QBASIC to generate",
     Qimg: "QBASIC26.jpg",
     Code: `CLS
