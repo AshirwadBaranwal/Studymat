@@ -1,5 +1,5 @@
 .QwhPage {
-  height: 63vh;
+  height: 65vh;
   overflow: auto;
 }
 .container {
@@ -11,6 +11,7 @@
   padding: 10px;
   margin: auto;
   margin-bottom: 30px;
+  overflow-y: auto;
 }
 /* .heading {
   text-align: center;
@@ -136,5 +137,4 @@
   .QuesBox {
     font-size: 14px;
   }
-
 }

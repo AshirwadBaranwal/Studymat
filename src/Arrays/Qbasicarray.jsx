@@ -274,4 +274,35 @@ END`,
     PRINT "Sum of ";40;"Consecutive natural no. is "; K
     END`,
   },
+  {
+    id: 24,
+    ques: " Write a program in QBASIC to give any no. then check that is odd or even.",
+    Code: `CLS
+    INPUT "Give a number";C
+    K= C MOD 2
+    IF K=0 THEN 
+      PRINT C;" is an even number."
+      ELSE 
+      PRINT C;" is an odd number."
+      END IF 
+    END
+    `,
+  },
+  {
+    id: 25,
+    ques: " Write a program in QBASIC to generate prime number series upto 100.",
+    Code: `CLS
+    FOR I = 2 TO 100
+      PRIME=5
+      FOR J = 2 TO I / 2
+        IF (I MOD J) = 0 THEN
+          PRIME = 0
+        END IF
+      NEXT J
+      IF PRIME=5 THEN
+        PRINT I
+      END IF
+    NEXT I
+    END`,
+  },
 ];
