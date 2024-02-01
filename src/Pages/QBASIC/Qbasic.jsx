@@ -69,6 +69,7 @@ function Qbasic() {
                   <span style={{ fontWeight: 900 }}>Question:{p.id}</span>
                   <br /> {p.ques}
                 </div>
+                {p.Qimg ? <img src={p.Qimg} alt="Qimage" /> : null}
 
                 <h6>Solution:</h6>
                 {/* code */}

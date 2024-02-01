@@ -305,4 +305,17 @@ END`,
     NEXT I
     END`,
   },
+  {
+    id: 26,
+    ques: "Write a program in QBASIC to generate",
+    Qimg: "QBASIC26.jpg",
+    Code: `CLS
+    FOR I=1 TO 5
+      FOR J=1 TO I
+    PRINT "*";
+        NEXT J
+      PRINT
+      NEXT I
+    END`,
+  },
 ];
