@@ -16,7 +16,7 @@ function Qbasic() {
     setCodeLoading("loaded");
   }, []);
 
-  const [copybtnmark, setcopybtnmark] = useState(<IoMdCopy />);
+  const [copybtnmark, setcopybtnmark] = useState(<IoMdCopy size={20} />);
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 1;
   const lastIndex = currentPage * recordsPerPage;
@@ -78,9 +78,11 @@ function Qbasic() {
                   <button
                     onClick={() => {
                       copy(p.Code);
-                      setcopybtnmark(<FaRegCircleCheck color="green" />);
+                      setcopybtnmark(
+                        <FaRegCircleCheck color="green" size={20} />
+                      );
                       setTimeout(() => {
-                        setcopybtnmark(<IoMdCopy />);
+                        setcopybtnmark(<IoMdCopy size={20} />);
                       }, 1000);
                     }}
                   >
