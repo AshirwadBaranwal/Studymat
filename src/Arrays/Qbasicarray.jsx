@@ -248,13 +248,16 @@ END`,
     Code: `CLS
     a=0
     b=1
-    PRINT 0
-    PRINT 1
-    FOR I= 1 TO 10
+    PRINT a
+    PRINT b
+    FOR I= 1 TO 100
       c = a+b
-    PRINT c
       a=b
-      b=c
+       b=c
+      IF c > 100 THEN
+        END
+      END IF
+      PRINT c
       NEXT I
     END`,
   },
