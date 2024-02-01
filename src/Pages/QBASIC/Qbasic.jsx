@@ -3,11 +3,12 @@ import styles from "./Qbasic.module.css";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "../../App.css";
-// import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
-// import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { IoMdCopy } from "react-icons/io";
+import { FaRegCircleCheck } from "react-icons/fa6";
 import { QbasicprintArray } from "../../Arrays/Qbasicarray";
 import Backbar from "../../Components/BackBar/Backbar";
 import { NotesArray } from "../../Context/NotesList-Store";
+import copy from "copy-to-clipboard";
 
 function Qbasic() {
   const { codeLoading, setCodeLoading } = useContext(NotesArray);
@@ -15,6 +16,7 @@ function Qbasic() {
     setCodeLoading("loaded");
   }, []);
 
+  const [copybtnmark, setcopybtnmark] = useState(<IoMdCopy />);
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 1;
   const lastIndex = currentPage * recordsPerPage;
@@ -71,7 +73,20 @@ function Qbasic() {
                 </div>
                 {p.Qimg ? <img src={p.Qimg} alt="Qimage" /> : null}
 
-                <h6>Solution:</h6>
+                <div className={styles.copybtnsec}>
+                  <h6>Solution:</h6>
+                  <button
+                    onClick={() => {
+                      copy(p.Code);
+                      setcopybtnmark(<FaRegCircleCheck color="green" />);
+                      setTimeout(() => {
+                        setcopybtnmark(<IoMdCopy />);
+                      }, 1000);
+                    }}
+                  >
+                    {copybtnmark}
+                  </button>
+                </div>
                 {/* code */}
                 <SyntaxHighlighter
                   className={styles.codeBox}

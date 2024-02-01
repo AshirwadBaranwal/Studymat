@@ -130,6 +130,16 @@
 .Page_item::selection {
   display: none;
 }
+.copybtnsec {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+}
+.copybtnsec button{
+  border-radius: 50%;
+  border: none;
+}
 @media (max-width: 500px) {
   .container {
     width: 90%;
