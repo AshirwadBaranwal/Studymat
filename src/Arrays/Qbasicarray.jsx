@@ -271,7 +271,7 @@ END`,
      PRINT i
       K=K+i
       NEXT i
-    PRINT "Sum of ";40;"Consecutive natural no. is "; K
+    PRINT "Sum of ";N;" Consecutive natural no. is "; K
     END`,
   },
   {
