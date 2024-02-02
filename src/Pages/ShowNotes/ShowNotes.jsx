@@ -22,7 +22,19 @@ function ShowNotes() {
             <Link to={L.URL} key={L.id} target="blank" className={style.Bar}>
               <div className={style.heading}>
                 <p>{L.Ch_Name}</p>
-                <p>Notes</p>
+                <div className={style.statussec}>
+                  <p>Notes</p>
+                  <p
+                    style={{
+                      backgroundColor:
+                        L.status === "Completed"
+                          ? "rgb(150, 212, 150)"
+                          : "rgb(241, 129, 129)",
+                    }}
+                  >
+                    {L.status}
+                  </p>
+                </div>
               </div>
             </Link>
           );

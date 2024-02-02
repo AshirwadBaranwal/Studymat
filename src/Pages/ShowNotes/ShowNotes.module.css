@@ -48,9 +48,25 @@
   line-height: 5px;
   font-weight: 600;
 }
-.heading p:nth-child(2) {
+/* .heading p:nth-child(2) {
   line-height: 5px;
   opacity: 0.6;
+} */
+.statussec {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+.statussec p:nth-child(1) {
+  line-height: 5px;
+  opacity: 0.6;
+}
+.statussec p:nth-child(2) {
+  font-size: 10px;
+  background-color:rgb(241, 129, 129);
+  color: black;
+  padding: 2px 5px;
+  border-radius: 15px;
 }
 
 .heading {
