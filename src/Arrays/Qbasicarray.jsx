@@ -332,4 +332,56 @@ END`,
       NEXT I
     END`,
   },
+  {
+    id: 28,
+    ques: "Write a program in QBASIC to generate following pattern-",
+    Qimg: "QBASIC28.jpg",
+    Code: `CLS
+    FOR I = 1 TO 5
+      FOR J = 1 TO I
+        PRINT J;
+        NEXT J
+      PRINT
+      NEXT I 
+    END`,
+  },
+  {
+    id: 29,
+    ques: "Write a program in QBASIC to generate following pattern-",
+    Qimg: "QBASIC29.jpg",
+    Code: `CLS
+    FOR I = 5 TO 1 STEP -1
+      FOR J = 1 TO I
+        PRINT J;
+        NEXT J
+      PRINT
+      NEXT I 
+    END`,
+  },
+  {
+    id: 30,
+    ques: "Write a program in QBASIC to generate following pattern-",
+    Qimg: "QBASIC30.jpg",
+    Code: `CLS
+    FOR I = 5 TO 1 STEP -1
+      FOR J = 5 TO I STEP -1
+        PRINT J;
+        NEXT J
+      PRINT
+      NEXT I 
+    END`,
+  },
+  {
+    id: 31,
+    ques: "Write a program in QBASIC to generate following pattern-",
+    Qimg: "QBASIC31.jpg",
+    Code: `CLS
+    FOR I = 1 TO 5
+      FOR J = 5 TO I STEP -1
+        PRINT J;
+        NEXT J
+      PRINT
+      NEXT I 
+    END`,
+  },
 ];
