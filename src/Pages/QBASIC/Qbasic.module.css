@@ -138,13 +138,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-
 }
-.copybtnsec button{
+.copybtnsec button {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   border: none;
+}
+.Qimgbg {
+  width: 95%;
+  height: fit-content;
+  background-color: var(--Qbasicbg-clr);
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .container {

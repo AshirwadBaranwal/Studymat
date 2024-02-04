@@ -22,6 +22,7 @@ body {
   --box3-clr: #fbecf1;
   --Hover-bg: #786ece;
   --Hover-clr: rgb(255, 255, 255);
+  --Qbasicbg-clr: white;
   background-color: white;
 }
 
@@ -38,6 +39,7 @@ body {
   --box3-clr: #2e2327;
   --Hover-bg: rgb(255, 255, 255);
   --Hover-clr: rgb(0, 0, 0);
+  --Qbasicbg-clr: rgb(175, 234, 175);
   background-color: #19191c;
 }
 .active {

@@ -322,7 +322,7 @@ END`,
   {
     id: 27,
     ques: "Write a program in QBASIC to generate",
-    Qimg: "QBASIC26.jpg",
+    Qimg: "QBASIC27.png",
     Code: `CLS
     FOR I=1 TO 5
       FOR J=1 TO I
@@ -335,7 +335,7 @@ END`,
   {
     id: 28,
     ques: "Write a program in QBASIC to generate following pattern-",
-    Qimg: "QBASIC28.jpg",
+    Qimg: "QBASIC28.png",
     Code: `CLS
     FOR I = 1 TO 5
       FOR J = 1 TO I
@@ -348,7 +348,7 @@ END`,
   {
     id: 29,
     ques: "Write a program in QBASIC to generate following pattern-",
-    Qimg: "QBASIC29.jpg",
+    Qimg: "QBASIC29.png",
     Code: `CLS
     FOR I = 5 TO 1 STEP -1
       FOR J = 1 TO I
@@ -361,7 +361,7 @@ END`,
   {
     id: 30,
     ques: "Write a program in QBASIC to generate following pattern-",
-    Qimg: "QBASIC30.jpg",
+    Qimg: "QBASIC30.png",
     Code: `CLS
     FOR I = 5 TO 1 STEP -1
       FOR J = 5 TO I STEP -1
@@ -374,7 +374,7 @@ END`,
   {
     id: 31,
     ques: "Write a program in QBASIC to generate following pattern-",
-    Qimg: "QBASIC31.jpg",
+    Qimg: "QBASIC31.png",
     Code: `CLS
     FOR I = 1 TO 5
       FOR J = 5 TO I STEP -1
@@ -387,7 +387,7 @@ END`,
   {
     id: 32,
     ques: `Write a program in QBASIC to generate following pattern-  `,
-    Qimg: "QBASIC32.jpg",
+    Qimg: "QBASIC32.png",
     Code: `CLS
     FOR I = 1 TO 5
       FOR J = 1 TO I
