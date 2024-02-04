@@ -384,4 +384,21 @@ END`,
       NEXT I 
     END`,
   },
+  {
+    id: 32,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC32.jpg",
+    Code: `CLS
+    FOR I = 1 TO 5
+      FOR J = 1 TO I
+        IF I = 2 OR I = 4 THEN
+          PRINT "?";
+          ELSE 
+          PRINT "*";
+          END IF
+        NEXT J
+      PRINT 
+      NEXT I
+    END`,
+  },
 ];
