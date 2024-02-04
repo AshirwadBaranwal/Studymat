@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./Qbasic.module.css";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "../../App.css";
 import { IoMdCopy } from "react-icons/io";
 import { FaRegCircleCheck } from "react-icons/fa6";
@@ -11,7 +13,7 @@ import { NotesArray } from "../../Context/NotesList-Store";
 import copy from "copy-to-clipboard";
 
 function Qbasic() {
-  const { codeLoading, setCodeLoading } = useContext(NotesArray);
+  const { darkMode, codeLoading, setCodeLoading } = useContext(NotesArray);
   useEffect(() => {
     setCodeLoading("loaded");
   }, []);
@@ -93,7 +95,7 @@ function Qbasic() {
                 <SyntaxHighlighter
                   className={styles.codeBox}
                   language="qbasic"
-                  style={docco}
+                  style={!darkMode ? nnfxDark : docco}
                 >
                   {p.Code}
                 </SyntaxHighlighter>
