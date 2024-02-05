@@ -299,8 +299,7 @@ END`,
       ELSE 
       PRINT C;" is an odd number."
       END IF 
-    END
-    `,
+    END`,
   },
   {
     id: 26,
@@ -398,6 +397,102 @@ END`,
           END IF
         NEXT J
       PRINT 
+      NEXT I
+    END`,
+  },
+  {
+    id: 33,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC33.png",
+    Code: `CLS
+    FOR I=1 TO 5
+      FOR J=1 TO 5-I 
+        PRINT " ";
+        NEXT J
+      FOR K= 1 TO I
+        PRINT K;
+        NEXT K
+      PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 34,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC34.png",
+    Code: `CLS
+    FOR I = 5 TO 1 STEP -1
+      FOR J = 1 TO 5 - I
+        PRINT " ";
+        NEXT J
+      FOR K = 1 TO I
+        PRINT K;
+        NEXT K
+      PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 35,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC35.png",
+    Code: `CLS
+    FOR I= 1 TO 5
+      FOR P = 1 TO 5-I
+        PRINT " ";
+      NEXT P      
+      FOR J = 1 TO (I*2)-1
+        PRINT J;
+        NEXT J
+     PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 36,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC36.png",
+    Code: `CLS
+    FOR I=1 TO 5
+      FOR J=1 TO 5-I 
+        PRINT "*";
+        NEXT J
+      FOR K= 1 TO I
+        PRINT K;
+        NEXT K
+      PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 37,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC37.png",
+    Code: `CLS
+    FOR I = 5 TO 1 STEP -1
+      FOR J = 1 TO 5 - I
+        PRINT "*";
+        NEXT J
+      FOR K = 1 TO I
+        PRINT K;
+        NEXT K
+      PRINT
+      NEXT I
+    END`,
+  },
+  {
+    id: 38,
+    ques: `Write a program in QBASIC to generate following pattern-  `,
+    Qimg: "QBASIC38.png",
+    Code: `CLS
+    FOR I= 1 TO 5
+      FOR P = 1 TO 5-I
+        PRINT "*";
+      NEXT P      
+      FOR J = 1 TO (I*2)-1
+        PRINT J;
+        NEXT J
+     PRINT
       NEXT I
     END`,
   },

@@ -150,6 +150,7 @@
   height: fit-content;
   background-color: var(--Qbasicbg-clr);
   border-radius: 10px;
+  padding: 3px;
 }
 @media (max-width: 500px) {
   .container {
