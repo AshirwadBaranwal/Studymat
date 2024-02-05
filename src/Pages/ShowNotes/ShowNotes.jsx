@@ -25,12 +25,12 @@ function ShowNotes() {
                 <div className={style.statussec}>
                   <p>Notes</p>
                   <p
-                    style={{
-                      backgroundColor:
-                        L.status === "Completed"
-                          ? "rgb(150, 212, 150)"
-                          : "rgb(241, 129, 129)",
-                    }}
+                  style={{
+                    backgroundColor:
+                      L.status === "Completed"
+                        ? "rgb(212, 239, 212)"
+                        : "rgb(246, 192, 192)",
+                  }}
                   >
                     {L.status}
                   </p>
