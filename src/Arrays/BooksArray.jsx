@@ -18,12 +18,21 @@ export const BookArray = [
     URL: "https://drive.google.com/file/d/19mwg2x5l9ij2JPiWYgZGrnu7P1L1iB49/view?usp=sharing",
   },
   {
-    id: 2,
+    id: 3,
     BName: "Let US C",
     BAuth: "Yashvant Kanetkar",
     BImage: "Let US C(3).jpg",
     Cost: "Free",
     Subject: "Computer",
     URL: "https://drive.google.com/file/d/16938O-g8lApol5l5A8bwptmUVYE8Duzv/view?usp=sharing",
+  },
+  {
+    id: 4,
+    BName: "साहित्य धारा",
+    BAuth: "सोलापूर विश्वविद्यालय, सोलापूर",
+    BImage: "HindiBook.jpg",
+    Cost: "Free",
+    Subject: "Hindi",
+    URL: "https://drive.google.com/file/d/1EJSwjQ6QEhRJAJ1JaT_DmNoSMVGvAwgn/view?usp=sharing",
   },
 ];
