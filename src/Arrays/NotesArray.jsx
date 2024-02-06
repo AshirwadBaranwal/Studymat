@@ -19,7 +19,7 @@ export const Notelist = [
       {
         id: "p3",
         Ch_Name: "Windows",
-        URL: "https://drive.google.com/file/d/1CkU14Buiv7KD2IX1HzVgG6nv9J3a_0D_/view?usp=sharing",
+        URL: "https://drive.google.com/file/d/1EcJLuD-eGvLQKHYpyLiN-3uoHYZWK_Us/view?usp=sharing",
         status: "Completed",
       },
       {
