@@ -307,7 +307,7 @@ END`,
     Code: `CLS
     FOR I = 2 TO 100
       PRIME=5
-      FOR J = 2 TO I / 2
+      FOR J = 2 TO I-1
         IF (I MOD J) = 0 THEN
           PRIME = 0
         END IF
@@ -494,6 +494,24 @@ END`,
         NEXT J
      PRINT
       NEXT I
+    END`,
+  },
+  {
+    id: 39,
+    ques: `Write a program in QBASIC to give any number then find that it is a prime number or not.`,
+    Code: `CLS
+    INPUT "GIVE A NUMBER";A
+    PRIME = 1
+    FOR I = 2 TO A-1
+      IF A MOD I = 0 THEN
+        PRIME = 0
+        END IF
+      NEXT I 
+    IF PRIME = 1 THEN 
+      PRINT A;" IS PRIME NUMBER. "
+      ELSE 
+      PRINT A;" IS NOT PRIME NUMBER. "
+      END IF
     END`,
   },
 ];
