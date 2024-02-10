@@ -1,7 +1,7 @@
 export const QbasicprintArray = [
   {
     id: 1,
-    ques: "Write programme in QBASIC to display sum of 5 and 10.",
+    ques: "Write a program in QBASIC to display sum of 5 and 10.",
     Code: `CLS
     A=5
     B=10
@@ -11,7 +11,7 @@ export const QbasicprintArray = [
   },
   {
     id: 2,
-    ques: "Write programme in QBASIC to display sum of any two numbers.",
+    ques: "Write a program in QBASIC to display sum of any two numbers.",
     Code: `CLS 
     INPUT "Give two number";A,B
     C=A+B
@@ -20,7 +20,7 @@ export const QbasicprintArray = [
   },
   {
     id: 3,
-    ques: "Write a programme in QBASIC to give any three number then display their average.",
+    ques: "Write a program in QBASIC to give any three number then display their average.",
     Code: `CLS
     INPUT "Give any three numbers";A,B,C
     Average = (A+B+C)/3
@@ -29,7 +29,7 @@ export const QbasicprintArray = [
   },
   {
     id: 4,
-    ques: "Write a programme in QBASIC to give any value for Principal, rate and time then display simple interest.",
+    ques: "Write a program in QBASIC to give any value for Principal, rate and time then display simple interest.",
     Code: `CLS
     INPUT "Principal(in Rs.)";P
     INPUT "Rate(Yearly)";R
@@ -40,7 +40,7 @@ export const QbasicprintArray = [
   },
   {
     id: 5,
-    ques: "Write a programme in QBASIC to give any three number then display their Sum , Average and product.",
+    ques: "Write a program in QBASIC to give any three number then display their Sum , Average and product.",
     Code: `CLS
     INPUT "Give three numbers";A,B,C
     Sum=(A+B+C)
@@ -53,7 +53,7 @@ export const QbasicprintArray = [
   },
   {
     id: 6,
-    ques: "Write a programme in QBASIC to give any two number then display highest value.",
+    ques: "Write a program in QBASIC to give any two number then display highest value.",
     Code: `CLS
     INPUT "Give any two numbers";A,B
     IF A>B THEN
@@ -65,7 +65,7 @@ export const QbasicprintArray = [
   },
   {
     id: 7,
-    ques: "Write a programme in QBASIC to give any three number, then display highest value",
+    ques: "Write a program in QBASIC to give any three number, then display highest value",
     Code: `CLS
     INPUT "Give any three unique numbers";A,B,C
     IF A>B AND A>C THEN
@@ -81,7 +81,7 @@ export const QbasicprintArray = [
   },
   {
     id: 8,
-    ques: "Write a programme in QBASIC to give marks of three subject then print Total Marks, Percentage and Remarks",
+    ques: "Write a program in QBASIC to give marks of three subject then print Total Marks, Percentage and Remarks",
     Code: `CLS
     INPUT "Marks in 1st subject";A
     INPUT "Marks in 2nd subject";B
@@ -111,7 +111,7 @@ export const QbasicprintArray = [
   },
   {
     id: 9,
-    ques: "Write a programme in QBASIC to generate natural numbers series up to 100.",
+    ques: "Write a program in QBASIC to generate natural numbers series up to 100.",
     Code: `CLS 
     FOR I= 1 TO 100
       PRINT I
@@ -120,7 +120,7 @@ export const QbasicprintArray = [
   },
   {
     id: 10,
-    ques: "Write a programme in QBASIC to generate even numbers series from 2 to 100.",
+    ques: "Write a program in QBASIC to generate even numbers series from 2 to 100.",
     Code: `CLS 
     FOR I= 2 TO 100 STEP 2
       PRINT I
@@ -129,7 +129,7 @@ export const QbasicprintArray = [
   },
   {
     id: 11,
-    ques: "Write a programme in QBASIC to generate odd numbers series from 2 to 100.",
+    ques: "Write a program in QBASIC to generate odd numbers series from 2 to 100.",
     Code: `CLS  
     FOR I = 1 TO 99 STEP 2
      PRINT I
@@ -138,7 +138,7 @@ export const QbasicprintArray = [
   },
   {
     id: 12,
-    ques: "Write a programme in QBASIC to generate table of 5.",
+    ques: "Write a program in QBASIC to generate table of 5.",
     Code: `CLS  
     FOR I = 5 TO 50 STEP 5
      PRINT I
@@ -147,7 +147,7 @@ export const QbasicprintArray = [
   },
   {
     id: 13,
-    ques: "Write a programme in QBASIC to ask a number from user and then generate table of that number .",
+    ques: "Write a program in QBASIC to ask a number from user and then generate table of that number .",
     Code: `CLS  
     INPUT "Give a number";N
     FOR I = N TO N*10 STEP N
