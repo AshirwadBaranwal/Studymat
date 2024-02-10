@@ -514,4 +514,92 @@ END`,
       END IF
     END`,
   },
+  {
+    id: 40,
+    ques: `Write a program in QBASIC to generate natural number series up to 100 by using while statement.`,
+    Code: `CLS
+    I=0
+    WHILE I < 100 
+      I = I + 1
+      PRINT I
+      WEND
+    END`,
+  },
+  {
+    id: 41,
+    ques: `Write a program in QBASIC to generate odd number series upto 99 by using while statement.`,
+    Code: `CLS
+    I = -1
+    WHILE I < 99
+      I = I + 2
+      PRINT I
+      WEND
+    END`,
+  },
+  {
+    id: 42,
+    ques: `Write a program in QBASIC to generate the table of 5 by using while statement.`,
+    Code: `CLS
+    I=5
+    WHILE I <= 50 
+      PRINT I
+      I = I + 5 
+      WEND 
+    END`,
+  },
+  {
+    id: 43,
+    ques: `Write a program in QBASIC to generate the table of any number by using while statement.`,
+    Code: `CLS
+    INPUT "Give a number";N
+    I = O
+    WHILE I < 10
+     I = I + 1
+     K = I * N
+      PRINT K
+      WEND 
+    END`,
+  },
+  {
+    id: 44,
+    ques: `METHOD-2: Write a program in QBASIC to generate the table of any number by using while statement.`,
+    Code: `CLS
+    INPUT "Give a number";A
+    P = A
+    WHILE A <= P*10 
+      PRINT A
+      A = A + P 
+      WEND 
+    END`,
+  },
+  {
+    id: 44,
+    ques: `Write a program in QBASIC to generate the factorial value of numbers from 1 to 10 by using while statement.`,
+    Code: `CLS
+    F = 1
+    I = 0
+    WHILE I < 10
+      I = I + 1
+      F = F * I
+      PRINT F
+      WEND
+    END`,
+  },
+  {
+    id: 44,
+    ques: `Write a program in QBASIC to generate table of numbers from 1 to 10 by using while statement.`,
+    Code: `CLS
+    I = 0
+    WHILE I<10
+      I = I + 1
+      F = 0
+      WHILE F < 10 
+        F = F + 1
+        K = I * F
+        PRINT K;" ";
+        WEND
+      PRINT
+      WEND
+    END`,
+  },
 ];
