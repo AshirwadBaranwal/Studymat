@@ -573,7 +573,7 @@ END`,
     END`,
   },
   {
-    id: 44,
+    id: 45,
     ques: `Write a program in QBASIC to generate the factorial value of numbers from 1 to 10 by using while statement.`,
     Code: `CLS
     F = 1
@@ -586,7 +586,7 @@ END`,
     END`,
   },
   {
-    id: 44,
+    id: 46,
     ques: `Write a program in QBASIC to generate table of numbers from 1 to 10 by using while statement.`,
     Code: `CLS
     I = 0
