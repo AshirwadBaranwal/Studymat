@@ -129,7 +129,7 @@ export const QbasicprintArray = [
   },
   {
     id: 11,
-    ques: "Write a program in QBASIC to generate odd numbers series from 2 to 100.",
+    ques: "Write a program in QBASIC to generate odd numbers series from 1 to 100.",
     Code: `CLS  
     FOR I = 1 TO 99 STEP 2
      PRINT I

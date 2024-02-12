@@ -42,8 +42,18 @@ export const Notelist = [
     Subj: "Computer-Fundamental",
     Logo: "Funda.png",
     Chapters: [
-      // { id: "c1", Ch_Name: "UNIX", URL: "#" },
-      // { id: "c2", Ch_Name: "Windows operating system", URL: "#" },
+      {
+        id: "c1",
+        Ch_Name: "Types of computers",
+        URL: "https://drive.google.com/file/d/19eY3RqKnA8y8S0G1hVYSS7KZDJFe5CFv/view?usp=sharing",
+        status: "Completed",
+      },
+      {
+        id: "c2",
+        Ch_Name: "Types of printers",
+        URL: "https://drive.google.com/file/d/158qs-o32XOlkrXtYkCxb5_qQnaZUdP0f/view?usp=sharing",
+        status: "Completed",
+      },
       // { id: "c3", Ch_Name: "MS Word", URL: "#" },
       // { id: "c4", Ch_Name: "MS Excel", URL: "#" },
     ],
