@@ -11,6 +11,7 @@ import { QbasicprintArray } from "../../Arrays/Qbasicarray";
 import Backbar from "../../Components/BackBar/Backbar";
 import { NotesArray } from "../../Context/NotesList-Store";
 import copy from "copy-to-clipboard";
+import Spinner from "../../Components/Spinner/Spinner";
 
 function Qbasic() {
   const { darkMode, codeLoading, setCodeLoading } = useContext(NotesArray);
@@ -64,7 +65,9 @@ function Qbasic() {
       </nav>
       <div className={styles.QwhPage}>
         {codeLoading === "Loading" ? (
-          <div className={styles.loader}>Loading....</div>
+          <div className={styles.loader}>
+            <Spinner></Spinner>
+          </div>
         ) : (
           records.map((p) => {
             return (
