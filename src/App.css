@@ -50,3 +50,31 @@ body {
   /* color: var(--para-clr); */
   color: white;
 }
+.Preloader {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--bg-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingomage {
+  animation: loader 2s ease-in-out;
+  height: 80px;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
