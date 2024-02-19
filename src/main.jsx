@@ -12,6 +12,7 @@ import ShowNotes from "./Pages/ShowNotes/ShowNotes.jsx";
 import ShowBooks from "./Pages/Books/ShowBooks.jsx";
 import Holiday from "./Pages/Holiday.jsx";
 import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
+import Login from "./Pages/Login/Login.jsx";
 
 // import Notes from "./Components/Notes/Notes.jsx";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
+      { path: "/Login", element: <Login /> },
     ],
   },
   { path: "/ContactUS", element: <Contact /> },
