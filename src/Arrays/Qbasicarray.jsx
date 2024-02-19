@@ -471,10 +471,10 @@ END`,
     Code: `CLS
     FOR I = 5 TO 1 STEP -1
       FOR J = 1 TO 5 - I
-        PRINT "*";
+        PRINT " ";
         NEXT J
       FOR K = 1 TO I
-        PRINT K;
+        PRINT "*";
         NEXT K
       PRINT
       NEXT I
@@ -600,6 +600,39 @@ END`,
         WEND
       PRINT
       WEND
+    END`,
+  },
+  {
+    id: 47,
+    ques: `Write a program in QBASIC to give any number then display reverse of that number.`,
+    Code: `CLS
+    INPUT "Give any number";N
+    M = O
+    WHILE N > 0
+      K = N MOD 10
+      M = (M*10) +K
+      N = INT(N / 10)
+      WEND 
+    PRINT "Reverse is ";M
+    END`,
+  },
+  {
+    id: 48,
+    ques: `Write a program in QBASIC to give any number then display that it is palindrome or not?(palindrome means - a number which is equal to it's reverse.).`,
+    Code: `CLS
+    INPUT "Give any number";N
+    L = N
+    M = O
+    WHILE N > 0
+      K = N MOD 10
+      M = (M*10) +K
+      N = INT(N / 10)
+      WEND
+    IF L = M THEN
+      PRINT "It is a palindrome number."
+      ELSE
+      PRINT "It is not a palindrome number."
+    END IF
     END`,
   },
 ];
