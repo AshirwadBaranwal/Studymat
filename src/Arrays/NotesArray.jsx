@@ -31,9 +31,15 @@ export const Notelist = [
 
       {
         id: "p5",
-        Ch_Name: "QBASIC",
+        Ch_Name: "QBASIC(Handwritten)",
         URL: "https://drive.google.com/file/d/1CoT3MKj3KfPavOV7ULWbeiU6GKKYGDQ6/view?usp=sharing",
         status: "Incomplete",
+      },
+      {
+        id: "p6",
+        Ch_Name: "QBASIC",
+        URL: "https://drive.google.com/file/d/1G_VrhOmYPCj7f3Pma9fXDPKSwALgHjzA/view?usp=sharing",
+        status: "Completed",
       },
     ],
   },
