@@ -134,10 +134,10 @@
     font-weight: 600;
     color: var(--para-clr);
   }
-  .Page_item:hover {
+  /* .Page_item:hover {
     background-color: var(--Hover-bg);
     color: var(--Hover-clr);
-  }
+  } */
 
   .Page_item::selection {
     display: none;
