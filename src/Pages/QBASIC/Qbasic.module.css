@@ -186,7 +186,7 @@
     padding-left: 0px;
     background-color: var(--bg-color);
     border-radius: 10px;
-    box-shadow: 0px 0px 2px var(--bx-shadow);
+    box-shadow: 0px 0px 6px rgb(109, 107, 107);
     overflow-y: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -220,7 +220,7 @@
     min-width: calc(100% - 400px);
     max-width: calc(100% - 400px);
     color: var(--para-clr);
-    box-shadow: 0px 0px 2px var(--bx-shadow);
+    box-shadow: 0px 0px 6px rgb(109, 107, 107);
     padding: 10px;
     border-radius: 10px;
   }
@@ -233,7 +233,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 0px 2px var(--bx-shadow);
+    box-shadow: 0px 0px 6px rgb(109, 107, 107);
     border-radius: 20px;
     color: var(--para-clr);
   }
