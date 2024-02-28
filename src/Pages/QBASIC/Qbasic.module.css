@@ -1,156 +1,165 @@
-.QwhPage {
-  height: 65vh;
-  overflow: auto;
-}
-.container {
-  width: 95%;
-  max-height: 500px;
-  color: var(--para-clr);
-  border: 2px solid #aea8d6;
-  border-radius: 5px;
-  padding: 10px;
-  margin: auto;
-  margin-bottom: 30px;
-  overflow-y: auto;
-}
-/* .heading {
-  text-align: center;
-  color: #7a68ef;
-  margin: 10px;
-  opacity: 0.8;
-} */
-.QuesBox {
-  margin-bottom: 10px;
-  overflow: auto;
-  font-size: 25px;
-}
-.QuesBox::-webkit-scrollbar {
-  display: none;
-  visibility: hidden;
-}
+@media (max-width: 920px) {
+  .QwhPage {
+    height: 65vh;
+    overflow: auto;
+  }
 
-.codeBox {
-  width: 99%;
-  max-height: 280px;
-  /* min-height: fit-content; */
-  border-radius: 5px;
-  margin: auto;
-}
-.scrolltop {
-  height: 40px;
-  width: 40px;
-  color: var(--btn-clr);
-}
-.loader {
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--para-clr);
-  font-size: 25px;
-}
+  .container {
+    width: 95%;
+    max-height: 500px;
+    color: var(--para-clr);
+    border: 2px solid #aea8d6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow-y: auto;
+  }
+  .heading {
+    text-align: center;
+    color: #7a68ef;
+    margin: 10px;
+    opacity: 0.8;
+  }
+  .QuesBox {
+    margin-bottom: 10px;
+    overflow: auto;
+    font-size: 25px;
+  }
+  .QuesBox::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+  }
 
-.pagination {
-  height: 50px;
-  width: 90%;
-  display: flex;
-  gap: 10px;
-  display: flex;
-  padding: 0px 10px;
-  align-items: center;
-  margin: auto;
-  background-color: var(--sec-bg-clr);
-  margin-top: 15px;
-  margin-bottom: 15px;
-  /* box-shadow: 0px 0px 8px -4px rgb(88, 87, 87); */
-  padding: 10px 0px;
-  border-radius: 5px;
-  cursor: pointer;
-  overflow-x: auto;
-}
-.pagination::-webkit-scrollbar {
-  display: none;
-}
+  .codeBox {
+    width: 99%;
+    max-height: 280px;
+    min-height: fit-content;
+    border-radius: 5px;
+    margin: auto;
+  }
+  .scrolltop {
+    height: 40px;
+    width: 40px;
+    color: var(--btn-clr);
+  }
+  .loader {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--para-clr);
+    font-size: 25px;
+  }
 
-/* .Page_item {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  border: 1px solid green;
-  border-radius: 50%;
-  list-style: none;
-  cursor: pointer;
-} */
+  .pagination {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    margin: auto;
+    background-color: var(--sec-bg-clr);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* box-shadow: 0px 0px 8px -4px rgb(88, 87, 87); */
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow-x: auto;
+  }
+  .pagination::-webkit-scrollbar {
+    display: none;
+  }
 
-.arrowKey {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  align-items: center;
-  margin: 0px 20px;
-  padding: 0px;
-}
-.arrowKey li {
-  position: relative;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--btn-clr);
-  color: white;
-  cursor: pointer;
-  border-radius: 50%;
-}
-.arrowKey li span {
-  margin: 0;
-  padding: 0;
-  width: fit-content;
-  position: absolute;
-  top: 28%;
-  left: 18%;
-}
+  .Page_item {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+  }
 
-.Page_item {
-  min-height: 30px;
-  min-width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  border: 1px solid var(--btn-clr);
-  font-weight: 600;
-  color: var(--para-clr);
-}
-/* .Page_item:hover {
-  background-color: var(--Hover-bg);
-  color: var(--Hover-clr);
-} */
+  .arrowKey {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 0px;
+  }
+  .arrowKey li {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-clr);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .arrowKey li:nth-child(2) {
+    display: none;
+  }
+  .arrowKey li span {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    position: absolute;
+    top: 28%;
+    left: 18%;
+  }
 
-.Page_item::selection {
-  display: none;
-}
-.copybtnsec {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-.copybtnsec button {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  border: none;
-}
-.Qimgbg {
-  width: 95%;
-  height: fit-content;
-  background-color: var(--Qbasicbg-clr);
-  border-radius: 10px;
-  padding: 3px;
+  .Page_item {
+    min-height: 30px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid var(--btn-clr);
+    font-weight: 600;
+    color: var(--para-clr);
+  }
+  .Page_item:hover {
+    background-color: var(--Hover-bg);
+    color: var(--Hover-clr);
+  }
+
+  .Page_item::selection {
+    display: none;
+  }
+  .copybtnsec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .copybtnsec button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+  }
+  .Qimgbg {
+    width: 95%;
+    height: fit-content;
+    background-color: var(--Qbasicbg-clr);
+    border-radius: 10px;
+    padding: 3px;
+  }
 }
 @media (max-width: 500px) {
   .container {
@@ -158,5 +167,113 @@
   }
   .QuesBox {
     font-size: 14px;
+  }
+}
+@media (min-width: 980px) {
+  .main {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: auto;
+    margin-top: 20px;
+  }
+  nav {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    padding-left: 0px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px var(--bx-shadow);
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--para-clr);
+  }
+  .pagination {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    margin-left: -10px;
+    /* justify-items: center; */
+    place-items: center;
+  }
+  .pagination li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 80%;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .QwhPage {
+    margin-left: 0px;
+    max-height: 80vh;
+    overflow-y: auto;
+    min-width: 500px;
+    max-width: 500px;
+    color: var(--para-clr);
+    box-shadow: 0px 0px 2px var(--bx-shadow);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .arrowKey {
+    /* position: absolute; */
+    /* bottom: -50px; */
+    background-color: var(--bg-color);
+    width: 350px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 2px var(--bx-shadow);
+    border-radius: 20px;
+    color: var(--para-clr);
+  }
+  .arrowKey li {
+    list-style: none;
+    cursor: pointer;
+  }
+  .codeBox {
+    max-height: 50vh;
+    border-radius: 10px;
+  }
+  .copybtnsec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .copybtnsec button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+  }
+  .loader {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--para-clr);
+    font-size: 25px;
+  }
+  .Qimgbg {
+    width: 95%;
+    height: fit-content;
+    background-color: var(--Qbasicbg-clr);
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .ForArrowkey {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
