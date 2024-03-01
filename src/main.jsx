@@ -13,6 +13,7 @@ import ShowBooks from "./Pages/Books/ShowBooks.jsx";
 import Holiday from "./Pages/Holiday.jsx";
 import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
 import Login from "./Pages/Login/Login.jsx";
+import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 
 // import Notes from "./Components/Notes/Notes.jsx";
 
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
   { path: "/Books", element: <ShowBooks /> },
   { path: "/Holiday", element: <Holiday /> },
   { path: "/Qbasic", element: <Qbasic /> },
+  { path: "/Sylllabus", element: <Syllabus /> },
 
   // { path: "/Notes", element: <Notes /> },
 ]);
