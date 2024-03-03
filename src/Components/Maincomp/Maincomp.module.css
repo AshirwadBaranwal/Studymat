@@ -1,3 +1,6 @@
+.wholeWidth {
+  padding: 0px 70px;
+}
 .features {
   width: 95%;
   height: 320px;
@@ -55,6 +58,9 @@
 }
 
 @media (max-width: 800px) {
+  .wholeWidth {
+    padding: 0px;
+  }
   .fright h3 {
     margin-left: -100px;
   }
@@ -87,7 +93,6 @@
     opacity: 0.8;
   }
 }
-
 
 .container {
   width: 95%;

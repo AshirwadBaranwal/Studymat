@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+.main {
+  margin: 100px;
+  color: var(--para-clr);
+}
+.aboutus {
+  display: grid;
+  grid-template-columns: calc(90% - 300px) 400px;
+  gap: 30px;
+  font-family: "poppins";
+  margin-bottom: 100px;
+}
+.fLeft {
+  background: var(--bg-clr);
+  box-shadow: 0px 0px 5px rgb(107, 106, 106);
+  border-radius: 10px;
+  border: 1px inset rgba(255, 255, 255, 0.18);
+  height: fit-content;
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.fRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* *******uiverse******** */
+/* *******uiverse******** */
+/* *******uiverse******** */
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card_inner {
+  transform: rotateY(180deg);
+}
+
+.card_front,
+.card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.card_front {
+  background-color: #6a2c70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* border: 10px solid #6a2c70; */
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  object-fit: cover;
+}
+
+.card_back {
+  /* background-color: #f08a5d; */
+  border: 1px solid white;
+  color: var(--para-clr);
+  display: flex;
+  /* align-items: center; */
+  /* border: 10px solid #f08a5d; */
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 3px 10px 0 rgba(71, 71, 73, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.card_back h4 {
+  margin: auto;
+  font-family: "poppins";
+}
+.card_back p {
+  margin: auto;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ************count********* */
+/* ************count********* */
+/* ************count********* */
+.count {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.card2 {
+  /* max-width: 20px !important; */
+  width: 8em;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 8em;
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: #fa719d;
+  color: black;
+  padding: 4em;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+.card2:hover .content {
+  max-width: 20px !important;
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  /* max-width: 20px !important; */
+  max-width: 8em;
+  max-height: 8em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em 1em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 22px;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+  font-size: 20px;
+}
+
+.back {
+  /* max-width: 20px !important; */
+  transform: rotateY(0.5turn);
+  background-color: #fa719d;
+  color: black;
+  /* color: var(--para-clr); */
+}
+
+.description {
+  transform: translateZ(3rem);
+}
+
+@media (max-width: 950px) {
+  .aboutus {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 10px;
+  }
+
+  .count {
+    width: 90%;
+    /* width: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    place-items: center; */
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    margin: 20px;
+    margin-top: 80px;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    margin-bottom: 20px;
+    /* place-content: center; */
+    gap: 20px;
+  }
+  .card2 {
+    margin-left: 10px;
+  }
+  .card {
+    min-width: 320px !important;
+    /* height: 200px; */
+    /* perspective: 1000px; */
+  }
+  .count {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    place-items: center;
+  }
+}

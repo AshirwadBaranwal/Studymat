@@ -9,6 +9,7 @@ header {
   align-items: center;
   box-shadow: 0px 1px 5px var(--bx-shadow);
   z-index: 900;
+  padding: 0px 70px;
 }
 .logo {
   height: fit-content;
@@ -142,5 +143,8 @@ header {
 @media (max-width: 500px) {
   .logo {
     margin-left: 10px;
+  }
+  header {
+    padding: 0px;
   }
 }
