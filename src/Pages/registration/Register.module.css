@@ -1,0 +1,10 @@
+.Main {
+  margin-top: 70px;
+}
+.Right {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}

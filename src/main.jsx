@@ -14,6 +14,7 @@ import Holiday from "./Pages/Holiday.jsx";
 import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
+import Register from "./Pages/registration/Register.jsx";
 
 // import Notes from "./Components/Notes/Notes.jsx";
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
       { path: "/Login", element: <Login /> },
+      { path: "/register", element: <Register /> },
     ],
   },
   { path: "/ContactUS", element: <Contact /> },
