@@ -192,10 +192,79 @@ const SyllabusArray = [
     Topics:
       "System life cycle, documentation, testing, debugging, Implementation.",
   },
+
+  //  Paper 2 Group 2
+  //  Paper 2 Group 2
+  //  Paper 2 Group 2
+
+  {
+    Group: 2,
+    Subject: "BUSINESS APPLICATIONS",
+    ChapterName: "",
+    Topics:
+      "Database organization, Database files, records, fields, types of files in database.",
+  },
   {
     Subject: "",
     ChapterName: "",
-    Topics: "",
+    Topics:
+      "File organization: Sequential file, Random file, Indexed file, Windows 98/2000, MS-Office.",
+  },
+
+  //  Paper 2 Group 3
+  //  Paper 2 Group 3
+  //  Paper 2 Group 3
+
+  {
+    Group: 3,
+    Subject: "PROGRAMMING WITH FOXPRO",
+    Subheading: "FOXPRO: VIEWING AND EDITING DATA",
+    ChapterName: "",
+    Topics: "Fox Pro-version, features, requirements of hardware and software",
+  },
+  {
+    Topics: "FoxPro- Menu system",
+  },
+  {
+    Topics:
+      "Creating database file, operation of data base (create, list, append, close, quit)",
+  },
+  {
+    Topics: "FoxPro- data type",
+  },
+  {
+    Topics: `Data displaying and monitoring commands: display, list locate, edit, change, browse, replace,
+    delete, recall, pack (all commands with various options)`,
+  },
+  {
+    Topics: "File utilities in FoxPro — display directory, copy delete, rename",
+  },
+  {
+    Subheading: "FOXPRO : INDEXING, SORTING AND PRINTING REPORT",
+    Topics: "Indexing concept and sorting",
+  },
+  {
+    Topics: "Sort commands-single & multiple key",
+  },
+  {
+    Topics: "Advantages and disadvantages of sort",
+  },
+  {
+    Topics: "Indexing vs sorting & multiple key",
+  },
+  {
+    Topics: "Indexing, find, seek rushmore technology",
+  },
+  {
+    Topics:
+      "Foxpro report-its creation, feature & utilities, preview, printing custom report, grouping & subgrouping.",
+  },
+  {
+    Topics: "Foxpro level-designing and printing",
+  },
+  {
+    Subheading: "FOXPRO : Memory variables. Keyboard Macros and Function",
+    Topics: "Memory variables-creation and uses, simple vs array",
   },
 ];
 

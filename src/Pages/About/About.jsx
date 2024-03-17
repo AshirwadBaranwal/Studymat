@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./About.module.css";
-import sign from "../../../public/sign.png";
+import sign from "/sign.png";
 import logo from "../../assets/Weblogo.png";
-import me from "../../../public/me.jpg";
+import me from "/me.jpg";
 import { CountArray } from "../../Arrays/CountArray";
 
 function About() {

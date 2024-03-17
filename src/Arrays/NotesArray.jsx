@@ -41,6 +41,12 @@ export const Notelist = [
         URL: "https://drive.google.com/file/d/1G_VrhOmYPCj7f3Pma9fXDPKSwALgHjzA/view?usp=sharing",
         status: "Completed",
       },
+      {
+        id: "p7",
+        Ch_Name: "FOXPRO",
+        URL: "https://drive.google.com/file/d/1SOZFQQ0BUF1Tlf4zTN3s28Er3kL6oQCq/view?usp=sharing",
+        status: "Incomplete",
+      },
     ],
   },
   {

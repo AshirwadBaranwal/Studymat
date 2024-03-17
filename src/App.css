@@ -14,15 +14,17 @@ body {
 
 *::-webkit-scrollbar-track {
   background: var(--bg-clr); /* color of the tracking area */
+  
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--btn-clr); /* color of the scroll thumb */
+  background-color: rgb(214, 213, 213); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   /* border: 3px solid orange;  */
 }
 
 .Dark {
+  --scroll-clr:#cf97f5;
   --bg-clr: white;
   --sec-bg-clr: #ffffff;
   --tert-bg-clr: #ffffff;
@@ -37,9 +39,11 @@ body {
   --Hover-clr: rgb(255, 255, 255);
   --Qbasicbg-clr: white;
   background-color: white;
+
 }
 
 .Light {
+  --scroll-clr:#eea3b8;
   --bg-clr: #19191c;
   --sec-bg-clr: #19191c;
   --tert-bg-clr: #19191c;

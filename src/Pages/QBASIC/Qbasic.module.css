@@ -124,8 +124,6 @@
   }
 
   .Page_item {
-    min-height: 30px;
-    min-width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
