@@ -1,0 +1,203 @@
+[
+    {
+    "Heading":"Introduction",
+    "Subheading":"",
+    "Html_Details":"<p> Foxpro is a package based language that gives facility to handle application programme through programming skill and also predefined option that solve user's problem.<br><br> Foxpro perform the task related to true DBMS(Data base management system). In many aspects , it is an industrial strength DB under certain circumstances, it can handle very large data tasks and it provides the tools to safeguard and inspect the data.Foxpro is approachable in database administration to use it. It works at a very basic and small scale level and also for very large and complex commercial applications.<br> Very broadly speaking, there are two parts to a DBMS like foxpro:- the database engine and the software user interface. The database engine is the part of the software that manipulates the database tables. Foxpro's engine can index, update, retrieve, information and do other tasks faster than any other DBMS. <br><br> The other part of foxpro is user interface means screen visibility like menu at the top, statusbar at the bottom and some thing called the command window in the middle. <br><br> Another position of the user interface is in the form of task specific elements which calls designer and builder tools.These are Database designer, Table designer, Report designer, view Designer, Form designer, Form builder etc.  <p>",
+    "Details":"",
+    "IMG":""
+},
+    {
+    "Heading":"Features of Foxpro",
+    "Subheading":"1. Foxpro as an interactive DB manager -",
+    "Html_Details":"",
+    "Details":"Foxpro is interactive, It means you can tell it to do things, and it will do them immediately. Foxpro gives direct response according to user request through command. ",
+    "IMG":""
+},{
+    "Heading":"",
+    "Subheading":"2. Foxpro as an programming language - ",
+    "Html_Details":"",
+    "Details":"It helps to understand your problem that a programming language underlies almost  evrything you can do in foxpro.",
+    "IMG":""
+},
+{
+    "Heading":"",
+    "Subheading":"3. Foxpro as an application development environment - ",
+    "Html_Details":"",
+    "Details":"Foxpro is being used to create software application. There application are most often specialized programs like transport scheduling, Banking, medical record keeping, Inventory management etc.It means Foxpro programmming language is used for internal small scale program and also companies develop and sell commercial software application.",
+    "IMG":""  
+},
+{
+    "Heading":"History of Foxpro",
+    "Subheading":"",
+    "Html_Details":"Foxpro starting version is DBASE in DOS environment. In 1981 and 1982 a new product was introduced DBASE-II within four years popular product are introduced that is DBASE-III and DBASE-III+ . After that it is improved and version release foxbase then after foxpro. <br><br> Now window version of foxpro released that is visual foxpro. ",
+    "Details":"" ,
+    "IMG":""  
+},
+{
+    "Heading":"How to start Foxpro -",
+    "Subheading":"",
+    "Html_Details":"Click on Foxpro icon from desktop or click on &emsp;  Start ---> Program ---> Visual studio 6.0 ---> Visual foxpro.<br> After that this type of window will display - ",
+    "Details":"" ,
+    "IMG":"Foxpro-1.png"  
+},
+{
+    "Heading":"",
+    "Subheading":"",
+    "Html_Details":"We can write any command in command window box as per requirement after that press <kbd>Enter</kbd> then response will be display out side of window if syntax is right. Otherwise display error message in message box.",
+    "Details":"Foxpro is database package at first create a table where define field name, Datatype, Width etc." ,
+    "IMG":""  
+},
+{
+    "Heading":"Datatypes in Foxpro -",
+    "Subheading":"",
+    "Html_Details":"",
+    "Details":"" ,
+    "IMG":"" 
+    
+    
+},
+{
+    "Heading":"Shortcut Keys in Foxpro",
+    "Subheading":"",
+    "Html_Details":"<kbd>Ctrl</kbd> + <kbd>O</kbd> = Open File <br><br><kbd>Ctrl</kbd> + <kbd>N</kbd> = New File <br><br><kbd>Ctrl</kbd> + <kbd>W</kbd> = Close File <br><br><kbd>Ctrl</kbd> + <kbd>S</kbd> = Save file <br><br><kbd>Ctrl</kbd> + <kbd>Q</kbd> = Quit without saving <br><br><kbd>Ctrl</kbd> + <kbd>P</kbd> = Print <br><br><kbd>Ctrl</kbd> + <kbd>D</kbd> = Do a program <br><br><kbd>Ctrl</kbd> + <kbd>F2</kbd> = Display Command Window <br><br><kbd>Ctrl</kbd> + <kbd>Z</kbd> = Undo edit <br><br><kbd>Ctrl</kbd> + <kbd>R</kbd> = Redo edit <br><br> <kbd>Ctrl</kbd> + <kbd>X</kbd>, <kbd>Ctrl</kbd> + <kbd>C</kbd>, <kbd>Ctrl</kbd> + <kbd>V</kbd>, <kbd>Ctrl</kbd> + <kbd>A</kbd>  is use generally like cut, copy, paste and select all respectively." ,
+    "Details":"" ,
+    "IMG":""   
+},
+
+{
+    "Heading":"Now we start using command as per requirement in Foxpro -",
+    "Subheading":"1. Create table",
+    "Html_Details":"This command is used to create table.  " ,
+    "Details":" syntax :-<br>Create table <table name>" ,
+    "IMG":"foxpro-create.png"   
+},
+{
+    "Heading":"",
+    "Subheading":"2. Append",
+    "Html_Details":"This command is used to add new record in active database file. " ,
+    "Details":"extension-(.dbf)" ,
+    "IMG":"foxpro-append.png"   ,
+    "detAfterImage":"Then save with Ctrl + W."
+},
+{
+    "Heading":"",
+    "Subheading":"3. List",
+    "Html_Details":"This command is used to display list of records which is available in active database file. " ,
+    "Details":"syntax :- List for <condition>" ,
+    "IMG":""   ,
+    "detAfterImage":" example:-  List for marks >= 60 and Roll <= 10"
+},
+{
+    "Heading":"",
+    "Subheading":"4. Browse",
+    "Html_Details":"This command is used to display existing record of active database file in tabular format. " ,
+    "Details":"Here we can also modify in available records." ,
+    "IMG":"foxpro-browse.png"   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"5. Use",
+    "Html_Details":"This command is used to open existing database file as per need.<br> use demo.dbf, Browse <kbd>Enter</kbd>",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"6. Edit",
+    "Html_Details":"This command is used to open existing record of active datbase file in vertical way and we an modify as per requirement.",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"7. Modify Structure",
+    "Html_Details":"This command is used to change any type of structure in a tip database file like - add a new field, remove existing field or change field name, data-type, size, etc <br> syntax :-<br> use demo.dbf <br> modify structure " ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"8. Display Structure",
+    "Html_Details":"This command is used to display structure of active database file.<br>syntax :-<br>use demo.dbf <br> display structure" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+}, 
+{
+    "Heading":"",
+    "Subheading":"9. Delete",
+    "Html_Details":"This command is used to delete record in active database file but it only gives marking position of delete.<br>syntax :-<br>use demo.dbf <br>  delete for (condition)<br><br> Example:-<br> use Ashi <br>  delete for marks<40<br>  Browse<kbd>Enter</kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"10. Recall",
+    "Html_Details":"This command is used to rcover deleted marking record as per requirement.<br>syntax :-<br>use demo.dbf <br> recall for (condition)<br> Browse<kbd>Enter</kbd><br><br>Example:-<br> use Ashi <br>  recall for marks<40<br> Browse<kbd>Enter</kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"11. Pack",
+    "Html_Details":"This command is used to finally delete all marking records." ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"12. Zap",
+    "Html_Details":"This command is used to delete all records of active database file permanently.<br>syntax :-<br>use demo.dbf <br>zap<kbd>Enter</kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"13. Goto",
+    "Html_Details":"This command is used to record pointer in desired position.<br>syntax :-<br>Goto (record no.)<kbd>Enter</kbd><br><br>Example :-<br>Goto 4 <kbd>Enter</kbd><br>Display<kbd>Enter</kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"14. Display",
+    "Html_Details":"This command is used to display record detail of current record position." ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"15. Display All",
+    "Html_Details":"This command is used to display all records of active database file." ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"16. Locate for",
+    "Html_Details":"This command is used to search particular record according to condition.<br> syntax:-<br> use sks <kbd>Enter</kbd><br>  Locate for marks >=70 <kbd>Enter</kbd><br>  Display <kbd>Enter</kbd> " ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"17. Sort",
+    "Html_Details":"This command is used to arrange particular database file in ascending order, or descending order. After that, arrange record will be stored in another database file. <br> Syntax:- <br> use demo.dbf <kbd>Enter</kbd>  <br> sort on (field) to newdemo.dbf <kbd>Enter</kbd> <br> <br> Example :- <br> use sks <kbd>Enter</kbd> <br> sort on marks desc to sks1 <kbd>Enter</kbd> <br> use sks1 <kbd>Enter</kbd> <br> Browse <kbd>Enter</kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+}
+  
+]

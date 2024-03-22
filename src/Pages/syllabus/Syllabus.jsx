@@ -9,15 +9,16 @@ function Syllabus() {
       <p className={style.guidline}>
         As per guidelines of the UGC/Patliputra University (Hons.) Paper
       </p>
-      <h6 className={style.heading}>Hons. — First Year</h6>
+      {/* <h6 className={style.heading}>Hons. — First Year</h6> */}
       {/* <h6 className={style.heading}>Group- 1</h6> */}
 
       {/* ********COMPUTER FUNDAMENTALS*********      */}
       {/* ********COMPUTER FUNDAMENTALS*********      */}
       {SyllabusArray.map(
-        ({ Subheading, Paper, Group, Subject, ChapterName, Topics }) => {
+        ({ Sub_c, Subheading, Paper, Group, Subject, ChapterName, Topics }) => {
           return (
             <>
+              {Sub_c ? <h6 className={style.heading}>{Sub_c}</h6> : null}
               {Paper ? (
                 <h6 className={style.heading}>PAPER - {Paper}</h6>
               ) : null}

@@ -1,5 +1,6 @@
 const SyllabusArray = [
   {
+    Sub_c: "Hons. — First Year",
     Paper: 1,
     Group: 1,
     Subject: "COMPUTER FUNDAMENTALS",
@@ -61,7 +62,7 @@ const SyllabusArray = [
     Topics:
       "Programme definition, Characteristics of good programme, Programming steps, algorithms, Flowcharts.",
   },
-  //   ************Gropu 2 *****************
+  //   ************Paper 1 *****************
   //   ************Gropu 2 *****************
   {
     Group: 2,
@@ -100,7 +101,7 @@ const SyllabusArray = [
       "Batch files, Configuration files. System files, COM, BIN, SYS, EXE & TXT files.",
   },
 
-  //   ************Gropu 3 *****************
+  //   ************Paper 1 *****************
   //   ************Gropu 3 *****************
   {
     Group: 3,
@@ -115,7 +116,7 @@ const SyllabusArray = [
     Topics:
       "Techniques of programming (Algorithm, flowchart, pseudo codes). Introduction to programming Introduction. Need of structure programming in QBASIC structured Programming Development of programme in QBASIC.",
   },
-  //   ************Gropu 4 *****************
+  //   ************Paper 1 *****************
   //   ************Gropu 4 *****************
   {
     Group: 4,
@@ -146,56 +147,39 @@ const SyllabusArray = [
       "Introduction to various categories of software. Operating system and its function interaction of operating system with hardware and user programme.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Various components of operating system with reference to DOS, BIOS, BIOS and DOS interrupts. Single user operating system, Task loader, Memory management.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Device management. Control of various devices. Device drivers interrupts driven and pool driven data transfers. Need of software and hardware protocols.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Multi-user, Multi tasking, multi processing and real time operating system. Introduction to memory management scheduling.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics: "File systems, File Management. Process management and scheduling.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Special requirements and facilities for multiprocessing environment.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Examples of multiprocessing operating systems. Introduction to UNIX. User management in UNIX.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "Computers in office automation: Nature and uses of information, Formal and Informal Information and Communication, Gathering and Presenting Information.",
   },
   {
-    Subject: "",
-    ChapterName: "",
     Topics:
       "System life cycle, documentation, testing, debugging, Implementation.",
   },
 
-  //  Paper 2 Group 2
-  //  Paper 2 Group 2
-  //  Paper 2 Group 2
+  //   ************Paper 2 *****************
+  //   ************Group 2 *****************
 
   {
     Group: 2,
@@ -211,9 +195,8 @@ const SyllabusArray = [
       "File organization: Sequential file, Random file, Indexed file, Windows 98/2000, MS-Office.",
   },
 
-  //  Paper 2 Group 3
-  //  Paper 2 Group 3
-  //  Paper 2 Group 3
+  //   ************Paper 2 *****************
+  //   ************Group 3 *****************
 
   {
     Group: 3,
@@ -265,6 +248,132 @@ const SyllabusArray = [
   {
     Subheading: "FOXPRO : Memory variables. Keyboard Macros and Function",
     Topics: "Memory variables-creation and uses, simple vs array",
+  },
+  {
+    Topics: "saving and restoring memory variables",
+  },
+  {
+    Topics: `?/??/??? Commands`,
+  },
+  {
+    Topics: "Time and date functions and commands,date arithmetic.",
+  },
+  {
+    Topics:
+      "Converting defining functions keys Arithmetic operations, Mathematical functions, mathematical Commands, Statistical Functions",
+  },
+  {
+    Subheading: "PROGRAMMING AND ERROR DEBUGGING:",
+    Topics: "Concept of FoxPro commands file, Modify commands",
+  },
+  {
+    Topics:
+      "Conditioning, branching and looping within Programme file with Do-While Enddo, if-Endif, Scan-   Endscan, For-Endfor, Docase-Endcase, Tex-Endtext, Executing commands from other command files, Macro Message",
+  },
+  {
+    Topics: "Common Error Message",
+  },
+  {
+    Topics: "Debugging techniques and commands",
+  },
+  {
+    Subheading: "MULTIPLE DATA FILE AND CUSTOM SCREENS:",
+    Topics:
+      "Concept of Multiple Database File, Using multiple database-SET RELATION, UPDATE, APPEND FROM, COPY TO, JOIN, Relation Query by example.",
+  },
+  {
+    Topics:
+      "Create custom screen with @, @_ GET, @_ EDIT, @SAY_GET READ, Creating Box & Line, User define functions, Custom Screen Desi nin and their uses, FoxDoc for Documentation",
+  },
+  {
+    Topics: "Text & References:",
+  },
+  {
+    Topics: "FOXPRO made Simple:by R.K. Taxali, BPB",
+  },
+  {
+    Topics: "MASTERING FOXPRO 2.5 BPB Publication",
+  },
+  // *****************Paper 2**********
+  // *****************Group 4**********
+  {
+    Subject: "PRACTICAL",
+    Topics:
+      "Development of a batch files to install software from floppy to disk. Development of a batch files to manage various packages on the disk. Detection of viruses and protection packages on IBM PC.MS-OFFICE, WINDOWS 98/2000.",
+  },
+  {
+    Sub_c: "HONS. — Second Year",
+    Paper: 3,
+    Subject: "COMPUTER NETWORKING",
+    Topics:
+      "Introduction to the N/W, Network Topologies, Types of channels: Twisted Wire, Co-axial wire, Microwave Communication, Satellite Communication, Optical fiber, Simplex, Duplex, Half Duplex Communication, Switching Techniques: Circuit Switching, Message Switching, Packet Switching, FEP, Repeaters, Bridge, Gateway, Token passing CS/CD, Protocols, ISO-OSI Model, NIC, Serial and Parallel Communications.",
+  },
+  {
+    Subheading: "INTERNET",
+    Topics:
+      "Evolution, Protocols, Interface Concept, Internet Vs Intranet, Growth of internet, ISP, Connectivity-Dial-Up, Leased Line, VSAT, etc URLs, Domain Names, Portals, Application",
+  },
+  {
+    Topics:
+      "E-Mail Concept, POP and We Based E-Mail, address, Basics of sending and receiving. E-mail protocols, Mailing list, Free Email services.",
+  },
+  {
+    Subheading: "BOOLEAN ALGEBRA",
+    Topics:
+      "Boolean Algebra, Rules and Theorems, De'Morgan Theorem, Duality Principal, Logical gates, Canonical equations, K-Maps, Half Adder, encoder, decoder.",
+  },
+  {
+    Subheading: "STRUCTURED PROGRAMMING",
+    Topics:
+      "Methods of documentation. Methods of analyzing a program requirement. Data flow diagrams.",
+  },
+  {
+    Subject: "C-LANGUAGE",
+    Subheading: "UNIT-1",
+    Topics: "Overview of C",
+  },
+
+  {
+    Topics: "Introduction & features of C",
+  },
+  {
+    Topics: " Structure of C Program",
+  },
+  {
+    Topics:
+      "Variables, Expressions, Indentifiers, Keywords, Data Types, Constants",
+  },
+  {
+    Topics: "Operators and Expressions",
+  },
+  {
+    Topics:
+      "Operator : Arithmetic, Logical, Relational, Conditional and Bitwise Operator Precedence and    Associatively of Operators,",
+  },
+  {
+    Topics: "  Type Conversion in Expression",
+  },
+  { Subheading: "UNIT-2", Topics: "Basic Input/Output and Library Functions" },
+
+  {
+    Topics:
+      "Single character input/output, i.e. getch(), getcher(), getcher(), putcher()",
+  },
+  {
+    Topics: " Formatted input/output i.e printf() and scanf()",
+  },
+  {
+    Topics: "Library functions — concepts, Mathematical & Character functions.",
+  },
+  {
+    Topics: "Control Structure",
+  },
+  {
+    Topics:
+      "  If statements, If-Else statements, Nesting of If-Else Statements, else if lader",
+  },
+  {
+    Topics: `  The?: Operator go to statement Switch \n statement Compound Statement Loop control for, while, do-while loops break, continue, go to statement`,
   },
 ];
 

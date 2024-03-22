@@ -15,6 +15,7 @@ import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
+import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
 
 // import Notes from "./Components/Notes/Notes.jsx";
 
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
   { path: "/Holiday", element: <Holiday /> },
   { path: "/Qbasic", element: <Qbasic /> },
   { path: "/Sylllabus", element: <Syllabus /> },
+  { path: "/Foxpro", element: <Foxpro /> },
 
   // { path: "/Notes", element: <Notes /> },
 ]);
