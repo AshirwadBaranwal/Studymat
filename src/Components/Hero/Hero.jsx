@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { memo, useContext } from "react";
 import styles from "./Hero.module.css";
 import HeroImage from "../../assets/Hero2img.png";
 import { NotesArray } from "../../Context/NotesList-Store";
@@ -38,4 +38,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default memo(Hero);

@@ -17,9 +17,9 @@
   height: 50px;
   width: 50px;
   object-fit: cover;
-  background-color: red;
   border-radius: 50%;
   overflow: hidden;
+  background-color: var(--mod-clr);
 }
 .Modal {
   position: fixed;
