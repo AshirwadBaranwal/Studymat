@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Hero from "../Hero/Hero";
 import Hero2 from "../Hero2/Hero2";
 import styles from "./Maincomp.module.css";
@@ -6,11 +6,15 @@ import weblogo from "../../assets/Weblogo.png";
 import Holiday from "../../assets/Holiday.svg";
 import Syllabus from "../../assets/Books.svg";
 import { Link } from "react-router-dom";
-import LinkImage from "../../assets/Links.svg";
-import { NotesArray } from "../../Context/NotesList-Store";
+import Codeques from "../../assets/codeQues.svg";
+
+import Cmodal from "../CodeModal/Cmodal";
 
 function Maincomp() {
-  const { codeLoading, setCodeLoading } = useContext(NotesArray);
+  const [showModal, setShowModal] = useState(false);
+  function closeCmodal() {
+    return setShowModal(false);
+  }
   return (
     <>
       <div className={styles.wholeWidth}>
@@ -54,22 +58,19 @@ function Maincomp() {
               <p>Syllabus</p>
             </div>
           </Link>
-          <Link
-            to="/Qbasic"
-            className={styles.box}
-            onClick={() => setCodeLoading("Loading")}
-          >
+          <div className={styles.box} onClick={() => setShowModal(true)}>
             <div className={styles.imgpart}>
-              <img height="40px" src={LinkImage} alt="LinkImage" />
+              <img height="40px" src={Codeques} alt="LinkImage" />
             </div>
             <div className={styles.contentpart}>
-              <p>QBASIC Codes</p>
+              <p>Code Ques</p>
             </div>
-          </Link>
+          </div>
         </div>
         <div className={styles.greetings}>
           <h2>❤️ From BCA Guide </h2>
         </div>
+        {showModal && <Cmodal closeCmodal={closeCmodal} />}
       </div>
     </>
   );

@@ -14,7 +14,6 @@ body {
 
 *::-webkit-scrollbar-track {
   background: var(--bg-clr); /* color of the tracking area */
-  
 }
 
 *::-webkit-scrollbar-thumb {
@@ -24,7 +23,7 @@ body {
 }
 
 .Dark {
-  --scroll-clr:#cf97f5;
+  --scroll-clr: #cf97f5;
   --bg-clr: white;
   --sec-bg-clr: #ffffff;
   --tert-bg-clr: #ffffff;
@@ -39,11 +38,11 @@ body {
   --Hover-clr: rgb(255, 255, 255);
   --Qbasicbg-clr: white;
   background-color: white;
-
+  --mod-clr: rgb(225, 225, 225);
 }
 
 .Light {
-  --scroll-clr:#eea3b8;
+  --scroll-clr: #eea3b8;
   --bg-clr: #19191c;
   --sec-bg-clr: #19191c;
   --tert-bg-clr: #19191c;
@@ -58,6 +57,7 @@ body {
   --Hover-clr: rgb(0, 0, 0);
   --Qbasicbg-clr: rgb(175, 234, 175);
   background-color: #19191c;
+  --mod-clr: rgb(58, 57, 57);
 }
 .active {
   background-color: var(--btn-clr);
