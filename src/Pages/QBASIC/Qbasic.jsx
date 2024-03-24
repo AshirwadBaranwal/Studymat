@@ -2,24 +2,20 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./Qbasic.module.css";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
-// import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "../../App.css";
-import { IoMdCopy } from "react-icons/io";
-import { FaRegCircleCheck } from "react-icons/fa6";
 import { QbasicprintArray } from "../../Arrays/Qbasicarray";
 import Backbar from "../../Components/BackBar/Backbar";
 import { NotesArray } from "../../Context/NotesList-Store";
-import copy from "copy-to-clipboard";
 import Spinner from "../../Components/Spinner/Spinner";
+import Copybtn from "../../Components/Copybtn/Copybtn.jsx";
 
 function Qbasic() {
   const { darkMode, codeLoading, setCodeLoading } = useContext(NotesArray);
   useEffect(() => {
     setCodeLoading("loaded");
   }, []);
-
-  const [copybtnmark, setcopybtnmark] = useState(<IoMdCopy size={20} />);
+  console.log("Qbasic page reloded");
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 1;
   const lastIndex = currentPage * recordsPerPage;
@@ -44,7 +40,6 @@ function Qbasic() {
   return (
     <>
       <Backbar previosPage="/"></Backbar>
-      {/* <h4 className={styles.heading}>QBASIC QUESTION SOLUTION</h4> */}
       {codeLoading === "Loading" ? (
         <div className={styles.loader}>
           <Spinner></Spinner>
@@ -81,6 +76,7 @@ function Qbasic() {
               </li>
             </div>
           </div>
+
           <div className={styles.QwhPage}>
             {records.map((p) => {
               return (
@@ -97,19 +93,7 @@ function Qbasic() {
 
                   <div className={styles.copybtnsec}>
                     <h6>Solution:</h6>
-                    <button
-                      onClick={() => {
-                        copy(p.Code);
-                        setcopybtnmark(
-                          <FaRegCircleCheck color="green" size={20} />
-                        );
-                        setTimeout(() => {
-                          setcopybtnmark(<IoMdCopy size={20} />);
-                        }, 1000);
-                      }}
-                    >
-                      {copybtnmark}
-                    </button>
+                    <Copybtn copythis={p.Code} />
                   </div>
                   {/* code */}
                   <SyntaxHighlighter

@@ -6,7 +6,7 @@ import PYQDark from "../../assets/undraw_questions_re_1fy7(1).svg";
 import Books from "../../assets/undraw_book_lover_re_rwjy.svg";
 import BooksDark from "../../assets/undraw_book_lover_re_rwjy(1).svg";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { NotesArray } from "../../Context/NotesList-Store";
 
 const Hero2 = () => {
@@ -66,4 +66,4 @@ const Hero2 = () => {
     </>
   );
 };
-export default Hero2;
+export default memo(Hero2);

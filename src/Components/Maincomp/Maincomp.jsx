@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useCallback, useContext, useState } from "react";
 import Hero from "../Hero/Hero";
 import Hero2 from "../Hero2/Hero2";
 import styles from "./Maincomp.module.css";
@@ -12,9 +12,10 @@ import Cmodal from "../CodeModal/Cmodal";
 
 function Maincomp() {
   const [showModal, setShowModal] = useState(false);
-  function closeCmodal() {
+  const closeCmodal = useCallback(() => {
     return setShowModal(false);
-  }
+  }, [showModal]);
+  console.log("Maincomponent rendered");
   return (
     <>
       <div className={styles.wholeWidth}>
