@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 .main {
-  margin: 100px;
+  margin: 84.93px;
   color: var(--para-clr);
+  height: fit-content;
 }
 .aboutus {
   display: grid;
@@ -216,3 +217,11 @@
     place-items: center;
   }
 }
+
+/* .wave {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+} */

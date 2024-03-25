@@ -3,7 +3,9 @@ import style from "./About.module.css";
 import sign from "/sign.png";
 import logo from "../../assets/Weblogo.png";
 import me from "/me.jpg";
+// import wave from "../../assets/wave.svg";
 import { CountArray } from "../../Arrays/CountArray";
+import Footer from "../../Components/Footer/Footer";
 
 function About() {
   return (
@@ -69,6 +71,8 @@ function About() {
           })}
         </div>
       </div>
+      <Footer></Footer>
+      {/* <img className={style.wave} src={wave} alt="" /> */}
     </>
   );
 }

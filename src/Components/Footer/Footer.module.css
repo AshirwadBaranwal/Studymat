@@ -5,8 +5,15 @@
   padding: 10px 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--bg-clr);
+  background-color: transparent;
+  margin: auto;
   margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+}
+h3 {
+  font-size: 18px;
 }
 .Links {
   display: flex;
@@ -79,4 +86,11 @@
     display: flex;
     padding-left: 50px;
   }
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
 }

@@ -6,6 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import wave from "../../assets/wave.svg";
 
 function Footer() {
   return (
@@ -73,6 +74,7 @@ function Footer() {
           </li>
         </ul>
       </div>
+      <img className={styles.wave} src={wave} alt="" />
     </div>
   );
 }

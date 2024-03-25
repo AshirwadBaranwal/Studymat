@@ -23,17 +23,30 @@ function Foxpro() {
   // pagination
 
   const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 1;
+  const recordsPerPage = 6;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const records = foxData.slice(firstIndex, lastIndex);
   const npage = Math.ceil(foxData.length / recordsPerPage);
 
+  // infinite scrolling
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 1 >=
+      document.documentElement.scrollHeight
+    ) {
+      setCurrentPage((prev) => prev + 1);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Backbar previosPage={"/ShowNotes/Practical"}></Backbar>
       <div className={style.main}>
-        {foxData.map((items) => {
+        {records.map((items) => {
           return (
             <>
               <section>
