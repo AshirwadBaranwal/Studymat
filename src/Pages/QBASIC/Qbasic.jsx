@@ -15,7 +15,6 @@ function Qbasic() {
   useEffect(() => {
     setCodeLoading("loaded");
   }, []);
-  console.log("Qbasic page reloded");
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 1;
   const lastIndex = currentPage * recordsPerPage;

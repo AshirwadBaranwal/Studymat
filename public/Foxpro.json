@@ -50,7 +50,7 @@
 {
     "Heading":"Datatypes in Foxpro -",
     "Subheading":"",
-    "Html_Details":"",
+    "Html_Details":"<table><tr><th>Datatype</th><th>Description</th></tr><tr><td>Character&nbsp;:</td><td>Ordinary text , including all numbers and the letters of the alphabet.</td></tr><tr><td>Numeric&nbsp;:</td><td>This is for numbers only, including a decimal point and the sign.</td></tr><tr><td>Date&nbsp;:</td><td>This is only for date. Their range is from 01/01/100 to 12/31/9999.</td></tr><tr><td>DateTime&nbsp;:</td><td>This is used for date and time. The range of times supported is 00:00:00 AM to 11:59:59 PM. It is only for visual pro.</td></tr><tr><td>Logical&nbsp;:</td><td>A logical value, either true or false.</td></tr><tr><td>Currency&nbsp;:</td><td>This data type is designed to contain monetary amounts by automatically maintaining up to 4 decimal points.</td></tr></table>",
     "Details":"" ,
     "IMG":"" 
     
@@ -68,7 +68,7 @@
     "Heading":"Now we start using command as per requirement in Foxpro -",
     "Subheading":"1. Create table",
     "Html_Details":"This command is used to create table.  " ,
-    "Details":" syntax :-<br>Create table <table name>" ,
+    "Details":" syntax :- Create table <table name>" ,
     "IMG":"foxpro-create.png"   
 },
 {
@@ -162,7 +162,7 @@
 {
     "Heading":"",
     "Subheading":"13. Goto",
-    "Html_Details":"This command is used to record pointer in desired position.<br>syntax :-<br>Goto (record no.)<kbd>Enter</kbd><br><br>Example :-<br>Goto 4 <kbd>Enter</kbd><br>Display<kbd>Enter</kbd>" ,
+    "Html_Details":"This command is used to record pointer in desired position.<br>syntax :-<br>Goto (record no.) <kbd>Enter</kbd><br><br>Example :-<br>Goto 4 <kbd>Enter</kbd><br>Display <kbd>Enter</kbd>" ,
     "Details":"" ,
     "IMG":""   ,
     "detAfterImage":" "
@@ -198,6 +198,237 @@
     "Details":"" ,
     "IMG":""   ,
     "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"18. Index",
+    "Html_Details":"This command is used to arrange active database file in ascending order on particular field, but it depends on original database file. <br> There are two types of index - <br> <ol><li>Single index</li><li>Compound index</li></ol> In single index, only one key or one field be used and in compound index multiple field be used. <br> Syntax :- <br> use demo.dbf <br> Index on (field name) to index name <br><br> Example :- <br> use sks <kbd>Enter</kbd> <br> Index on name to sks <kbd>Enter</kbd> <br> Browse <kbd>Enter<kbd>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"Difference between Index and Short - ",
+    "Html_Details":"<table><tr><th>Index</th><th>Short</th></tr><tr><td>Index create index file whose extension is .idx</td><td>Sort create new database file after arrange any database file<td></tr><tr><td>Index is dependent on original database file for so being arranged data.</td><td>Sort not dependent on original database file for showing arranged data.</td></tr><tr><td>Index is faster for searching.</td><td>Sort is slower for searching</td></tr><tr><td>In the case of index multiple field used by the separation of plus(+).</td><td>In compound sort multiple field is used by the separation of (g)</td></tr></table>" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},
+{
+    "Heading":"",
+    "Subheading":"19. Find",
+    "Html_Details":"This command is used to search particular information from database file, but that must be an index file. <br> Syntax :- <br> use demo.dbf <br> Index on (field name) to (index name) <br> find field value<br><br> Example :- <br> use sks <kbd>Enter</kbd> <br> Index on name to sks <kbd>Enter</kbd> <br> find Ram <kbd>Enter</kbd> <br> Dsiplay <kbd>Enter</kbd>  " ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "
+},{
+    "Heading":"",
+    "Subheading":"20. Seek",
+    "Html_Details":"This command is used to search particular information related to database file, but the database file must be indexed, and value will be numeric and string both.<br> Numeric is used without inverted coma and string is used under inverted comma.<br> Syntax :- <br> use demo.dbf <br> Index on (field name) to (index name) <br> seek field name<br><br> Example :- <br> use sks <kbd>Enter</kbd> <br> Index on name to sks <kbd>Enter</kbd> <br> seek Ram <kbd>Enter</kbd> <br> Dsiplay <kbd>Enter</kbd>  " ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"21. Replace",
+    "Html_Details":"This command is used to replace value of particular field related to recruitment by using condition.<br> Syntax :- <br> use sks <kbd>Enter</kbd><br>Replce all marks = 60 for Roll no. = 10 <br> Replace all remarks = (first) for marks >= 60" ,
+    "Details":"" ,
+    "IMG":"Replacetable.png"   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"22. Close",
+    "Html_Details":"" ,
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"23. Close All",
+    "Html_Details":"This command is used to close all database file. <br> Syntax : -<br> use sks <kbd>Enter</kbd> <br> List <kbd>Enter</kbd> <br> Close All <kbd>Enter</kbd>",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"24. Dir",
+    "Html_Details":"This command is used to display list of all file.<br> Syntax :- <br> dir * dbf <br> dir * idx <br> dir * prg.",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"25. Erase",
+    "Html_Details":"This command is used to delete particular file from foxpro.<br> Syntax :- <br> Erase demo.dbf <br> Earse sk.dbf",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"26. Copy to",
+    "Html_Details":"This command is used to copy database in new file with new name.<br> Syntax :- <br> use demo.dbf <br> copy to new.dbf <br><br>Example:- <br> use sks <kbd>Enter</kbd> <br>Copy to sks <kbd>Enter</kbd> ",
+    "Details":"" ,
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"27. Clear",
+    "Html_Details":"",
+    "Details":"This command is used to clear the screen.",
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"Function ",
+    "Subheading":"",
+    "Html_Details":"Function returns a value on the basis of given parameter or arguments.<br> There are two types of functions : - <br> <ol><li>Pre-defined function</li><li>User-defined function</li></ol>",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+},{
+    "Heading":"",
+    "Subheading":"1. Pre-defined Function ",
+    "Html_Details":"This function is created by application developer not by user. It is pre-defined provided by software, and user only use it as per requirement. So, it is called library function.",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"2. User-defined Function ",
+    "Html_Details":"This function is created by user as per own logic and solve any type of problem through programming concept. Function is created one time and can be used multiple times as per requirement.",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"Different examples of pre-defined function: -",
+    "Subheading":"1. Day( )",
+    "Html_Details":"This function is used to get the day of given data as argument in numeric form.<br>Syntax :-<br> day(Date( ))<br><br>Example: -<br> ? day (Date ( ) )<br><br> Output :- 27 ; (It is today's Day.)",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"2. Date( )",
+    "Html_Details":"This function is used to display current system date.<br> Syntax :-  ? Date ( ) <kbd>Enter</kbd> <br>Output -  07/27/20 <br><br>If we use..<br> Set Date British <kbd>Enter</kbd> <br>Set Century on <kbd>Enter</kbd> <br> ? Date ( ) <kbd>Enter</kbd> <br> Output :- 27/07/2020",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"3. Month ( )",
+    "Html_Details":"This function is used to get month of given date.<br> Syntax :-  ? Month (Date)  <kbd>Enter</kbd> <br>Output :-  3  (It is current month.)",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"4. Year( )",
+    "Html_Details":"This function is used to get the year of given date.<br> Syntax :-  ? Year ( Date( ))   <kbd>Enter</kbd> <br>Output :-  2024  (It is current year.)",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"5. Cmonth( ) ",
+    "Html_Details":"This function is used to get the name of month from given date with first letter capital and rest is small.<br> Syntax :-  ? Cmonth ( Date( ))   <kbd>Enter</kbd> <br>Output :-  March  (It is current month name.)",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"6. DOW( ) ",
+    "Html_Details":"This function is used to get ay of week in numeric form which is 1 to 7.<br> Syntax :-  ? DOW(Date)   <kbd>Enter</kbd> <br>Output :-  4  (Because today is Wednesday.)",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"7. CDOW( ) ",
+    "Html_Details":"This function is used to get character day of week of given date.<br> Syntax :-  ? CDOW(Date)   <kbd>Enter</kbd> <br>Output :-  Wednesday",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"8. CTOD( )  ",
+    "Html_Details":"This function is used to convert character to date.<br> Syntax :-  ? CTOD(Character) <kbd>Enter</kbd> <br>Example: - Suppose I want to know character day of week of particular date- <br> &ensp;&ensp; Set Date British <kbd>Enter</kbd><br> &ensp;&ensp; ? CDOW ( CTOD (“15/08/1947”) ) <kbd>Enter</kbd>",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"9. DTOC( )",
+    "Html_Details":"This function is used to convert date to character.<br> Syntax :-  ? DTOC(Date) <kbd>Enter</kbd> <br>Example: - Suppose I want to know list of record their date of birth 28/07/2020 - <br> &ensp;&ensp; Set Date British <kbd>Enter</kbd><br> &ensp;&ensp; ? List for DTOC (DOB) = “25/07/2020” <kbd>Enter</kbd>",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"10. Val( ) ",
+    "Html_Details":"This function is used to convert character to number.<br> Example :-  ? Val (“5”) + Val (“10”) <kbd>Enter</kbd><br> Output :- 15",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"11. Str( )  ",
+    "Html_Details":"This function is used to convert number to character.<br> Example :-  ? Str (5) + Str (10) <kbd>Enter</kbd><br> Output :- 510",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"12. Left( )",  
+    "Html_Details":"This function is used to get no. of character for given string from left side.<br>Syntax: - Left (“String” ,  No. of character)<br> Example :-  ? Left (“SANJEEV”, 3)  <kbd>Enter</kbd><br> Output :- SAN",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"13. Right( )",  
+    "Html_Details":"This function is used to get no. of character for given string from right side.<br>Syntax: - Right (“string” , No. of character)<br> Example :-  ? Right (“SANJEEV”, 3)  <kbd>Enter</kbd><br> Output :- EEV",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"14. Substr( )",  
+    "Html_Details":"This function is used to get no. of character for given string from desired position.<br>Syntax: - Substr (“string” ,  Position, No. of character)<br> Example :- ? Substr (“SANJEEV”, 3, 3)  <kbd>Enter</kbd><br> Output :- NJE",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"15. Len( )",  
+    "Html_Details":"This function is used to count no. of character for given string.<br>Syntax: - Len (“ string ”)<br> Example :- ? Len (“SANJEEV”)  <kbd>Enter</kbd><br> Output :- 7",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
+}
+,{
+    "Heading":"",
+    "Subheading":"16. Ltrim( )",  
+    "Html_Details":"This function is used to ignore spaces from left side if given string.<br>Syntax: - Ltrim (“string”) <br> Example :- ? Len ( Ltrim (“….. SANJEEV”) ) <kbd>Enter</kbd><br> Output :- 7",
+    "Details":"",
+    "IMG":""   ,
+    "detAfterImage":" "  
 }
   
 ]

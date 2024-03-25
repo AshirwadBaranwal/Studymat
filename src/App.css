@@ -95,3 +95,23 @@ body {
     transform: scale(1);
   }
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead,
+tbody {
+  width: 100%;
+}
+th,
+td {
+  
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: var(--btn-clr);
+  text-align: center;
+  color: white;
+}

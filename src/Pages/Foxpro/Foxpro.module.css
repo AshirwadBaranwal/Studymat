@@ -31,14 +31,15 @@
 .detail {
   margin-bottom: 10px;
 }
-.subheading{
-  color: rgb(193, 81, 99);
+.subheading {
+  color: var(--btn-clr);
+  font-size: 15px;
 }
 @media (max-width: 500px) {
   .main {
     width: 100%;
     text-align: start;
-    font-size: 14px;
+    font-size: 12px;
     /* text-justify:inter-cluster; */
   }
   .imageholder {
