@@ -28,10 +28,10 @@
   width: 350px;
   padding: 20px;
   color: white;
-  background-color: var(--mod-clr);
+  background-color: var(--bg-clr);
   border-radius: 10px;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 10px -3px black;
+  box-shadow: 0px 0px 10px -8px black;
 }
 .chooseBox {
   display: flex;

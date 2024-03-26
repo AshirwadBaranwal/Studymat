@@ -19,18 +19,18 @@ function ShowNotes() {
       <div className={style.main}>
         {NotesToShow.map((L) => {
           return (
-            <Link to={L.URL} key={L.id} target="blank" className={style.Bar}>
+            <Link to={L.URL} key={L.id} target="_blank" className={style.Bar}>
               <div className={style.heading}>
                 <p>{L.Ch_Name}</p>
                 <div className={style.statussec}>
                   <p>Notes</p>
                   <p
-                  style={{
-                    backgroundColor:
-                      L.status === "Completed"
-                        ? "rgb(212, 239, 212)"
-                        : "rgb(246, 192, 192)",
-                  }}
+                    style={{
+                      backgroundColor:
+                        L.status === "Completed"
+                          ? "rgb(212, 239, 212)"
+                          : "rgb(246, 192, 192)",
+                    }}
                   >
                     {L.status}
                   </p>

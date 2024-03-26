@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 // import SetSemester from "../SetSemester/SetSemester";
 
@@ -15,8 +15,17 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
     }
   };
 
+  useEffect(() => {
+    document.body.style.overflowY = "hidden";
+    return () => (document.body.style.overflowY = "scroll");
+  }, []);
+
   return (
     <>
+      <div
+        className={styles.wholepage}
+        onClick={() => setClickSidebar(false)}
+      ></div>
       <motion.div
         className={styles.navmenu}
         initial={{ x: 100 }}

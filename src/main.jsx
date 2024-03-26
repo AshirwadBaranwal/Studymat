@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -15,9 +15,10 @@ import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
-import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
+// import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
 import CLangQues from "./Pages/Clanguage/CLangQues.jsx";
 
+const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
 // import Notes from "./Components/Notes/Notes.jsx";
 
 const router = createBrowserRouter([
@@ -39,7 +40,14 @@ const router = createBrowserRouter([
   { path: "/Holiday", element: <Holiday /> },
   { path: "/Qbasic", element: <Qbasic /> },
   { path: "/Sylllabus", element: <Syllabus /> },
-  { path: "/Foxpro", element: <Foxpro /> },
+  {
+    path: "/Foxpro",
+    element: (
+      <Suspense fallback={<div>loading...</div>}>
+        <Foxpro />
+      </Suspense>
+    ),
+  },
   { path: "/CQuestions", element: <CLangQues /> },
 
   // { path: "/Notes", element: <Notes /> },

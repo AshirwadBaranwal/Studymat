@@ -101,7 +101,7 @@
   margin: auto;
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 5px;
   overflow: hidden;
   border-radius: 10px;
@@ -121,7 +121,7 @@
   cursor: pointer;
 }
 .box p {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Poppins";
   line-height: 10px;
   padding-left: 0px;

@@ -7,6 +7,7 @@ import Holiday from "../../assets/Holiday.svg";
 import Syllabus from "../../assets/Books.svg";
 import { Link } from "react-router-dom";
 import Codeques from "../../assets/codeQues.svg";
+import Blogsvg from "../../assets/Blogsvg.svg";
 
 import Cmodal from "../CodeModal/Cmodal";
 
@@ -15,7 +16,6 @@ function Maincomp() {
   const closeCmodal = useCallback(() => {
     return setShowModal(false);
   }, [showModal]);
-  console.log("Maincomponent rendered");
   return (
     <>
       <div className={styles.wholeWidth}>
@@ -41,7 +41,7 @@ function Maincomp() {
         <div className={styles.container}>
           <Link to="/Holiday" className={styles.box}>
             <div className={styles.imgpart}>
-              <img height="50px" src={Holiday} alt="" />
+              <img height="30px" src={Holiday} alt="" />
             </div>
             <div className={styles.contentpart}>
               <p>Holiday</p>
@@ -53,7 +53,7 @@ function Maincomp() {
             className={styles.box}
           >
             <div className={styles.imgpart}>
-              <img height="40px" src={Syllabus} alt="" />
+              <img height="30px" src={Syllabus} alt="" />
             </div>
             <div className={styles.contentpart}>
               <p>Syllabus</p>
@@ -61,12 +61,21 @@ function Maincomp() {
           </Link>
           <div className={styles.box} onClick={() => setShowModal(true)}>
             <div className={styles.imgpart}>
-              <img height="40px" src={Codeques} alt="LinkImage" />
+              <img height="30px" src={Codeques} alt="LinkImage" />
             </div>
             <div className={styles.contentpart}>
               <p>Code Ques</p>
             </div>
           </div>
+
+          <Link to="/Foxpro" className={styles.box}>
+            <div className={styles.imgpart}>
+              <img height="30px" src={Blogsvg} alt="" />
+            </div>
+            <div className={styles.contentpart}>
+              <p> Foxpro Blog</p>
+            </div>
+          </Link>
         </div>
         <div className={styles.greetings}>
           <h2>❤️ From BCA Guide </h2>
