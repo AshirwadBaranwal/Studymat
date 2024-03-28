@@ -26,7 +26,11 @@ function Navbar({ setClickSidebar, clickSidebar }) {
   return (
     <header>
       <div className={styles.logo}>
-        <img height="60px" src={darkMode ? Logo : weblogo} alt="Logo" />
+        <img
+          height={darkMode ? "60px" : "50px"}
+          src={darkMode ? Logo : weblogo}
+          alt="Logo"
+        />
       </div>
 
       <div className={styles.menu}>
