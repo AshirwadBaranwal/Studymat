@@ -140,17 +140,12 @@
   .Page_item::selection {
     display: none;
   }
-  .copybtnsec {
+   .copybtnsec {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
   }
-  .copybtnsec button {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: none;
-  }
+
   .Qimgbg {
     width: 95%;
     height: fit-content;
@@ -248,12 +243,12 @@
     justify-content: space-between;
     margin-bottom: 5px;
   }
-  .copybtnsec button {
+  /* .copybtnsec button {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     border: none;
-  }
+  } */
   .loader {
     height: 70vh;
     width: 100%;

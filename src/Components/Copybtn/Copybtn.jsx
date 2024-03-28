@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import { IoMdCopy } from "react-icons/io";
-import { FaRegCircleCheck } from "react-icons/fa6";
 import copy from "copy-to-clipboard";
+import style from "./Copybtn.module.css";
 
 const Copybtn = ({ copythis }) => {
-  const [copybtnmark, setcopybtnmark] = useState(<IoMdCopy size={20} />);
+  const [copybtnmark, setcopybtnmark] = useState("Copy");
   return (
     <div>
-      <button
+      <div
+        className={style.copybtn}
         onClick={() => {
           copy(copythis);
-          setcopybtnmark(<FaRegCircleCheck color="green" size={20} />);
+          setcopybtnmark("Copied");
           setTimeout(() => {
-            setcopybtnmark(<IoMdCopy size={20} />);
+            setcopybtnmark("Copy");
           }, 1000);
         }}
       >
         {copybtnmark}
-      </button>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,130 @@
-.navigation {
-  max-width: 22%;
+/* .main {
+  margin-left: 240px;
+  background-color: white;
+   'height: calc(100% - 60px);'
+  height: calc(100vh - 63px);
+  margin-top: 1px;
+  overflow: scroll;
+}
+
+.menu {
+  position: fixed;
+  max-width: 240px;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid black;
+  color: black; 
+}*/
+.main {
+  display: flex;
+  height: calc(100vh - 66px);
+  overflow: hidden;
+  margin-top: 5px;
+  color: var(--para-clr);
+}
+.menu {
+  max-width: 250px;
+  height: calc(100vh - 66px);
+  border-right: 1px solid var(--para-clr);
+  padding-top: 5px;
+}
+
+.quesbox {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--para-clr);
+}
+.forscroll {
+  overflow-y: auto;
+  width: calc(100% - 250px);
+  margin: 0px 100px;
+}
+.ques {
+  padding: 10px 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.answerSheet {
+  padding: 20px 50px;
+}
+.question {
+  padding: 10px;
+}
+.Answer {
+  width: 100%;
+  border-radius: 10px;
+}
+.Output {
+  width: 100%;
+  /* background-color: rgb(217, 216, 216); */
+  background-color: var(--bg-clr);
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+  padding: 10px;
+  border-radius: 5px;
+}
+h6 {
+  margin-left: 10px;
+}
+.changeButton {
+  display: none;
+}
+.copySolution {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+@media (max-width: 1168px) {
+  .forscroll {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 787px) {
+  .menu {
+    display: none;
+  }
+  .forscroll {
+    width: 100%;
+    margin: 0px;
+  }
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+  .answerSheet {
+    padding: 0px 20px;
+    padding-top: 12px;
+  }
+  .changeButton {
+    display: block;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: var(--btn-clr);
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    position: fixed;
+    z-index: 50000;
+    background-color: black;
+  }
+  /* .menu{
+    display: none;
+  } */
+  .forscroll {
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -16,9 +16,9 @@ import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
-import CLangQues from "./Pages/Clanguage/CLangQues.jsx";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
+const CLangQues = React.lazy(() => import("./Pages/Clanguage/CLangQues.jsx"));
 // import Notes from "./Components/Notes/Notes.jsx";
 
 const router = createBrowserRouter([
@@ -48,7 +48,14 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
-  { path: "/CQuestions", element: <CLangQues /> },
+  {
+    path: "/CQuestions",
+    element: (
+      <Suspense fallback={<div>loading...</div>}>
+        <CLangQues />
+      </Suspense>
+    ),
+  },
 
   // { path: "/Notes", element: <Notes /> },
 ]);

@@ -41,12 +41,12 @@ const Cmodal = ({ closeCmodal }) => {
               <p>Code Ques</p>
             </div>
           </Link> */}
-          <div className={style.lang}>
+          <Link to="/CQuestions" className={style.lang}>
             <div className={style.logopart}>
               <img height="50px" src={Clogo} alt="Clogo" />
             </div>
             <p>C</p>
-          </div>
+          </Link>
         </div>
       </div>
     </>

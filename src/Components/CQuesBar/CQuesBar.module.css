@@ -1,0 +1,39 @@
+/* .main {
+  margin-left: 240px;
+  background-color: white;
+   'height: calc(100% - 60px);'
+  height: calc(100vh - 63px);
+  margin-top: 1px;
+  overflow: scroll;
+}
+
+.menu {
+  position: fixed;
+  max-width: 240px;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid black;
+  color: black; 
+}*/
+.menu {
+  position: fixed;
+  max-width: 250px;
+  height: calc(100vh - 66px);
+  border-right: 1px solid var(--bx-shadow);
+  padding-top: 5px;
+  z-index: 500;
+  background-color: var(--bg-clr);
+  margin-top: 5px;
+}
+.quesbox {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--bx-shadow);
+}
+.ques {
+  padding: 10px 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}

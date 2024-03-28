@@ -1,0 +1,12 @@
+.copybtn {
+  width: 60px;
+  font-size: 12px;
+  background-color: transparent;
+  padding: 1px;
+  border: 1px solid var(--para-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
