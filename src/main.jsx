@@ -15,6 +15,7 @@ import Qbasic from "./Pages/QBASIC/Qbasic.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
+import Spinner from "./Components/Spinner/Spinner.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
@@ -43,7 +44,21 @@ const router = createBrowserRouter([
   {
     path: "/Foxpro",
     element: (
-      <Suspense fallback={<div>loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+              width: "100vw",
+            }}
+          >
+            <Spinner></Spinner>
+          </div>
+        }
+      >
         <Foxpro />
       </Suspense>
     ),
@@ -51,7 +66,21 @@ const router = createBrowserRouter([
   {
     path: "/CQuestions",
     element: (
-      <Suspense fallback={<div>loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+              width: "100vw",
+            }}
+          >
+            <Spinner></Spinner>
+          </div>
+        }
+      >
         <CLangQues />
       </Suspense>
     ),

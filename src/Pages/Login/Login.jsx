@@ -3,14 +3,14 @@ import style from "./Login.module.css";
 import Loginimg from "../../assets/Login.jpg";
 
 function Login() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState({});
   const usernameElement = useRef();
-  const passwordElemente = useRef();
+  const passwordElement = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     setUser({
       username: usernameElement.current.value,
-      password: passwordElemente.current.value,
+      password: passwordElement.current.value,
     });
     console.log(user);
   };
@@ -62,7 +62,7 @@ function Login() {
                 className={style.inputField}
                 id="password"
                 placeholder="Password"
-                ref={passwordElemente}
+                ref={passwordElement}
                 name="password"
                 autoComplete="off"
               />

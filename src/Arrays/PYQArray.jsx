@@ -76,6 +76,20 @@ export const PYQArray = [
     URL: "https://drive.google.com/file/d/11kILbKVW6TGN9TLr-wwqV5cDrYBSvQIO/view?usp=sharing",
     Part: "1",
   },
+  {
+    id: 12,
+    Subj: "Honours Paper-I",
+    Year: 2019,
+    URL: "https://drive.google.com/file/d/1fTkvNktq3ZNDj6EMUzOUQXp5mUtdEU_U/view?usp=sharing",
+    Part: "1",
+  },
+  {
+    id: 13,
+    Subj: "Honours Paper-II",
+    Year: 2019,
+    URL: "https://drive.google.com/file/d/1DzxlS3RhSrM_LeVYbkThP7KvH4MCJwb2/view?usp=sharing",
+    Part: "1",
+  },
 ];
 
 const categories = PYQArray.map((P) => P.Year);

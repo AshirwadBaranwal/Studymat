@@ -106,12 +106,18 @@ tbody {
 }
 th,
 td {
-  
   padding: 8px;
   text-align: left;
 }
 th {
   background-color: var(--btn-clr);
   text-align: center;
+  color: white;
+}
+.activeCode {
+  background-color: var(--btn-clr);
+  color: white;
+}
+.activeCode div {
   color: white;
 }

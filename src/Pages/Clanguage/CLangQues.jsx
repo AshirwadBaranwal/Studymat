@@ -24,14 +24,20 @@ const CLangQues = () => {
 
       <div className={style.main}>
         {showques ? (
-          <CQuesBar setCurrentPage={setCurrentPage} setShowQues={setShowQues} />
+          <CQuesBar
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            setShowQues={setShowQues}
+          />
         ) : null}
         <div className={style.menu}>
           {CquesArray.map(({ id, Ques }) => {
             return (
               <>
                 <div
-                  className={style.quesbox}
+                  className={`${style.quesbox} ${
+                    currentPage === id ? "activeCode" : null
+                  } `}
                   onClick={() => {
                     setCurrentPage(id);
                   }}

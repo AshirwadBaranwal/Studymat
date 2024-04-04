@@ -8,28 +8,28 @@ function Register() {
   const PasswordRef = useRef();
 
   const [registerUser, setRegisterUser] = useState({
-    userName: "",
+    username: "",
     password: "",
     email: "",
     phone: "",
   });
-  const finalsubmit = async (e) => {
+  const finalsubmit = (e) => {
     e.preventDefault();
     setRegisterUser({
-      userName: userNameRef.current.value,
+      username: userNameRef.current.value,
       password: PasswordRef.current.value,
       email: EmailRef.current.value,
       phone: PhoneRef.current.value,
     });
     try {
-      const response = await fetch(`http://localhost:8000/api/auth/register`, {
+      const response = fetch(`http://localhost:8000/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(registerUser),
       });
-      console.log(response);
+      console.log(response.body);
     } catch (error) {
       console.log("register", error);
     }
