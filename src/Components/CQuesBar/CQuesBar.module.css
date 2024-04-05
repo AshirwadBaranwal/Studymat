@@ -22,10 +22,12 @@
   max-width: 250px;
   height: calc(100vh - 66px);
   border-right: 1px solid var(--bx-shadow);
-  padding-top: 5px;
+  /* padding-top: -5px; */
   z-index: 500;
   background-color: var(--bg-clr);
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  left: 0;
+  margin-left: -5px;
 }
 .quesbox {
   padding: 8px;
@@ -38,4 +40,12 @@
   padding: 10px 5px;
   box-sizing: border-box;
   font-size: 14px;
+}
+.whPage {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
 }
