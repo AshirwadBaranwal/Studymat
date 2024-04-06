@@ -28,7 +28,7 @@ function PYQPdfs() {
       <div className={style.Mainpage}>
         {ArrayToMap.map((items) => {
           return (
-            <Link to={items.Link} className={style.Parts}>
+            <Link to={items.Link} target="_blank" className={style.Parts}>
               <span>
                 <MdPictureAsPdf color="#e4312c" size={25} />
               </span>
