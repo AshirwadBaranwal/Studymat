@@ -7,7 +7,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import About from "./Pages/About/About.jsx";
 import Subject from "./Pages/Subjects/Subject.jsx";
 import NotesArrayProvider from "./Context/NotesList-Store";
-import PYQPage from "./Pages/PYQPage/PYQPage.jsx";
+
 import ShowNotes from "./Pages/ShowNotes/ShowNotes.jsx";
 import ShowBooks from "./Pages/Books/ShowBooks.jsx";
 import Holiday from "./Pages/Holiday.jsx";
@@ -16,7 +16,7 @@ import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
 import Spinner from "./Components/Spinner/Spinner.jsx";
-import NPYQ from "./Pages/NewPYQPage/NPYQ.jsx";
+import NPYQ from "./Pages/PYQPage/NPYQ.jsx";
 import PYQSubject from "./Pages/PYQSubject/PYQSubject.jsx";
 import PYQPdfs from "./Pages/PYQPdfs/PYQPdfs.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
@@ -39,15 +39,15 @@ const router = createBrowserRouter([
   },
   { path: "/ContactUS", element: <Contact /> },
   { path: "/Subject", element: <Subject /> },
-  { path: "/PYQ", element: <PYQPage /> },
+  { path: "/PYQ", element: <NPYQ /> },
   { path: "/ShowNotes/:Subject", element: <ShowNotes /> },
   { path: "/Books", element: <ShowBooks /> },
   { path: "/Holiday", element: <Holiday /> },
   { path: "/Qbasic", element: <Qbasic /> },
   { path: "/Sylllabus", element: <Syllabus /> },
-  { path: "/NPYQ", element: <NPYQ /> },
-  { path: "/NPYQ/PYQSubject", element: <PYQSubject /> },
-  { path: "/NPYQ/PYQSubject/PDFs", element: <PYQPdfs /> },
+  { path: "/PYQ", element: <NPYQ /> },
+  { path: "/PYQ/:Part", element: <PYQSubject /> },
+  { path: "/PYQ/:Part/:PSubject", element: <PYQPdfs /> },
   {
     path: "/Foxpro",
     element: (

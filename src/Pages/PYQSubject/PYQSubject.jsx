@@ -1,20 +1,33 @@
 import React from "react";
 import style from "./PYQSubject.module.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaFolder } from "react-icons/fa";
 import Backbar from "../../Components/BackBar/Backbar";
+import NPYQArray from "../../Arrays/NPYQArray";
 function PYQSubject() {
+  const Part = useParams();
+  const newNPYQArray = NPYQArray.filter((items) => items.Part === Part.Part);
+  const SubjectArray = newNPYQArray[0].Subjects;
+
   return (
     <>
-      <Backbar></Backbar>
+      <Backbar previosPage={"/PYQ"}></Backbar>
       <div className={style.Mainpage}>
-        <Link to={`/NPYQ/PYQSubject`} className={style.Parts}>
-          <span>
-            <FaFolder color="#ffcc40" size={25} />
-          </span>
-          Honours(Paper-1)
-        </Link>
-        <Link className={style.Parts}>
+        {SubjectArray.map((items) => {
+          return (
+            <Link
+              to={`/PYQ/${items.id}/${items.SubName}`}
+              className={style.Parts}
+            >
+              <span>
+                <FaFolder color="#ffcc40" size={25} />
+              </span>
+              {items.SubName}
+            </Link>
+          );
+        })}
+
+        {/* <Link className={style.Parts}>
           <span>
             <FaFolder color="#ffcc40" size={25} />
           </span>
@@ -37,7 +50,7 @@ function PYQSubject() {
             <FaFolder color="#ffcc40" size={25} />
           </span>
           Mathematics
-        </Link>
+        </Link> */}
       </div>
     </>
   );
