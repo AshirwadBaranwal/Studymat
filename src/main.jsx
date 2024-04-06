@@ -16,6 +16,9 @@ import Login from "./Pages/Login/Login.jsx";
 import Syllabus from "./Pages/syllabus/Syllabus.jsx";
 import Register from "./Pages/registration/Register.jsx";
 import Spinner from "./Components/Spinner/Spinner.jsx";
+import NPYQ from "./Pages/NewPYQPage/NPYQ.jsx";
+import PYQSubject from "./Pages/PYQSubject/PYQSubject.jsx";
+import PYQPdfs from "./Pages/PYQPdfs/PYQPdfs.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
@@ -30,6 +33,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
       { path: "/Login", element: <Login /> },
+
       { path: "/register", element: <Register /> },
     ],
   },
@@ -41,6 +45,9 @@ const router = createBrowserRouter([
   { path: "/Holiday", element: <Holiday /> },
   { path: "/Qbasic", element: <Qbasic /> },
   { path: "/Sylllabus", element: <Syllabus /> },
+  { path: "/NPYQ", element: <NPYQ /> },
+  { path: "/NPYQ/PYQSubject", element: <PYQSubject /> },
+  { path: "/NPYQ/PYQSubject/PDFs", element: <PYQPdfs /> },
   {
     path: "/Foxpro",
     element: (

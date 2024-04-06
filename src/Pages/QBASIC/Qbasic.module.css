@@ -1,4 +1,7 @@
 @media (max-width: 980px) {
+  .main {
+    margin-top: 70px;
+  }
   .QwhPage {
     height: 65vh;
     overflow: auto;
@@ -13,6 +16,7 @@
     padding: 10px;
     margin: auto;
     margin-bottom: 30px;
+
     overflow-y: auto;
   }
   .heading {
@@ -140,7 +144,7 @@
   .Page_item::selection {
     display: none;
   }
-   .copybtnsec {
+  .copybtnsec {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
@@ -155,6 +159,9 @@
   }
 }
 @media (max-width: 500px) {
+  .main {
+    margin-top: 70px;
+  }
   .container {
     width: 90%;
   }
@@ -170,7 +177,7 @@
     justify-content: space-between;
     padding-left: 0;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 80px;
   }
   nav {
     position: relative;

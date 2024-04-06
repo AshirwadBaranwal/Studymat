@@ -21,7 +21,7 @@
   display: flex;
   height: calc(100vh - 66px);
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 55px;
   color: var(--para-clr);
 }
 .menu {
@@ -94,6 +94,7 @@ h6 {
   .main {
     margin: 0;
     padding: 0;
+    margin-top: 60px;
   }
   .answerSheet {
     padding: 0px 20px;

@@ -1,0 +1,28 @@
+.Mainpage {
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.Parts {
+  color: var(--para-clr);
+  margin: 15px 10px;
+  padding: 15px;
+  height: fit-content;
+  width: 80%;
+  /* border: 1px solid var(--para-clr); */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .Mainpage {
+    margin-top: 80px;
+    margin-left: 0px;
+  }
+  .Parts {
+    width: 95%;
+  }
+}
