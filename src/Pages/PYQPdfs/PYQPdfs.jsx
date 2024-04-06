@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./PYQPdfs.module.css";
 import { Link, useParams } from "react-router-dom";
 import { MdPictureAsPdf } from "react-icons/md";
@@ -7,24 +7,26 @@ import NPYQArray from "../../Arrays/NPYQArray";
 
 function PYQPdfs() {
   const PSubject = useParams();
-  console.log("PSubject;", PSubject);
+  const [ArrayToMap, setArrayToMap] = useState([]);
 
-  const newNPYQArray = NPYQArray.filter(
-    (items) => items.Part === PSubject.Part
-  );
-  const SubjectArray = newNPYQArray[0].Subjects;
-  const newSubjectArray = SubjectArray.filter(
-    (items) => items.SubName === PSubject.PSubject
-  );
+  useEffect(() => {
+    const newNPYQArray = NPYQArray.filter(
+      (items) => items.Part === PSubject.Part
+    );
+    const SubjectArray = newNPYQArray[0].Subjects;
+    const newSubjectArray = SubjectArray.filter(
+      (items) => items.SubName === PSubject.PSubject
+    );
 
-  const PDFArray = newSubjectArray[0].PDFs;
-  console.log(PDFArray);
+    const PDFArray = newSubjectArray[0].PDFs;
+    setArrayToMap(PDFArray);
+  }, []);
 
   return (
     <>
       <Backbar previosPage={-1}></Backbar>
       <div className={style.Mainpage}>
-        {PDFArray.map((items) => {
+        {ArrayToMap.map((items) => {
           return (
             <Link to={items.Link} className={style.Parts}>
               <span>
@@ -34,7 +36,6 @@ function PYQPdfs() {
             </Link>
           );
         })}
-
       </div>
     </>
   );
