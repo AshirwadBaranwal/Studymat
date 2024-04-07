@@ -10,12 +10,25 @@
   width: 100%;
   /* border: 1px solid var(--para-clr); */
 
-
   display: flex;
   gap: 20px;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+.OverParts {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+  margin: 15px 10px;
+  border-radius: 8px;
+}
+.download {
+  position: absolute;
+  right: 20px;
 }
 @media (max-width: 900px) {
   .Mainpage {
@@ -25,21 +38,10 @@
   .Parts {
     width: 95%;
   }
-  .OverParts{
-   min-width: 95%;
+  .OverParts {
+    min-width: 95%;
   }
-}
-.OverParts {
-  width: 80%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
-  margin: 15px 10px;
-  border-radius: 8px;
-  
-}
-.download {
-  position: absolute;
-  right: 20px;
+  .download {
+    display: none;
+  }
 }
