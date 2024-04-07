@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { MdPictureAsPdf } from "react-icons/md";
 import Backbar from "../../Components/BackBar/Backbar";
 import NPYQArray from "../../Arrays/NPYQArray";
+import { MdOutlineDownloadForOffline } from "react-icons/md";
 
 function PYQPdfs() {
   const PSubject = useParams();
@@ -27,13 +28,23 @@ function PYQPdfs() {
       <Backbar previosPage={-1}></Backbar>
       <div className={style.Mainpage}>
         {ArrayToMap.map((items) => {
+          const newlink = "https://drive.google.com/uc?export=download&id=";
           return (
-            <Link to={items.Link} target="_blank" className={style.Parts}>
-              <span>
-                <MdPictureAsPdf color="#e4312c" size={25} />
-              </span>
-              {`${PSubject.PSubject}-${items.Year}`} .pdf
-            </Link>
+            <div className={style.OverParts}>
+              <Link to={items.Link} target="_blank" className={style.Parts}>
+                <span>
+                  <MdPictureAsPdf color="var(--btn-clr)" size={25} />
+                </span>
+                {`${PSubject.PSubject}-${items.Year}`} .pdf
+              </Link>
+
+              <Link
+                className={style.download}
+                to={`${newlink}${items.Link.slice(32, 65)}`}
+              >
+                <MdOutlineDownloadForOffline size={25} color="var(--btn-clr)" />
+              </Link>
+            </div>
           );
         })}
       </div>

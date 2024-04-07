@@ -4,13 +4,13 @@
 }
 .Parts {
   color: var(--para-clr);
-  margin: 15px 10px;
+
   padding: 20px;
   height: fit-content;
-  width: 80%;
+  width: 100%;
   /* border: 1px solid var(--para-clr); */
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+
+
   display: flex;
   gap: 20px;
   align-items: center;
@@ -25,4 +25,21 @@
   .Parts {
     width: 95%;
   }
+  .OverParts{
+   min-width: 95%;
+  }
+}
+.OverParts {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px -3px var(--bx-shadow);
+  margin: 15px 10px;
+  border-radius: 8px;
+  
+}
+.download {
+  position: absolute;
+  right: 20px;
 }
