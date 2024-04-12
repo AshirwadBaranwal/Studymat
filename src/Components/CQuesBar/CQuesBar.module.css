@@ -28,6 +28,7 @@
   /* margin-top: 5px; */
   left: 0;
   margin-left: -5px;
+  overflow-y: auto;
 }
 .quesbox {
   padding: 8px;
