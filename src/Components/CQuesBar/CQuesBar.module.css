@@ -20,13 +20,16 @@
 .menu {
   position: fixed;
   max-width: 250px;
-  height: calc(100vh - 66px);
+  /* height: calc(100vh - 115px); */
+  /* height: fit-content; */
   border-right: 1px solid var(--bx-shadow);
   /* padding-top: -5px; */
   z-index: 500;
   background-color: var(--bg-clr);
   /* margin-top: 5px; */
   left: 0;
+  bottom: 0;
+  top: 60px;
   margin-left: -5px;
   overflow-y: auto;
 }
@@ -36,6 +39,11 @@
   cursor: pointer;
   border-bottom: 1px solid var(--bx-shadow);
   color: var(--para-clr);
+  max-height: 80px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .ques {
   padding: 10px 5px;

@@ -79,6 +79,7 @@ const CLangQues = () => {
           )}
         </div>
       </div>
+
       <div className={style.changeButton} onClick={handleQuesChange}>
         <PiSlidersHorizontalLight size={25} />
       </div>

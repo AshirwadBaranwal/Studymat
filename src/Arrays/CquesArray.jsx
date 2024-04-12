@@ -194,6 +194,58 @@ const CquesArray = [
       "Enter three sides of triangle :<br>3<br>4<br>5<br>perimeter =12.000000 and area =6.000000",
     Image: "",
   },
+
+  {
+    id: 11,
+    Ques: "11. Write a C program to find eligibility of voter.",
+    Answer: `#include <stdio.h>
+
+    int main() {
+       int age;
+       printf("Enter the age of voter : ");
+       scanf("%d", &age);
+       if(age >= 18)
+       {
+           printf("Voter is eligible.");
+       }
+    else
+    {
+        printf("voter is not eligible.");
+    }
+        return 0;
+    }`,
+    Output: "Enter the age of voter : 10<br>voter is not eligible.",
+    Image: "",
+  },
+  {
+    id: 12,
+    Ques: "12. if the basic salary is less than 1500 then HRA = 10% of salary and ΔA = 90% of salary if basic salary is either equal or above 1500 then HRA = 500 and ΔA = 98% basic salary. If an employee basic salary is &input through keyboard. write a program to find gross salary.",
+    Answer: `#include <stdio.h>
+
+    int main()
+    {
+        float bs, hra, da, gs;
+        printf("Enter the basic salary: ");
+        scanf("%f", &bs);
+        if (bs < 1500)
+        {
+            hra = (bs * 10) / 100;
+            da = (bs * 90) / 100;
+        }
+        else
+        {
+            hra = 500;
+            da = (bs * 98) / 100;
+        }
+        gs = bs + hra + da;
+        printf("Gross salary = %f", gs);
+        return 0;
+    }
+    `,
+    Output: "Enter the basic salary: 1600<br>Gross salary = 3668.000000",
+    Image: "",
+  },
+ 
 ];
 
 export default CquesArray;
