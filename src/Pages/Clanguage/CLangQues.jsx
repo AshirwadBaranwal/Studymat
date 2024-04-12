@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import style from "./CLangQues.module.css";
-import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import { nnfxDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { stackoverflowDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CquesArray from "../../Arrays/CquesArray";
 import Backbar from "../../Components/BackBar/Backbar.jsx";
@@ -63,7 +64,7 @@ const CLangQues = () => {
                   <ReactSyntaxHighlighter
                     className={style.Answer}
                     language="C"
-                    style={!darkMode ? nnfxDark : docco}
+                    style={!darkMode ? stackoverflowDark : docco}
                   >
                     {Answer}
                   </ReactSyntaxHighlighter>

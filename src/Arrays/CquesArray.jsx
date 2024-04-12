@@ -4,7 +4,7 @@ const CquesArray = [
     Ques: "1. Write a C program to print Hello world! .",
     Answer: `
     #include <stdio.h>
-      int main(){
+      int main( ){
       printf("Hello World!");
       return 0;
     }
@@ -17,7 +17,7 @@ const CquesArray = [
     Ques: "2. Write a C program to find sum of two numbers.",
     Answer: `
     #include <stdio.h>
-      int main(){
+      int main( ){
       int a,b,sum;
       printf("Enter two numbers: ");
       scanf("%d%d" , &a,&b);
@@ -32,7 +32,7 @@ const CquesArray = [
     id: 3,
     Ques: "3. Write a C program to find Simple interest.",
     Answer: `#include <stdio.h>
-    int main()
+    int main( )
     {
         int Principle, Rate, Time;
         float Interest;
@@ -54,7 +54,7 @@ const CquesArray = [
     id: 4,
     Ques: "4. Write a C program to find average of three numbers.",
     Answer: `#include <stdio.h>
-    int main()
+    int main( )
     {
         int n1,n2,n3;
         float avg;
@@ -66,6 +66,132 @@ const CquesArray = [
     }`,
     Output:
       "Enter the value of three numbers :50 <br> 30 <br> 20 <br> The average of  three numbers is 33.333332",
+    Image: "",
+  },
+  {
+    id: 5,
+    Ques: "5. Write a C program to find compound interest.",
+    Answer: `#include <stdio.h>
+    #include <math.h>
+    
+    int main( ) {
+       float principal, rate, time, CI;
+       printf("Enter the pricipal amount:");
+       scanf("%f",&principal);
+       printf("Enter the time period:");
+       scanf("%f",&time);
+       printf("Enter the rate:");
+       scanf("%f",&rate);
+       CI = principal*(pow((1+rate/100),time)-1);
+       printf("Compound interest is %f",CI);
+        return 0;
+    }`,
+    Output:
+      "Enter the pricipal amount:1000000<br>Enter the time period:5<br>Enter the rate:6<br>Compound interest is 338225.218750",
+    Image: "",
+  },
+  {
+    id: 6,
+    Ques: "6. Write a C program to find perimeter and area of a circle.",
+    Answer: `#include <stdio.h>
+
+    int main( ) {
+      float radius, perimeter, area;
+      printf("Enter the value of radius:");
+      scanf("%f",&radius);
+      perimeter = 2 * 3.14 * radius;
+      area = 3.14 * radius * radius;
+      printf("Area = %f and perimeter =%f",area,perimeter);
+        return 0;
+    }`,
+    Output:
+      "Enter the value of radius: 1<br>Area = 3.140000 and perimeter =6.280000",
+    Image: "",
+  },
+  {
+    id: 7,
+    Ques: "7. Write a C program to find perimeter and area of a rectangle.",
+    Answer: `#include <stdio.h>
+
+    int main() {
+        float l, b, area, perimeter;
+        printf("Enter the length of rectangle: ");
+        scanf("%f",&l);
+        printf("Enter the breadth of rectangle: ");
+        scanf("%f",&b);
+    area = l * b;
+        perimeter = 2*(l+b);
+        printf("Area = %f and perimeter = %f",area,perimeter);
+        return 0;
+    }`,
+    Output:
+      "Enter the length of rectangle: 2<br>Enter the breadth of rectangle: 2<br>Area = 4.000000 and perimeter = 8.000000",
+    Image: "",
+  },
+  {
+    id: 8,
+    Ques: "8. Write a C program to find perimeter and area of a square.",
+    Answer: `#include <stdio.h>
+
+    int main() {
+        float l, b, area, perimeter;
+        printf("Enter the length of rectangle: ");
+        scanf("%f",&l);
+        printf("Enter the breadth of rectangle: ");
+        scanf("%f",&b);
+    area = l * b;
+        perimeter = 2*(l+b);
+        printf("Area = %f and perimeter = %f",area,perimeter);
+        return 0;
+    }`,
+    Output:
+      "Enter the length of rectangle: 2<br>Enter the breadth of rectangle: 2<br>Area = 4.000000 and perimeter = 8.000000",
+    Image: "",
+  },
+  {
+    id: 9,
+    Ques: "9. Write a C program to find perimeter and area of a triangle.",
+    Answer: `#include <stdio.h>
+    #include <math.h>
+    int main()
+    {
+        float a, b, c, perimeter, s, area;
+        printf("Enter three sides of triangle : \n");
+        scanf("%f %f %f", &a, &b, &c);
+        perimeter = a + b + c;
+        s = (a + b + c) / 2;
+        area = sqrt(s * (s - a) * (s - b) * (s - c));
+        printf("perimeter =%f and area =%f ", perimeter, area);
+        return 0;
+    }
+    `,
+    Output:
+      "Enter three sides of triangle :<br>3<br>4<br>5<br>perimeter =12.000000 and area =6.000000",
+    Image: "",
+  },
+  {
+    id: 10,
+    Ques: "10. Write a C program to find odd or even number.",
+    Answer: `#include <stdio.h>
+    int main()
+    {
+        int a;
+        printf("Enter a number: ");
+        scanf("%d", &a);
+        if (a % 2 == 0)
+        {
+            printf("Number is even.");
+        }
+        else
+        {
+            printf("Number is odd.");
+        }
+        return 0;
+    }
+    
+    `,
+    Output:
+      "Enter three sides of triangle :<br>3<br>4<br>5<br>perimeter =12.000000 and area =6.000000",
     Image: "",
   },
 ];
