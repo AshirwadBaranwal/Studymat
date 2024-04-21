@@ -13,23 +13,32 @@ function Register() {
     email: "",
     phone: "",
   });
-  const finalsubmit = (e) => {
+  const finalsubmit = async (e) => {
     e.preventDefault();
-    setRegisterUser({
+      setRegisterUser({
       username: userNameRef.current.value,
       password: PasswordRef.current.value,
       email: EmailRef.current.value,
       phone: PhoneRef.current.value,
     });
     try {
-      const response = fetch(`http://localhost:8000/api/auth/register`, {
+      const response = await fetch(`http://localhost:8000/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(registerUser),
       });
-      console.log(response.body);
+      if (!response.ok) {
+        // Read the JSON response body to obtain the error message
+        const errorData = await response.json();
+        console.error("Registration error:", errorData);
+        return;
+      }
+      
+      // Parse the response body as JSON
+      const data = await response.json();
+      console.log("Registration successful:", data);
     } catch (error) {
       console.log("register", error);
     }
