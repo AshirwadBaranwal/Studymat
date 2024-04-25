@@ -42,7 +42,7 @@ function Register() {
       const { extradetails, message } = res_data;
 
       toast.error(extradetails ? extradetails : message, {
-        position: "bottom-right",
+        position: "top-right",
       });
 
       if (response.ok) {
@@ -53,7 +53,7 @@ function Register() {
           password: "",
         });
         toast.success("Registration successfull", {
-          position: "bottom-right",
+          position: "top-right",
         });
         // setTokeninLS(res_data.token);
         navigate("/Login");

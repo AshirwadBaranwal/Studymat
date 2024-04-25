@@ -41,12 +41,12 @@ function Login() {
 
       const { extradetails, message } = res_data;
       toast.error(extradetails ? extradetails : message, {
-        position: "bottom-right",
+        position: "top-right",
       });
 
       if (response.ok) {
         toast.success("login sucessfull", {
-          position: "bottom-right",
+          position: "top-right",
         });
         navigate("/");
       }
