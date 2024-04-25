@@ -1,82 +1,183 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import style from "./Login.module.css";
-import Loginimg from "../../assets/Login.jpg";
+import { toast } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
-  const [user, setUser] = useState({});
-  const usernameElement = useRef();
-  const passwordElement = useRef();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setUser({
-      username: usernameElement.current.value,
-      password: passwordElement.current.value,
-    });
-    console.log(user);
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleInput = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setUser({ ...user, [name]: value });
   };
 
-  return (
-    <div className={style.whpage}>
-      <div className={style.container}>
-        <div className={style.leftsec}>
-          <img src={Loginimg} height="600px" alt="" />
-        </div>
-        <div className={style.rightsec}>
-          <form className={style.form_main} onSubmit={(e) => handleSubmit(e)}>
-            <p className={style.heading}>Login</p>
-            <div className={style.inputContainer}>
-              <svg
-                className={style.inputIcon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="#2e2e2e"
-                viewBox="0 0 16 16"
-              >
-                <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
-              </svg>
-              <input
-                type="text"
-                className={style.inputField}
-                id="username"
-                placeholder="Username"
-                ref={usernameElement}
-                name="username"
-                autoComplete="off"
-              />
-            </div>
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    console.log(user);
 
-            <div className={style.inputContainer}>
-              <svg
-                className={style.inputIcon}
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="#2e2e2e"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
-              </svg>
-              <input
-                type="password"
-                className={style.inputField}
-                id="password"
-                placeholder="Password"
-                ref={passwordElement}
-                name="password"
-                autoComplete="off"
-              />
-            </div>
+    try {
+      const response = await fetch(
+        "https://bcaguide.onrender.com/api/v1/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
 
-            <button className={style.button}>Submit</button>
-            <a className={style.forgotLink} href="#">
-              Forgot your password?
-            </a>
+      console.log(response);
+
+      const res_data = await response.json();
+
+      console.log(res_data);
+
+      const { extradetails, message } = res_data;
+      toast.error(extradetails ? extradetails : message, {
+        position: "bottom-right",
+      });
+
+      if (response.ok) {
+        toast.success("login sucessfull", {
+          position: "bottom-right",
+        });
+        navigate("/");
+      }
+    } catch (error) {
+      console.log("frontend login error", error);
+    }
+  };
+
+  // return (
+  //   <>
+  //     {" "}
+  {
+    /* <div className={style.main}>
+        <div className={style.container}>
+          <div className={style.heading}>Sign In</div>
+          <form onSubmit={handleLogin} className={style.form}>
+            <input
+              required
+              className={style.input}
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              autoComplete="off"
+              value={user.email}
+              onChange={handleInput}
+            />
+            <input
+              required
+              className={style.input}
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              autoComplete="off"
+              value={user.password}
+              onChange={handleInput}
+            />
+            <span className={style.forgot_password}>
+              <a href="#">Forgot Password ?</a>
+            </span>
+            <input
+              className={style.login_button}
+              type="submit"
+              value="Sign In"
+            />
           </form>
+          <div className={style.social_account_container}>
+            <span className={style.title}>Or Sign in with</span>
+            <div className={style.social_accounts}>
+              <button className={`${style.social_button} google`}>
+                <svg
+                  className={style.svg}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 488 512"
+                >
+                  <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                </svg>
+              </button>
+              <button className={`${style.social_button} apple`}>
+                <svg
+                  className={style.svg}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 384 512"
+                >
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+                </svg>
+              </button>
+              <button className={`${style.social_button} twitter`}>
+                <svg
+                  className={style.svg}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <span className={style.agreement}>
+            <a href="#">Learn user licence agreement</a>
+          </span>
         </div>
       </div>
-    </div>
-  );
+    </>
+  ); */
+    return (
+      <div className={style.main}>
+        <div className={style.form_box}>
+          <form className={style.form} onSubmit={handleLogin}>
+            <span className={style.title}>Sign in</span>
+            <span className={style.subtitle}>Login to your account</span>
+            <div className={style.form_container}>
+              <input
+                required
+                className={style.input}
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                autoComplete="off"
+                value={user.email}
+                onChange={handleInput}
+              />
+
+              <input
+                required
+                className={style.input}
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                autoComplete="off"
+                value={user.password}
+                onChange={handleInput}
+              />
+            </div>
+            <button type="submit">Sign in</button>
+          </form>
+          <div className={style.form_section}>
+            <p>
+              Don't have an account? <Link to="/register">sign up</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Login;

@@ -20,6 +20,8 @@ import NPYQ from "./Pages/PYQPage/NPYQ.jsx";
 import PYQSubject from "./Pages/PYQSubject/PYQSubject.jsx";
 import PYQPdfs from "./Pages/PYQPdfs/PYQPdfs.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
 const CLangQues = React.lazy(() => import("./Pages/Clanguage/CLangQues.jsx"));
@@ -33,7 +35,6 @@ const router = createBrowserRouter([
       { path: "/", element: <Maincomp /> },
       { path: "/About", element: <About /> },
       { path: "/Login", element: <Login /> },
-
       { path: "/register", element: <Register /> },
     ],
   },
@@ -99,6 +100,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NotesArrayProvider>
+      <ToastContainer />
       <RouterProvider router={router}></RouterProvider>
     </NotesArrayProvider>
   </React.StrictMode>

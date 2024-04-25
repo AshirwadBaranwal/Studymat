@@ -1,108 +1,124 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import style from "./Register.module.css";
+import { Link, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
 function Register() {
-  const userNameRef = useRef();
-  const PhoneRef = useRef();
-  const EmailRef = useRef();
-  const PasswordRef = useRef();
-
-  const [registerUser, setRegisterUser] = useState({
+  // const { setTokeninLS } = useContext(authContext);
+  const [user, setUser] = useState({
     username: "",
-    password: "",
     email: "",
     phone: "",
+    password: "",
   });
-  const finalsubmit = async (e) => {
-    e.preventDefault();
-      setRegisterUser({
-      username: userNameRef.current.value,
-      password: PasswordRef.current.value,
-      email: EmailRef.current.value,
-      phone: PhoneRef.current.value,
+
+  const navigate = useNavigate();
+  const handleInput = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setUser({
+      ...user,
+      [name]: value,
     });
+  };
+
+  const handleregister = async (e) => {
+    e.preventDefault();
+    console.log(user);
+
     try {
-      const response = await fetch(`http://localhost:8000/api/auth/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(registerUser),
+      const response = await fetch(
+        `https://bcaguide.onrender.com/api/v1/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
+
+      const res_data = await response.json();
+      const { extradetails, message } = res_data;
+
+      toast.error(extradetails ? extradetails : message, {
+        position: "bottom-right",
       });
-      if (!response.ok) {
-        // Read the JSON response body to obtain the error message
-        const errorData = await response.json();
-        console.error("Registration error:", errorData);
-        return;
+
+      if (response.ok) {
+        setUser({
+          username: "",
+          email: "",
+          phone: "",
+          password: "",
+        });
+        toast.success("Registration successfull", {
+          position: "bottom-right",
+        });
+        // setTokeninLS(res_data.token);
+        navigate("/Login");
       }
-      
-      // Parse the response body as JSON
-      const data = await response.json();
-      console.log("Registration successful:", data);
+      console.log(response);
     } catch (error) {
-      console.log("register", error);
+      console.log("front register error", error);
     }
   };
+
   return (
-    <>
-      <form onSubmit={(e) => finalsubmit(e)}>
-        <div className={style.Main}>
-          <div className={style.Left}>
-            <img src="" alt="" />
+    <div className={style.main}>
+      <div className={style.form_box}>
+        <form className={style.form} onSubmit={handleregister}>
+          <span className={style.title}>Sign up</span>
+          <span className={style.subtitle}>
+            Create a free account with your email.
+          </span>
+          <div className={style.form_container}>
+            <input
+              type="text"
+              className={style.input}
+              placeholder="Full Name"
+              name="username"
+              autoComplete="off"
+              value={user.username}
+              onChange={handleInput}
+            />
+            <input
+              type="email"
+              className={style.input}
+              placeholder="Email"
+              name="email"
+              autoComplete="off"
+              value={user.email}
+              onChange={handleInput}
+            />
+            <input
+              type="number"
+              className={style.input}
+              placeholder="phone"
+              name="phone"
+              autoComplete="off"
+              value={user.phone}
+              onChange={handleInput}
+            />
+            <input
+              type="password"
+              className={style.input}
+              placeholder="Password"
+              name="password"
+              autoComplete="off"
+              value={user.password}
+              onChange={handleInput}
+            />
           </div>
-          <div className={style.Right}>
-            <div>
-              <label htmlFor="username">Username: </label>
-              <input
-                type="text"
-                placeholder="Username"
-                name="username"
-                id="username"
-                ref={userNameRef}
-              />
-            </div>
-
-            <br />
-            <div>
-              <label htmlFor="email">Email: </label>
-              <input
-                type="email"
-                placeholder="email"
-                name="email"
-                id="email"
-                ref={EmailRef}
-              />
-            </div>
-
-            <br />
-            <div>
-              <label htmlFor="phone">Phone: </label>
-              <input
-                type="text"
-                placeholder="phone"
-                name="phone"
-                id="phone"
-                ref={PhoneRef}
-              />
-            </div>
-
-            <br />
-            <div>
-              <label htmlFor="password">Password: </label>
-              <input
-                type="password"
-                placeholder="Password"
-                name="password"
-                id="password"
-                ref={PasswordRef}
-              />
-            </div>
-            <br />
-            <button type="submit">Submit </button>
-          </div>
+          <button type="submit">Sign up</button>
+        </form>
+        <div className={style.form_section}>
+          <p>
+            Have an account? <Link to="/Login">Log in</Link>
+          </p>
         </div>
-      </form>
-    </>
+      </div>
+    </div>
   );
 }
 

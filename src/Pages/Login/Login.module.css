@@ -1,143 +1,90 @@
-.whpage {
-  margin: auto;
-  margin-top: 70px;
-  height: 89vh;
-  width: 98vw;
-  /* background-color: red; */
-}
-
-.container {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.leftsec {
-  height: 90%;
-  width: 100%;
-  /* background-color: aqua; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rightsec {
-  height: 90%;
+.main {
+  height: calc(100vh - 60px);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
+}
+.form_box {
+  max-width: 400px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
 }
 
-/* UIVERSE CODE */
-
-.form_main {
-  width: 300px;
-  height: 400px;
+.form {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  padding: 30px 30px 30px 30px;
-  box-shadow: 0px 10px 10px rgb(212, 212, 212);
-  position: relative;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form_container {
   overflow: hidden;
-}
-
-.form_main::before {
-  position: absolute;
-  content: "";
-  width: 380px;
-  height: 300px;
-  background-color: rgb(209, 193, 255);
-  transform: rotate(45deg);
-  left: -180px;
-  bottom: 30px;
-  z-index: 1;
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
-}
-
-.heading {
-  font-size: 2em;
-  color: #2e2e2e;
-  font-weight: 700;
-  margin: 5px 0 10px 0;
-  z-index: 2;
-}
-
-.inputContainer {
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 0.5rem;
   width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
 }
 
-.inputIcon {
-  position: absolute;
-  left: 3px;
-}
-
-.inputField {
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
   width: 100%;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgb(173, 173, 173);
-  margin: 10px 0;
-  color: black;
-  font-size: 0.8em;
-  font-weight: 500;
-  box-sizing: border-box;
-  padding-left: 30px;
-}
-
-.inputField:focus {
-  outline: none;
-  border-bottom: 2px solid rgb(199, 114, 255);
-}
-
-.inputField::placeholder {
-  color: rgb(80, 80, 80);
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.button {
-  z-index: 2;
-  position: relative;
-  width: 100%;
-  border: none;
-  background-color: rgb(162, 104, 255);
-  height: 30px;
-  color: white;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-#button:hover {
-  background-color: rgb(126, 84, 255);
-}
-
-.forgotLink {
-  z-index: 2;
-  font-size: 0.7em;
-  font-weight: 500;
-  color: rgb(44, 24, 128);
-  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
   padding: 8px 15px;
-  border-radius: 20px;
 }
-@media (max-width: 1000px) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .leftsec {
-    display: none;
-  }
+
+.form_section {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form_section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color 0.3s ease;
+}
+
+.form_section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
 }
