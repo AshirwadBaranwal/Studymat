@@ -22,6 +22,8 @@ import PYQPdfs from "./Pages/PYQPdfs/PYQPdfs.jsx";
 // import Foxpro from "./Pages/Foxpro/Foxpro.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthProvider } from "./Context/AuthContext.jsx";
+import Logout from "./Pages/Logout.jsx";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
 const CLangQues = React.lazy(() => import("./Pages/Clanguage/CLangQues.jsx"));
@@ -36,9 +38,9 @@ const router = createBrowserRouter([
       { path: "/About", element: <About /> },
       { path: "/Login", element: <Login /> },
       { path: "/register", element: <Register /> },
+      { path: "/ContactUS", element: <Contact /> },
     ],
   },
-  { path: "/ContactUS", element: <Contact /> },
   { path: "/Subject", element: <Subject /> },
   { path: "/PYQ", element: <NPYQ /> },
   { path: "/ShowNotes/:Subject", element: <ShowNotes /> },
@@ -49,6 +51,7 @@ const router = createBrowserRouter([
   { path: "/PYQ", element: <NPYQ /> },
   { path: "/PYQ/:Part", element: <PYQSubject /> },
   { path: "/PYQ/:Part/:PSubject", element: <PYQPdfs /> },
+  { path: "/logout", element: <Logout /> },
   {
     path: "/Foxpro",
     element: (
@@ -100,8 +103,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NotesArrayProvider>
-      <ToastContainer />
-      <RouterProvider router={router}></RouterProvider>
+      <AuthProvider>
+        <ToastContainer />
+        <RouterProvider router={router}></RouterProvider>
+      </AuthProvider>
     </NotesArrayProvider>
   </React.StrictMode>
 );

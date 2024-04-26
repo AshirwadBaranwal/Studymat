@@ -2,9 +2,10 @@ import React, { useContext, useState } from "react";
 import style from "./Register.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import { useAuth } from "../../Context/AuthContext";
 
 function Register() {
-  // const { setTokeninLS } = useContext(authContext);
+  const { setTokeninLS } = useAuth();
   const [user, setUser] = useState({
     username: "",
     email: "",
@@ -27,16 +28,13 @@ function Register() {
     console.log(user);
 
     try {
-      const response = await fetch(
-        `https://bcaguide.onrender.com/api/v1/register`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(user),
-        }
-      );
+      const response = await fetch(`http://localhost:5000/api/v1/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      });
 
       const res_data = await response.json();
       const { extradetails, message } = res_data;
@@ -55,8 +53,8 @@ function Register() {
         toast.success("Registration successfull", {
           position: "top-right",
         });
-        // setTokeninLS(res_data.token);
-        navigate("/Login");
+        setTokeninLS(res_data.token);
+        navigate("/");
       }
       console.log(response);
     } catch (error) {
