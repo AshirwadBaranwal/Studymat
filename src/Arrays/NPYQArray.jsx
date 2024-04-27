@@ -138,8 +138,36 @@ const NPYQArray = [
         SubName: "Hindi",
         PDFs: [
           {
-            Link: "",
-            Year: "",
+            Link: "https://drive.google.com/file/d/13_hkgyG8GrGq0OHjnminsaPt581rOIeV/view?usp=sharing",
+            Year: "2012",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1dU3Zk37UZXnH3dfZexgzcjHuCAoIxR4T/view?usp=sharing",
+            Year: "2015",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1xgvVoz9BKDiOy3S6zXTGWn6mefhr9VJ7/view?usp=sharing",
+            Year: "2017",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1QovH-0MfalYMl9ilcboUJcko-e7VXt7S/view?usp=sharing",
+            Year: "2019",
+          },
+          {
+            Link: "https://drive.google.com/file/d/19r8pjaYlUJcbNUTzrTGcNn753N5i96i1/view?usp=sharing",
+            Year: "2020",
+          },
+          {
+            Link: "https://drive.google.com/file/d/18S3R9cGBjAmUWPCMm5V2Kdz3_iN0orVv/view?usp=sharing",
+            Year: "2021",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1yixfBelNP2u0dXxBpiQcoCRkEDr22ryq/view?usp=sharing",
+            Year: "2022",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1PDIEQmpW-6rvNoOgBv_86G4KYsRl56vB/view?usp=sharing",
+            Year: "2023",
           },
         ],
       },
@@ -148,8 +176,28 @@ const NPYQArray = [
         SubName: "English",
         PDFs: [
           {
-            Link: "",
-            Year: "",
+            Link: "https://drive.google.com/file/d/1pqY-5QAbW2qOQyxKLIUW8f2q71NzuDMg/view?usp=sharing",
+            Year: "2015",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1eKDkiEH564gKTH5G8xqLe3HSn2xwxQx6/view?usp=sharing",
+            Year: "2019",
+          },
+          {
+            Link: "https://drive.google.com/file/d/14U5b3UNo_AuMl79eZkigeh5MoH8tjYIJ/view?usp=sharing",
+            Year: "2020",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1nzx_UddyASSxbXNJuwPUo5gznbSXxdnC/view?usp=sharing",
+            Year: "2021",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1j3DdaS3vTT-r2Imo40GzFgo12xaJVxDA/view?usp=sharing",
+            Year: "2022",
+          },
+          {
+            Link: "https://drive.google.com/file/d/1jvYjbElRWCUV_haTOEeZ3C_KGtypLC3Q/view?usp=sharing",
+            Year: "2023",
           },
         ],
       },
