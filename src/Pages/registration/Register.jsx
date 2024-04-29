@@ -26,13 +26,16 @@ function Register() {
   const handleregister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
+      const response = await fetch(
+        `https://bcaguide.onrender.com/api/v1/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
 
       const res_data = await response.json();
       const { extradetails, message } = res_data;

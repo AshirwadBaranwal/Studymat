@@ -15,13 +15,16 @@ function Verifyemail() {
 
   const verifysignupmail = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/verifyemail`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(emailtoken),
-      });
+      const response = await fetch(
+        `https://bcaguide.onrender.com/api/v1/verifyemail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(emailtoken),
+        }
+      );
 
       const res_data = await response.json();
       console.log("response data", res_data);
