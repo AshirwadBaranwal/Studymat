@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./Login.module.css";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../Context/AuthContext";
 
@@ -21,7 +21,6 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log(user);
 
     try {
       const response = await fetch("http://localhost:5000/api/v1/login", {
@@ -32,24 +31,24 @@ function Login() {
         body: JSON.stringify(user),
       });
 
-      console.log(response);
-
       const res_data = await response.json();
 
-      console.log(res_data);
-
-      const { extradetails, message } = res_data;
-      toast.error(extradetails ? extradetails : message, {
-        position: "top-right",
-      });
+      const { extradetails, message, isVerfied } = res_data;
+      if (!response.ok) {
+        toast.error(extradetails ? extradetails : message, {
+          position: "top-right",
+        });
+      }
 
       if (response.ok) {
         toast.success("login sucessfull", {
           position: "top-right",
         });
         setTokeninLS(res_data.token);
+
         navigate("/");
       }
+      console.log("login run");
     } catch (error) {
       console.log("frontend login error", error);
     }

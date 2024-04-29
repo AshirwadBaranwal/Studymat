@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import style from "./Register.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-hot-toast";
 import { useAuth } from "../../Context/AuthContext";
 
 function Register() {
@@ -25,8 +25,6 @@ function Register() {
 
   const handleregister = async (e) => {
     e.preventDefault();
-    console.log(user);
-
     try {
       const response = await fetch(`http://localhost:5000/api/v1/register`, {
         method: "POST",
@@ -38,10 +36,11 @@ function Register() {
 
       const res_data = await response.json();
       const { extradetails, message } = res_data;
-
-      toast.error(extradetails ? extradetails : message, {
-        position: "top-right",
-      });
+      if (!response.ok) {
+        toast.error(extradetails ? extradetails : message, {
+          position: "top-right",
+        });
+      }
 
       if (response.ok) {
         setUser({
@@ -50,11 +49,10 @@ function Register() {
           phone: "",
           password: "",
         });
-        toast.success("Registration successfull", {
+        toast.success("verification link sent to your email", {
           position: "top-right",
         });
-        setTokeninLS(res_data.token);
-        navigate("/");
+        // setTokeninLS(res_data.token);
       }
       console.log(response);
     } catch (error) {

@@ -24,6 +24,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider } from "./Context/AuthContext.jsx";
 import Logout from "./Pages/Logout.jsx";
+import Verifyemail from "./Pages/Verifyemail/Verifyemail.jsx";
+import { Toaster } from "react-hot-toast";
 
 const Foxpro = React.lazy(() => import("./Pages/Foxpro/Foxpro.jsx"));
 const CLangQues = React.lazy(() => import("./Pages/Clanguage/CLangQues.jsx"));
@@ -97,16 +99,17 @@ const router = createBrowserRouter([
     ),
   },
 
-  // { path: "/Notes", element: <Notes /> },
+  { path: "/verifyemail", element: <Verifyemail /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <NotesArrayProvider>
-      <AuthProvider>
-        <ToastContainer />
-        <RouterProvider router={router}></RouterProvider>
-      </AuthProvider>
-    </NotesArrayProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <NotesArrayProvider>
+    <AuthProvider>
+      <ToastContainer />
+      <Toaster position="top-center" />
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
+  </NotesArrayProvider>
+  // </React.StrictMode>
 );
