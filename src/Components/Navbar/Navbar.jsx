@@ -8,10 +8,12 @@ import { NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import DarkToggle from "../DARK/DarkToggle";
+import { useAuth } from "../../Context/AuthContext";
 
 function Navbar({ setClickSidebar, clickSidebar }) {
   const [showdropdown, setshowdropdown] = useState(false);
   const { setSemester, semester, darkMode } = useContext(NotesArray);
+  const { isLoggedin, userdata } = useAuth();
 
   const ActiveStyle = ({ isActive }) => {
     if (isActive) {
@@ -54,17 +56,49 @@ function Navbar({ setClickSidebar, clickSidebar }) {
               Contact Us
             </NavLink>
           </li>
+          {isLoggedin ? (
+            <li>
+              <NavLink
+                style={ActiveStyle}
+                className={styles.NavLink}
+                to="/logout"
+              >
+                Logout
+              </NavLink>
+            </li>
+          ) : (
+            <>
+              <li>
+                <NavLink
+                  style={ActiveStyle}
+                  className={styles.NavLink}
+                  to="/Login"
+                >
+                  Login
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  style={ActiveStyle}
+                  className={styles.NavLink}
+                  to="/register"
+                >
+                  Sign up
+                </NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <div className={styles.navRest}>
-        <button
+        {/* <button
           className={styles.dropbtn}
           onClick={() => {
             setshowdropdown(!showdropdown);
           }}
         >
           {semester}
-        </button>
+        </button> */}
         <DarkToggle />
 
         {/* hamburger */}

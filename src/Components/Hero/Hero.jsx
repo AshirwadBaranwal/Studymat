@@ -5,6 +5,7 @@ import { NotesArray } from "../../Context/NotesList-Store";
 
 const Hero = () => {
   const { theme, darkMode } = useContext(NotesArray);
+
   return (
     <div className={styles.Hero}>
       <div className={styles.HeroL}>
