@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useAuth } from "../../Context/AuthContext";
 // import SetSemester from "../SetSemester/SetSemester";
 
 function Sidebar({ setClickSidebar, clickSidebar }) {
@@ -19,7 +20,7 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
     document.body.style.overflowY = "hidden";
     return () => (document.body.style.overflowY = "scroll");
   }, []);
-
+  const { isLoggedin } = useAuth();
   return (
     <>
       <div
@@ -60,6 +61,41 @@ function Sidebar({ setClickSidebar, clickSidebar }) {
               Contact Us
             </NavLink>
           </li>
+          {isLoggedin ? (
+            <li>
+              <NavLink
+                style={ActiveStyle}
+                className={styles.NavLink}
+                to="/logout"
+                onClick={() => setClickSidebar(false)}
+              >
+                Logout
+              </NavLink>
+            </li>
+          ) : (
+            <>
+              <li>
+                <NavLink
+                  style={ActiveStyle}
+                  className={styles.NavLink}
+                  to="/Login"
+                  onClick={() => setClickSidebar(false)}
+                >
+                  Login
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  style={ActiveStyle}
+                  className={styles.NavLink}
+                  to="/register"
+                  onClick={() => setClickSidebar(false)}
+                >
+                  Sign up
+                </NavLink>
+              </li>
+            </>
+          )}
         </ul>
         {/* <h6 style={{ marginLeft: "45px", marginTop: "25px" }}>
           Choose your year:

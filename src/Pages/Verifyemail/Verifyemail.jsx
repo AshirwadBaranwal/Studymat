@@ -48,7 +48,7 @@ function Verifyemail() {
       <h3>
         Verify your email on <span>bcaguide360.netlify.app</span>{" "}
       </h3>
-      <p>{emailtoken ? `${emailtoken.tokendata}` : " no token"}</p>
+      {/* <p>{emailtoken ? `${emailtoken.tokendata}` : " no token"}</p> */}
       <button className={style.btn} onClick={verify}>
         click to verify
       </button>
