@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "./Verifyemail.module.css";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+
 function Verifyemail() {
-  const navigate = useNavigate();
   const [emailtoken, setEmailToken] = useState({
     tokendata: "",
   });
@@ -32,7 +31,6 @@ function Verifyemail() {
       console.log(response);
       if (response.ok) {
         toast.success(message);
-        navigate("/login");
       } else {
         toast.error(message);
       }
