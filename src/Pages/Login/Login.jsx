@@ -51,7 +51,7 @@ function Login() {
 
         navigate("/");
       }
-      console.log("login run");
+     
     } catch (error) {
       console.log("frontend login error", error);
     }
