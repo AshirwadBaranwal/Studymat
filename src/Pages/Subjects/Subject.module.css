@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+.wholewidth {
+  max-width: 85rem;
+  margin: auto;
+}
 .banner {
   width: 90%;
   height: fit-content;

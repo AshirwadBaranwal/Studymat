@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 .main {
-  margin: 84.93px;
+  max-width: 85rem;
+  margin: auto;
   color: var(--para-clr);
   height: fit-content;
+  margin: 84.93px;
 }
 .aboutus {
   display: grid;

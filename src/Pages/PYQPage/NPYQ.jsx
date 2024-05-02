@@ -13,6 +13,7 @@ function NPYQ() {
   return (
     <>
       <Backbar previosPage={"/"}></Backbar>
+      <div className={style.Wholewidth}>
       <div className={style.Mainpage}>
         {ArrayToMap.map((items) => {
           return (
@@ -37,6 +38,7 @@ function NPYQ() {
           </span>
           Part-3
         </Link> */}
+      </div>
       </div>
     </>
   );

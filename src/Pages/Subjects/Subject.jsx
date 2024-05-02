@@ -10,28 +10,30 @@ function Subject() {
   return (
     <>
       <Backbar previosPage="/"></Backbar>
-      <div className={styles.banner}>
-        <img width="100%" height="80px" src={SubBanner} alt="Banner" />
-        <h2>Subject</h2>
-      </div>
-      <div className={styles.main}>
-        {notesArray.map((items) => {
-          return (
-            <Link
-              to={`/ShowNotes/${items.Subj}`}
-              className={styles.subjectBox}
-              key={items.Subj}
-            >
-              <div className={styles.Image}>
-                <img height="40px" src={items.Logo} alt="" />
-              </div>
-              <div className={styles.content}>
-                <div>{items.Subj}</div>
-                <p>Chapters - {items.Chapters.length} </p>
-              </div>
-            </Link>
-          );
-        })}
+      <div className={styles.wholewidth}>
+        <div className={styles.banner}>
+          <img width="100%" height="80px" src={SubBanner} alt="Banner" />
+          <h2>Subject</h2>
+        </div>
+        <div className={styles.main}>
+          {notesArray.map((items) => {
+            return (
+              <Link
+                to={`/ShowNotes/${items.Subj}`}
+                className={styles.subjectBox}
+                key={items.Subj}
+              >
+                <div className={styles.Image}>
+                  <img height="40px" src={items.Logo} alt="" />
+                </div>
+                <div className={styles.content}>
+                  <div>{items.Subj}</div>
+                  <p>Chapters - {items.Chapters.length} </p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,11 @@
+.Wholewidth {
+  max-width: 85rem;
+  margin: auto;
+}
+
 .Mainpage {
+  margin-left: 200px;
   margin-top: 80px;
-  margin-left: 50px;
 }
 .Parts {
   color: var(--para-clr);

@@ -37,6 +37,8 @@
   width: 70%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 80px;
 }
 .HeroL img {
   width: 50vw;
@@ -66,7 +68,7 @@
   position: relative;
   width: fit-content;
   height: fit-content;
-  background-color: var(--btn-clr);  
+  background-color: var(--btn-clr);
   color: white;
   font-size: 18px;
   font-weight: 600;

@@ -1,5 +1,7 @@
 .wholeWidth {
   padding: 0px 70px;
+  max-width: 85rem;
+  margin: auto;
 }
 .features {
   width: 95%;

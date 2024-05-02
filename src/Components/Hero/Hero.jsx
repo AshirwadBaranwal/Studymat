@@ -16,6 +16,7 @@ const Hero = () => {
               darkMode
                 ? "drop-shadow(0px 0px 50px #90d1cd)"
                 : "drop-shadow(0px 0px 0px #7110b2)",
+            width: "80%",
           }}
           src={HeroImage}
           alt="HeroImage"

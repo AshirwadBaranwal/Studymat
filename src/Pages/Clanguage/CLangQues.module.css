@@ -18,6 +18,8 @@
   color: black; 
 }*/
 .main {
+  max-width: 85rem;
+  margin: auto;
   display: flex;
   height: calc(100vh - 57px);
   overflow: hidden;
@@ -97,7 +99,6 @@ h6 {
     padding: 0;
     margin-top: 60px;
     height: calc(100vh - 200px);
-
   }
   .answerSheet {
     padding: 0px 20px;

@@ -1,4 +1,6 @@
 .main {
+  max-width: 85rem;
+  margin: auto;
   width: 90%;
   height: 75vh;
   overflow-y: auto;
@@ -6,7 +8,7 @@
   background-color: var(--sec-bg-clr);
   padding: 20px 5px;
   margin: auto;
-margin-top: 80px;
+  margin-top: 80px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px -3px var(--bx-shadow);
   display: flex;

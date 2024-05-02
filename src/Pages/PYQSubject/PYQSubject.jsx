@@ -18,20 +18,22 @@ function PYQSubject() {
   return (
     <>
       <Backbar previosPage={"/PYQ"}></Backbar>
-      <div className={style.Mainpage}>
-        {ArrayToMap.map((items) => {
-          return (
-            <Link
-              to={`/PYQ/${items.id}/${items.SubName}`}
-              className={style.Parts}
-            >
-              <span>
-                <FaFolder color="#ffcc40" size={25} />
-              </span>
-              {items.SubName}
-            </Link>
-          );
-        })}
+      <div className={style.Wholewidth}>
+        <div className={style.Mainpage}>
+          {ArrayToMap.map((items) => {
+            return (
+              <Link
+                to={`/PYQ/${items.id}/${items.SubName}`}
+                className={style.Parts}
+              >
+                <span>
+                  <FaFolder color="#ffcc40" size={25} />
+                </span>
+                {items.SubName}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </>
   );

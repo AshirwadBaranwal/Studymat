@@ -1,4 +1,6 @@
 .main {
+  max-width: 85rem;
+  margin: auto;
   height: calc(100vh - 60px);
   width: 98vw;
   display: flex;
@@ -74,5 +76,8 @@
   }
   .textarea {
     width: 86%;
+  }
+  .main {
+    margin-top: 60px;
   }
 }
