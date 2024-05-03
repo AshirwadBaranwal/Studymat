@@ -1,3 +1,7 @@
+.submitButton {
+  position: relative;
+  height: 50px;
+}
 .main {
   height: calc(100vh - 60px);
   width: 100%;

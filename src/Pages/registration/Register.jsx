@@ -28,45 +28,43 @@ function Register() {
   const handleregister = async (e) => {
     e.preventDefault();
     setLogging(true);
-    if (logging) {
-      try {
-        const response = await fetch(
-          `https://bcaguide.onrender.com/api/v1/register`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(user),
-          }
-        );
-
-        const res_data = await response.json();
-        const { extradetails, message } = res_data;
-        if (!response.ok) {
-          setLogging(false);
-          toast.error(extradetails ? extradetails : message, {
-            position: "top-right",
-          });
+    try {
+      const response = await fetch(
+        `https://bcaguide.onrender.com/api/v1/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
         }
+      );
 
-        if (response.ok) {
-          setLogging(false);
-          setUser({
-            username: "",
-            email: "",
-            phone: "",
-            password: "",
-          });
-          toast.success("verification link sent to your email", {
-            position: "top-right",
-          });
-          // setTokeninLS(res_data.token);
-        }
-      } catch (error) {
+      const res_data = await response.json();
+      const { extradetails, message } = res_data;
+      if (!response.ok) {
         setLogging(false);
-        console.log("front register error", error);
+        toast.error(extradetails ? extradetails : message, {
+          position: "top-right",
+        });
       }
+
+      if (response.ok) {
+        setLogging(false);
+        setUser({
+          username: "",
+          email: "",
+          phone: "",
+          password: "",
+        });
+        toast.success("verification link sent to your email", {
+          position: "top-right",
+        });
+        // setTokeninLS(res_data.token);
+      }
+    } catch (error) {
+      setLogging(false);
+      console.log("front register error", error);
     }
   };
 
@@ -116,7 +114,7 @@ function Register() {
               onChange={handleInput}
             />
           </div>
-          <button type="submit">
+          <button className={style.submitButton} type="submit">
             {logging ? <ButtonLoader /> : "Sign up"}
           </button>
         </form>

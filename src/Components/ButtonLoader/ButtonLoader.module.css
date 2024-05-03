@@ -7,11 +7,12 @@
 }
 
 .spinner.center {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
+  
   margin: auto;
 }
 
@@ -23,6 +24,7 @@
   height: 0.2777em;
   border-radius: 0.0555em;
   background-color: transparent;
+  color: white;
   -webkit-transform-origin: center -0.2222em;
   -ms-transform-origin: center -0.2222em;
   transform-origin: center -0.2222em;
@@ -127,7 +129,7 @@
 
 @keyframes spinner-fade9234 {
   0% {
-    background-color: #69717d;
+    background-color: white ;
   }
 
   100% {

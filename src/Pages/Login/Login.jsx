@@ -94,7 +94,7 @@ function Login() {
                 onChange={handleInput}
               />
             </div>
-            <button type="submit">
+            <button className={style.submitButton} type="submit">
               {logging ? <ButtonLoader /> : "Sign in"}
             </button>
           </form>
