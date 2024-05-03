@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./ButtonLoader.module.css";
 
 function ButtonLoader() {
   return (
@@ -17,7 +18,6 @@ function ButtonLoader() {
         <div className={style.spinner_blade}></div>
         <div className={style.spinner_blade}></div>
       </div>
-      ;
     </>
   );
 }

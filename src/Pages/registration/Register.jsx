@@ -64,6 +64,7 @@ function Register() {
           // setTokeninLS(res_data.token);
         }
       } catch (error) {
+        setLogging(false);
         console.log("front register error", error);
       }
     }

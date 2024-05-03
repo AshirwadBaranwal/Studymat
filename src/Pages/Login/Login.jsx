@@ -57,6 +57,7 @@ function Login() {
         navigate("/");
       }
     } catch (error) {
+      setLogging(false);
       console.log("frontend login error", error);
     }
   };
