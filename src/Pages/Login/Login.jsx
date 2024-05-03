@@ -12,6 +12,7 @@ function Login() {
     email: "",
     password: "",
   });
+  const [logging, setLogging] = useState(false);
 
   const handleInput = (e) => {
     const name = e.target.name;
@@ -21,6 +22,7 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setLogging(true);
 
     try {
       const response = await fetch(
@@ -41,9 +43,11 @@ function Login() {
         toast.error(extradetails ? extradetails : message, {
           position: "top-right",
         });
+        setLogging(false);
       }
 
       if (response.ok) {
+        setLogging(false);
         toast.success("login sucessfull", {
           position: "top-right",
         });
@@ -51,7 +55,6 @@ function Login() {
 
         navigate("/");
       }
-     
     } catch (error) {
       console.log("frontend login error", error);
     }
@@ -89,7 +92,9 @@ function Login() {
                 onChange={handleInput}
               />
             </div>
-            <button type="submit">Sign in</button>
+            <button type="submit">
+              {logging ? "Processing.." : "Sign in"}
+            </button>
           </form>
           <div className={style.form_section}>
             <p>
