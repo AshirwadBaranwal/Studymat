@@ -3,6 +3,7 @@ import style from "./Login.module.css";
 import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../Context/AuthContext";
+import ButtonLoader from "../../Components/ButtonLoader/ButtonLoader";
 
 function Login() {
   const { setTokeninLS } = useAuth();
@@ -93,7 +94,7 @@ function Login() {
               />
             </div>
             <button type="submit">
-              {logging ? "Processing.." : "Sign in"}
+              {logging ? <ButtonLoader /> : "Sign in"}
             </button>
           </form>
           <div className={style.form_section}>

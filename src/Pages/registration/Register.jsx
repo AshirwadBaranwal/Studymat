@@ -3,6 +3,7 @@ import style from "./Register.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { useAuth } from "../../Context/AuthContext";
+import ButtonLoader from "../../Components/ButtonLoader/ButtonLoader";
 
 function Register() {
   const { setTokeninLS } = useAuth();
@@ -12,6 +13,7 @@ function Register() {
     phone: "",
     password: "",
   });
+  const [logging, setLogging] = useState(false);
 
   const navigate = useNavigate();
   const handleInput = (e) => {
@@ -25,41 +27,45 @@ function Register() {
 
   const handleregister = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch(
-        `https://bcaguide.onrender.com/api/v1/register`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(user),
+    setLogging(true);
+    if (logging) {
+      try {
+        const response = await fetch(
+          `https://bcaguide.onrender.com/api/v1/register`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+          }
+        );
+
+        const res_data = await response.json();
+        const { extradetails, message } = res_data;
+        if (!response.ok) {
+          setLogging(false);
+          toast.error(extradetails ? extradetails : message, {
+            position: "top-right",
+          });
         }
-      );
 
-      const res_data = await response.json();
-      const { extradetails, message } = res_data;
-      if (!response.ok) {
-        toast.error(extradetails ? extradetails : message, {
-          position: "top-right",
-        });
+        if (response.ok) {
+          setLogging(false);
+          setUser({
+            username: "",
+            email: "",
+            phone: "",
+            password: "",
+          });
+          toast.success("verification link sent to your email", {
+            position: "top-right",
+          });
+          // setTokeninLS(res_data.token);
+        }
+      } catch (error) {
+        console.log("front register error", error);
       }
-
-      if (response.ok) {
-        setUser({
-          username: "",
-          email: "",
-          phone: "",
-          password: "",
-        });
-        toast.success("verification link sent to your email", {
-          position: "top-right",
-        });
-        // setTokeninLS(res_data.token);
-      }
-    
-    } catch (error) {
-      console.log("front register error", error);
     }
   };
 
@@ -109,7 +115,9 @@ function Register() {
               onChange={handleInput}
             />
           </div>
-          <button type="submit">Sign up</button>
+          <button type="submit">
+            {logging ? <ButtonLoader /> : "Sign up"}
+          </button>
         </form>
         <div className={style.form_section}>
           <p>
